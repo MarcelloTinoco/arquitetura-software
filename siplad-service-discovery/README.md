@@ -11,3 +11,9 @@ The following guides illustrate how to use some features concretely:
 
 * [Service Registration and Discovery](https://spring.io/guides/gs/service-registration-and-discovery/)
 
+# Montar e executar
+
+- mvn clean package install -DskipTests
+
+- java -jar -Dserver.port=8900 target/siplad-service-discovery-1.0.jar
+

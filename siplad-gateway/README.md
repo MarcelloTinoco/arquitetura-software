@@ -26,4 +26,9 @@ Please see [this blog entry](https://spring.io/blog/2018/12/12/spring-cloud-gree
 for more information on maintenance mode and a list of suggested replacements for those
 libraries.
 
-java -jar -Dserver.port=8900 target/siplad-gateway-1.0.jar
+# Montar e executar
+
+- mvn clean package install -DskipTests
+
+- java -jar -Dserver.port=8900 target/siplad-gateway-1.0.jar
+
