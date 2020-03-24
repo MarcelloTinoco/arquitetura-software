@@ -52,3 +52,7 @@ https://spring.io/guides/gs/spring-boot-docker/
 ## Github Chris Richardson
 https://github.com/cer/microservices-examples
 https://github.com/cer/microservices-examples/blob/master/docker-compose-images.yml
+
+## Docker ARGS, ENV
+
+https://vsupalov.com/docker-arg-env-variable-guide/
