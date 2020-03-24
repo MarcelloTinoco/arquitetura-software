@@ -3,12 +3,12 @@ version: '3'
 services:
 
   servicediscovery:
-    image: siplad/servicediscovery-1.0
+    image: siplad/service-discovery:1.0
     ports:
        - "8800:8800"
   
   servicegateway:
-    image: siplad/service-gateway-1.0
+    image: siplad/service-gateway:1.0
     environment:
     - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://servicediscovery:8800/eureka/
     ports:
@@ -17,7 +17,7 @@ services:
       - servicediscovery
   
   fooservice:
-    image: foo/foo-service-1.0
+    image: foo/foo-service:1.0
     environment:
     - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://servicediscovery:8800/eureka/
     ports:
