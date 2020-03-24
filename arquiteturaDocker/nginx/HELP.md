@@ -1,0 +1,1 @@
+docker build -t siplad-nginx-gateway-lb .

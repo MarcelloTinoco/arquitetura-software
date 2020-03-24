@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active:
+    - default
+server:
+  port: ${PORT:8800}
+  compression:
+    enabled: true
+    
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
