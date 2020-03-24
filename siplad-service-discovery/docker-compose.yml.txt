@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+
+  servicediscovery:
+    image: siplad/servicediscovery-1.0
+    ports:
+       - "8800:8800"

@@ -44,3 +44,11 @@ https://www.digitalocean.com/community/tutorials/como-instalar-o-nginx-no-ubuntu
 
 - `sudo apt install maven`
 - `mvn -version`
+
+### Spring Boot With Docker
+
+https://spring.io/guides/gs/spring-boot-docker/
+
+## Github Chris Richardson
+https://github.com/cer/microservices-examples
+https://github.com/cer/microservices-examples/blob/master/docker-compose-images.yml
