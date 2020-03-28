@@ -32,3 +32,6 @@ libraries.
 
 - java -jar -Dserver.port=8900 target/siplad-gateway-1.0.jar
 
+# Criar a imagem
+
+- docker build -t siplad/service-gateway:1.0 .
