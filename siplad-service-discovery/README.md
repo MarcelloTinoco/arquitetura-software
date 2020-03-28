@@ -17,3 +17,6 @@ The following guides illustrate how to use some features concretely:
 
 - java -jar -Dserver.port=8900 target/siplad-service-discovery-1.0.jar
 
+# Criar a imagem
+
+- docker build -t siplad/service-discovery:1.0 .

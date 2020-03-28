@@ -31,6 +31,11 @@ https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04
 -  `sudo apt-get install docker-ce`
 -  `systemctl status docker`
 
+### Instalar o docker compose
+
+- `sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+- `sudo chmod +x /usr/local/bin/docker-compose
+
 
 ### Para colocar o NGinx Balanceando a carga na frente dos gateway
 ### Instalando o NGinx 
