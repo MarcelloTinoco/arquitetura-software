@@ -12,3 +12,14 @@ For further reference, please consider the following sections:
 # Criar a imagem
 
 - docker build -t foo/foo-service:1.0 .
+
+
+# Instrumentar, gerar metricas e dashboards
+
+- Prometheus e Grafana
+
+https://micrometer.io/docs/registry/prometheus
+
+https://grafana.com/grafana/dashboards/4701
+
+https://www.bytesville.com/springboot-micrometer-prometheus-grafana/

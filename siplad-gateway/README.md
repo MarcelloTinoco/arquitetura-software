@@ -26,12 +26,28 @@ Please see [this blog entry](https://spring.io/blog/2018/12/12/spring-cloud-gree
 for more information on maintenance mode and a list of suggested replacements for those
 libraries.
 
+# Autenticação centralizada
+
+`https://spring.io/guides/tutorials/rest/`
+
+`https://www.baeldung.com/spring-security-zuul-oauth-jwt`
+
+`https://medium.com/@arjunac009/spring-boot-microservice-with-centralized-authentication-zuul-eureka-jwt-5719e05fde29`
+
+`https://medium.com/@mool.smreeti/microservices-with-spring-boot-authentication-with-jwt-and-spring-security-6e10155d9db0`
+
+
+
 # Montar e executar
 
-- mvn clean package install -DskipTests
+- `mvn clean package install -DskipTests`
 
-- java -jar -Dserver.port=8900 target/siplad-gateway-1.0.jar
+- `java -jar -Dserver.port=8900 target/siplad-gateway-1.0.jar`
 
 # Criar a imagem
 
-- docker build -t siplad/service-gateway:1.0 .
+- `docker build -t siplad/service-gateway:1.0 .` 
+
+# Docker compose
+
+- `docker compose up`
