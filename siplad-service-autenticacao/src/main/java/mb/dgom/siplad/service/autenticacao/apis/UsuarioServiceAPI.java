@@ -1,5 +1,7 @@
 package mb.dgom.siplad.service.autenticacao.apis;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -15,5 +17,9 @@ public interface UsuarioServiceAPI {
 
 	@PostMapping(path = "/v1/apoio/usuarios/getByUserName", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<UsuarioDTO> getByUserName(@RequestBody CredenciaisUsuarioDTO credenciais);
+	
+	@PostMapping(path = "/v1/apoio/usuarios/autenticar", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<UsuarioDTO> autenticar(@RequestBody CredenciaisUsuarioDTO credenciais);
+	
 	
 }

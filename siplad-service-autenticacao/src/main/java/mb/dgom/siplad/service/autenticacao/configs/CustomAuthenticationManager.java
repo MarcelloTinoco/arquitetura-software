@@ -4,11 +4,15 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
 
+import mb.dgom.siplad.service.autenticacao.apis.UsuarioServiceAPI;
+import mb.dgom.siplad.service.autenticacao.dtos.CredenciaisUsuarioDTO;
+import mb.dgom.siplad.service.autenticacao.dtos.UsuarioDTO;
 import mb.dgom.siplad.service.autenticacao.service.UsuarioService;
 import mb.dgom.siplad.service.autenticacao.vos.UsuarioVO;
 
@@ -19,6 +23,9 @@ public class CustomAuthenticationManager implements AuthenticationManager{
 	
 	@Autowired
 	private UsuarioService usuarioService;
+	
+	@Autowired
+	private UsuarioServiceAPI usuarioServiceAPI;
 	
 	//@Autowired
 	//private SipladMobileCryptography crypto;
@@ -43,7 +50,15 @@ public class CustomAuthenticationManager implements AuthenticationManager{
 		//if(!StringUtils.isEmpty(acessoDecriptografado) && !StringUtils.isEmpty(senhaDecriptografada)) {
 		if(!StringUtils.isEmpty(usuario) && !StringUtils.isEmpty(senha)) {
 			//UsuarioVO usr = usuarioService.autenticar(acessoDecriptografado, SecurityUtil.convertStringToSha512(senhaDecriptografada));
-			UsuarioVO usr = usuarioService.autenticar(usuario, senha);
+			//UsuarioVO usr = usuarioService.autenticar(usuario, senha);
+			
+			CredenciaisUsuarioDTO credenciais = new CredenciaisUsuarioDTO();
+			credenciais.setUserName(usuario);
+			credenciais.setPassword(senha);
+			ResponseEntity<UsuarioDTO> response = usuarioServiceAPI.autenticar(credenciais);
+			
+			UsuarioDTO usr = response.getBody();
+			
 			if(usr!=null && usr.getId()!=null) {
 				usrToken = new UsernamePasswordAuthenticationToken(usuario, null);
 			}

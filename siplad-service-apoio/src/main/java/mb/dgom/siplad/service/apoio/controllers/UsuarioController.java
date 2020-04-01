@@ -51,4 +51,24 @@ public class UsuarioController {
 		
 		return responseEntity;
 	}
+	
+	@PostMapping(path = "/autenticar", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<UsuarioDTO> autenticar(@RequestBody CredenciaisUsuarioDTO credenciais, HttpServletRequest request) {
+
+		ResponseEntity<UsuarioDTO> responseEntity;
+		
+		UsuarioDTO user = new UsuarioDTO();
+		user.setId(new Long(1));
+		user.setAcesso("admin");
+		user.setUserName("admin");
+		user.setNome("Administrador");
+		user.setStatus(true);
+		
+		responseEntity = ResponseEntity.ok().body(user);
+		
+		
+		return responseEntity;
+	}
+	
+	
 }
