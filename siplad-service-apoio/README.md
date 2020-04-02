@@ -13,3 +13,6 @@ https://www.baeldung.com/spring-security-zuul-oauth-jwt
 https://medium.com/@arjunac009/spring-boot-microservice-with-centralized-authentication-zuul-eureka-jwt-5719e05fde29
 
 https://medium.com/@mool.smreeti/microservices-with-spring-boot-authentication-with-jwt-and-spring-security-6e10155d9db0
+
+
+- `docker build -t siplad/service-apoio:1.0 .` 

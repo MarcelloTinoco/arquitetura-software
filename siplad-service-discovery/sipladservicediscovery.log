@@ -1,0 +1,215 @@
+2020-04-02 16:49:20.445  INFO [sipladservicediscovery,,,] 9064 --- [main] .d.s.s.SipladServiceDiscoveryApplication : The following profiles are active: default
+2020-04-02 16:49:21.023  WARN [sipladservicediscovery,,,] 9064 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-02 16:49:21.207  INFO [sipladservicediscovery,,,] 9064 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e0a071e2-5d87-3c8c-a01e-d5896ae202b9
+2020-04-02 16:49:21.647  WARN [sipladservicediscovery,,,] 9064 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-04-02 16:49:21.668  INFO [sipladservicediscovery,,,] 9064 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-04-02 16:49:21.668  INFO [sipladservicediscovery,,,] 9064 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1209 ms
+2020-04-02 16:49:21.759  WARN [sipladservicediscovery,,,] 9064 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-02 16:49:21.759  INFO [sipladservicediscovery,,,] 9064 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-02 16:49:21.767  INFO [sipladservicediscovery,,,] 9064 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4288d98e
+2020-04-02 16:49:23.299  INFO [sipladservicediscovery,,,] 9064 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-02 16:49:23.808  WARN [sipladservicediscovery,,,] 9064 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-02 16:49:23.809  INFO [sipladservicediscovery,,,] 9064 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-02 16:49:24.031  INFO [sipladservicediscovery,,,] 9064 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 16:49:25.621  INFO [sipladservicediscovery,,,] 9064 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-02 16:49:25.656  WARN [sipladservicediscovery,,,] 9064 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-02 16:49:25.976  INFO [sipladservicediscovery,,,] 9064 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-04-02 16:49:25.996  INFO [sipladservicediscovery,,,] 9064 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-04-02 16:49:25.997  INFO [sipladservicediscovery,,,] 9064 --- [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2020-04-02 16:49:26.002  INFO [sipladservicediscovery,,,] 9064 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1585856966001 with initial instances count: 0
+2020-04-02 16:49:26.043  INFO [sipladservicediscovery,,,] 9064 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2020-04-02 16:49:26.044  INFO [sipladservicediscovery,,,] 9064 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8800/eureka/]
+2020-04-02 16:49:26.301  INFO [sipladservicediscovery,,,] 9064 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-04-02 16:49:26.301  INFO [sipladservicediscovery,,,] 9064 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-04-02 16:49:26.301  INFO [sipladservicediscovery,,,] 9064 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-04-02 16:49:26.301  INFO [sipladservicediscovery,,,] 9064 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-04-02 16:49:26.438  INFO [sipladservicediscovery,,,] 9064 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8800/eureka/
+2020-04-02 16:49:26.444  INFO [sipladservicediscovery,,,] 9064 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2020-04-02 16:49:26.445  INFO [sipladservicediscovery,,,] 9064 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2020-04-02 16:49:26.521  INFO [sipladservicediscovery,,,] 9064 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-02 16:49:26.595  INFO [sipladservicediscovery,,,] 9064 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SIPLADSERVICEDISCOVERY with eureka with status UP
+2020-04-02 16:49:26.597  INFO [sipladservicediscovery,,,] 9064 --- [Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2020-04-02 16:49:26.597  INFO [sipladservicediscovery,,,] 9064 --- [Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2020-04-02 16:49:26.598  INFO [sipladservicediscovery,,,] 9064 --- [Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2020-04-02 16:49:26.610  INFO [sipladservicediscovery,,,] 9064 --- [Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2020-04-02 16:49:26.610  INFO [sipladservicediscovery,,,] 9064 --- [Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2020-04-02 16:49:26.610  INFO [sipladservicediscovery,,,] 9064 --- [Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2020-04-02 16:49:26.610  INFO [sipladservicediscovery,,,] 9064 --- [Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2020-04-02 16:49:26.611  INFO [sipladservicediscovery,,,] 9064 --- [Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2020-04-02 16:49:26.619  INFO [sipladservicediscovery,,,] 9064 --- [Thread-12] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2020-04-02 16:49:26.647  INFO [sipladservicediscovery,,,] 9064 --- [main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-04-02 16:49:26.674  INFO [sipladservicediscovery,,,] 9064 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-04-02 16:49:26.674  INFO [sipladservicediscovery,,,] 9064 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-04-02 16:49:26.674  INFO [sipladservicediscovery,,,] 9064 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-04-02 16:49:26.674  INFO [sipladservicediscovery,,,] 9064 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-04-02 16:49:26.913  INFO [sipladservicediscovery,,,] 9064 --- [main] io.undertow                              : starting server: Undertow - 2.0.29.Final
+2020-04-02 16:49:26.919  INFO [sipladservicediscovery,,,] 9064 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2020-04-02 16:49:26.928  INFO [sipladservicediscovery,,,] 9064 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2020-04-02 16:49:27.016  INFO [sipladservicediscovery,,,] 9064 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8800 (http) with context path ''
+2020-04-02 16:49:27.017  INFO [sipladservicediscovery,,,] 9064 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8800
+2020-04-02 16:49:28.166  INFO [sipladservicediscovery,,,] 9064 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-02 16:49:28.167  INFO [sipladservicediscovery,,,] 9064 --- [main] .d.s.s.SipladServiceDiscoveryApplication : Started SipladServiceDiscoveryApplication in 10.62 seconds (JVM running for 11.385)
+2020-04-02 16:49:33.793  INFO [sipladservicediscovery,,,] 9064 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 16:49:33.793  INFO [sipladservicediscovery,,,] 9064 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-02 16:49:33.805  INFO [sipladservicediscovery,,,] 9064 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-04-02 16:49:35.440  INFO [sipladservicediscovery,4cc5875e49cf0e6a,4cc5875e49cf0e6a,true] 9064 --- [XNIO-1 task-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 with status UP (replication=false)
+2020-04-02 16:49:36.028  INFO [sipladservicediscovery,15022ee21532fcca,15022ee21532fcca,true] 9064 --- [XNIO-1 task-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 with status UP (replication=true)
+2020-04-02 16:49:37.437  INFO [sipladservicediscovery,f4fdfb8506a12bfc,f4fdfb8506a12bfc,true] 9064 --- [XNIO-1 task-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 with status UP (replication=false)
+2020-04-02 16:49:37.947  INFO [sipladservicediscovery,1341a0ebed53d3d0,1341a0ebed53d3d0,true] 9064 --- [XNIO-1 task-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 with status UP (replication=true)
+2020-04-02 16:49:39.823  INFO [sipladservicediscovery,30bb3ccea09b62ec,30bb3ccea09b62ec,false] 9064 --- [XNIO-1 task-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAUTENTICACAO/localhost:sipladserviceautenticacao:9100 with status UP (replication=false)
+2020-04-02 16:49:40.333  INFO [sipladservicediscovery,a1808dc478dbf1a8,a1808dc478dbf1a8,true] 9064 --- [XNIO-1 task-12] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAUTENTICACAO/localhost:sipladserviceautenticacao:9100 with status UP (replication=true)
+2020-04-02 16:50:26.612  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 16:51:26.612  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 16:52:26.612  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 16:53:26.613  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 16:54:26.613  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 16:55:26.614  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 16:56:26.614  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 16:57:26.615  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 16:58:26.615  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 16:59:26.616  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:00:26.616  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:01:26.617  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:02:26.618  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:03:26.618  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:04:26.445  INFO [sipladservicediscovery,,,] 9064 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2020-04-02 17:04:26.618  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:05:26.619  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:06:26.619  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:07:26.620  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:08:26.620  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:09:26.621  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:10:26.621  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:11:26.622  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:12:26.623  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:13:26.623  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:14:26.623  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:15:26.623  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:16:26.624  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:17:26.625  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:18:26.625  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:19:26.446  INFO [sipladservicediscovery,,,] 9064 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2020-04-02 17:19:26.626  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:20:26.627  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:21:26.628  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:22:26.628  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:23:26.628  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:24:26.629  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:25:26.629  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:26:26.630  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:27:26.631  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:28:26.632  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:29:26.632  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:30:26.633  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:31:26.633  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:32:26.633  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:33:26.634  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:34:26.446  INFO [sipladservicediscovery,,,] 9064 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2020-04-02 17:34:26.634  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:35:26.635  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:36:26.635  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:37:26.636  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:38:26.636  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:39:26.637  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:40:26.638  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:41:26.638  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:42:26.639  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:43:26.639  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:44:26.640  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:45:26.641  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:46:26.641  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:47:26.642  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:48:26.642  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:49:26.447  INFO [sipladservicediscovery,,,] 9064 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2020-04-02 17:49:26.643  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:50:26.643  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:51:26.644  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:52:26.644  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:53:26.645  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:54:26.646  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:55:26.646  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:56:26.647  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:57:26.647  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:58:26.648  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 17:59:26.648  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:00:26.649  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:01:26.649  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:02:26.649  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:03:26.650  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:04:26.448  INFO [sipladservicediscovery,,,] 9064 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2020-04-02 18:04:26.650  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:05:26.650  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:06:26.651  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:07:26.652  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:08:26.652  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:09:26.653  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:10:26.653  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:11:26.653  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:12:26.654  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:13:26.654  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:14:26.654  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:15:26.655  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:16:26.655  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:17:26.656  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:18:26.656  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:19:26.449  INFO [sipladservicediscovery,,,] 9064 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 6
+2020-04-02 18:19:26.656  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:20:26.657  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:21:26.658  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:22:26.659  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:23:26.659  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:24:26.659  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:25:26.659  INFO [sipladservicediscovery,,,] 9064 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-02 18:25:32.349  WARN [sipladservicediscovery,,,] 9064 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@443a53df}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2020-04-02 18:25:32.352  WARN [sipladservicediscovery,,,] 9064 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@443a53df}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:641) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:142) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:132) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.19.3.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:284) ~[zipkin-reporter-2.12.1.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:358) [zipkin-reporter-2.12.1.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_221]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_221]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_221]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_221]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_221]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1226) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990) ~[na:1.8.0_221]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:739) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 9 common frames omitted
+
+2020-04-02 18:26:24.991  INFO [sipladservicediscovery,,,] 9064 --- [RMI TCP Connection(105)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-04-02 18:26:24.992  INFO [sipladservicediscovery,,,] 9064 --- [RMI TCP Connection(105)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SIPLADSERVICEDISCOVERY with eureka with status DOWN
+2020-04-02 18:26:24.994  INFO [sipladservicediscovery,,,] 9064 --- [RMI TCP Connection(105)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2020-04-02 18:26:24.996  INFO [sipladservicediscovery,,,] 9064 --- [RMI TCP Connection(105)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+2020-04-02 18:26:24.997  INFO [sipladservicediscovery,,,] 9064 --- [RMI TCP Connection(105)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+2020-04-02 18:26:24.998  INFO [sipladservicediscovery,,,] 9064 --- [RMI TCP Connection(105)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+2020-04-02 18:26:24.998  INFO [sipladservicediscovery,,,] 9064 --- [RMI TCP Connection(105)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+2020-04-02 18:26:25.009  INFO [sipladservicediscovery,,,] 9064 --- [RMI TCP Connection(105)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2020-04-02 18:26:25.013  INFO [sipladservicediscovery,,,] 9064 --- [RMI TCP Connection(105)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-02 18:26:26.016  WARN [sipladservicediscovery,,,] 9064 --- [RMI TCP Connection(105)-127.0.0.1] z.r.AsyncReporter$BoundedAsyncReporter   : Timed out waiting for in-flight spans to send
+2020-04-02 18:26:26.019  INFO [sipladservicediscovery,,,] 9064 --- [RMI TCP Connection(105)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-04-02 18:26:26.020  INFO [sipladservicediscovery,,,] 9064 --- [RMI TCP Connection(105)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-04-02 18:26:26.024  INFO [sipladservicediscovery,,,] 9064 --- [RMI TCP Connection(105)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-02 18:26:26.026  INFO [sipladservicediscovery,,,] 9064 --- [RMI TCP Connection(105)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.0.29.Final

@@ -1,0 +1,60 @@
+version: '3.3'
+
+services:
+
+  servicediscovery:
+    image: siplad/service-discovery:1.0
+    deploy:
+      resources:
+        limits:
+          cpus: "0.2"
+          memory: 512M
+        reservations:
+          memory: 256M  
+    restart: always
+    ports:
+       - "8800:8800"
+    networks: 
+      - sipladnetwork
+
+  servicegateway:
+    image: siplad/service-gateway:1.0
+    restart: always
+    environment:
+    - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://servicediscovery:8800/eureka/
+    ports:
+    - "8900:8900"
+    networks: 
+      - sipladnetwork
+    depends_on:
+      - servicediscovery
+  
+  serviceapoio:
+    image: siplad/service-apoio:1.0
+    restart: always
+    environment:
+    - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://servicediscovery:8800/eureka/
+    ports:
+    - "9300:9300"
+    networks: 
+      - sipladnetwork
+    depends_on:
+      - servicediscovery
+      - servicegateway
+  
+  serviceautenticacao:
+    image: siplad/service-autenticacao:1.0
+    restart: always
+    environment:
+    - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://servicediscovery:8800/eureka/
+    ports:
+    - "9100:9100"
+    networks: 
+      - sipladnetwork
+    depends_on:
+      - servicediscovery
+      - servicegateway
+      - serviceapoio
+
+networks: 
+  sipladnetwork:  

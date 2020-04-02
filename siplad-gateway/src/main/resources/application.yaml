@@ -2,7 +2,8 @@ spring:
   profiles:
     active:
     - default
-
+  zipkin:
+    base-url: http://192.168.126.5:9411
 server:
   port: ${PORT:8900}
   compression:
@@ -49,6 +50,11 @@ management:
         - env
         - refresh
 
+      
+# Configuracao do arquivo de log  - Sera utilizado quando utilizar o docker. Sera mapeado o volume do conteiner para o host para acessar os logs da aplicacao
+logging:
+  file: ${spring.application.name}.log
+  
 # Configuracoes especificas da aplicacao
 
 #O Ambiente em execucao

@@ -1,0 +1,20 @@
+version: '3.3'
+
+services:
+
+  serviceapoio:
+    image: siplad/service-apoio:1.0
+    restart: always
+    environment:
+    - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://servicediscovery:8800/eureka/
+    ports:
+    - "9300:9300"
+    networks: 
+      - sipladnetwork
+    depends_on:
+      - servicediscovery
+      - servicegateway
+
+networks: 
+  sipladnetwork:   
+  

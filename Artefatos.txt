@@ -1,0 +1,39 @@
+Artefatos
+
+Service Discovery  - Infra
+
+- mvn clean package install -DskipTests
+- java -jar -Dserver.port=8800 target/siplad-service-discovery-1.0.jar
+- docker build -t siplad/service-discovery:1.0 .
+
+Service Gateway    - Infra
+
+- mvn clean package install -DskipTests
+- java -jar -Dserver.port=8900 target/siplad-gateway-1.0.jar
+- docker build -t siplad/service-gateway:1.0 .
+
+Service Autenticacao - Applicacao
+
+- mvn clean package install -DskipTests
+- java -jar -Dserver.port=9100 target/siplad-service-autenticacao-1.0.jar
+- docker build -t siplad/service-autenticacao:1.0 .
+
+Service Apoio        - Aplicacao
+
+- mvn clean package install -DskipTests
+- java -jar -Dserver.port=9300 target/siplad-service-apoio-1.0.jar
+- docker build -t siplad/service-apoio:1.0 .
+
+Service Core  - Classes e Bibliotecas Comuns
+
+- mvn clean package install -DskipTests
+
+Prometheus           - Monitoramento
+- docker run --name prometheus -d -p 9090:9090 prom/prometheus { --rm remove o container ao derrubar }
+
+Grafana              - Monitoramento
+- docker run --name grafana -d -p 3000:3000 grafana/grafana { --rm remove o container ao derrubar }
+Senha inicial admin/admin/
+
+Zipkin               - Monitoramento
+- docker run -d -p 9411:9411 openzipkin/zipkin

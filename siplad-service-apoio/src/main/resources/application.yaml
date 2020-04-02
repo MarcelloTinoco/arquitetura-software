@@ -1,7 +1,7 @@
 spring:
   profiles:
     active:
-    - default
+    - default  zipkin:    base-url: http://192.168.126.5:9411
 server:
   port: ${PORT:9300}
   compression:
@@ -33,4 +33,4 @@ management:
       
 # Configuracao do arquivo de log  - Sera utilizado quando utilizar o docker. Sera mapeado o volume do conteiner para o host para acessar os logs da aplicacao
 logging:
-  file: siplad-service-apoio.log
+  file: ${spring.application.name}.log

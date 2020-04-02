@@ -2,7 +2,7 @@
 # Virtual Box - Versão 5.2.38 r136252 (Qt5.6.2)
 # Ubuntu 16.04 - ubuntu-16.04.5-desktop-amd64.iso 
 
-## Instalar o ubuntu 18.04
+## Instalar o ubuntu 16.04.5
 
 ### Instalar as ferramentas de rede
 
@@ -63,3 +63,16 @@ https://github.com/cer/microservices-examples/blob/master/docker-compose-images.
 ## Docker ARGS, ENV
 
 https://vsupalov.com/docker-arg-env-variable-guide/
+
+
+## Executando o ecossistema no docker.
+
+- `1 - Primeiro todos os artefatos devem ser construidos com o mvn clean package install -DskipTests`
+
+- `2 - Depois executar o docker build, de cada artefato para criar as imagens`
+
+- `3 - Ao final, depois que todas as imagens foram geradas, rodar o docker-compose que se encontra na raiz`
+
+## Docker stack
+
+`docker stack deploy -c docker-compose.yml siplad_v3`
