@@ -23,10 +23,11 @@ zuul:
   ignored-services:
   - '*'
   routes:
-    fooservice: #fooservice
-      path: /v1/fooservice/** # mapeia para o /v1/fooservice
-      service-id: fooservice  # localizado pelo service discovery pelo service-id fooservice
-      strip-prefix: false
+
+##    fooservice: #fooservice
+##      path: /v1/fooservice/** # mapeia para o /v1/fooservice
+##      service-id: fooservice  # localizado pelo service discovery pelo service-id fooservice
+##      strip-prefix: false
       
     sipladserviceapoio: #sipladserviceapoio
       path: /v1/apoio/** # mapeia para o /v1/apoio

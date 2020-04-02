@@ -1,0 +1,95 @@
+2020-04-02 08:45:41.410  INFO [sipladserviceapoio,,,] 17840 --- [main] m.d.s.s.a.SipladServiceApoioApplication  : The following profiles are active: default
+2020-04-02 08:45:42.215  WARN [sipladserviceapoio,,,] 17840 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-02 08:45:42.376  INFO [sipladserviceapoio,,,] 17840 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d6708134-991a-3818-940d-3d1fc26d95b9
+2020-04-02 08:45:42.895  WARN [sipladserviceapoio,,,] 17840 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-04-02 08:45:42.920  INFO [sipladserviceapoio,,,] 17840 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-04-02 08:45:42.921  INFO [sipladserviceapoio,,,] 17840 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1495 ms
+2020-04-02 08:45:43.078  WARN [sipladserviceapoio,,,] 17840 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-02 08:45:43.078  INFO [sipladserviceapoio,,,] 17840 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-02 08:45:43.086  INFO [sipladserviceapoio,,,] 17840 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6732726
+2020-04-02 08:45:44.415  INFO [sipladserviceapoio,,,] 17840 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-02 08:45:44.942  WARN [sipladserviceapoio,,,] 17840 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-02 08:45:44.942  INFO [sipladserviceapoio,,,] 17840 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-02 08:45:45.176  INFO [sipladserviceapoio,,,] 17840 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-02 08:45:46.842  INFO [sipladserviceapoio,,,] 17840 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-02 08:45:46.893  WARN [sipladserviceapoio,,,] 17840 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-02 08:45:47.048  INFO [sipladserviceapoio,,,] 17840 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2020-04-02 08:45:47.133  INFO [sipladserviceapoio,,,] 17840 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-04-02 08:45:47.162  INFO [sipladserviceapoio,,,] 17840 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-04-02 08:45:47.448  INFO [sipladserviceapoio,,,] 17840 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-04-02 08:45:47.448  INFO [sipladserviceapoio,,,] 17840 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-04-02 08:45:47.545  INFO [sipladserviceapoio,,,] 17840 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-04-02 08:45:47.545  INFO [sipladserviceapoio,,,] 17840 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-04-02 08:45:47.689  INFO [sipladserviceapoio,,,] 17840 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 08:45:47.821  INFO [sipladserviceapoio,,,] 17840 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-04-02 08:45:47.822  INFO [sipladserviceapoio,,,] 17840 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-04-02 08:45:47.822  INFO [sipladserviceapoio,,,] 17840 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-04-02 08:45:47.822  INFO [sipladserviceapoio,,,] 17840 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-04-02 08:45:47.822  INFO [sipladserviceapoio,,,] 17840 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-04-02 08:45:47.822  INFO [sipladserviceapoio,,,] 17840 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-04-02 08:45:47.822  INFO [sipladserviceapoio,,,] 17840 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-04-02 08:45:48.055  INFO [sipladserviceapoio,,,] 17840 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-04-02 08:45:48.057  INFO [sipladserviceapoio,,,] 17840 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 3
+2020-04-02 08:45:48.059  INFO [sipladserviceapoio,,,] 17840 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-02 08:45:48.062  INFO [sipladserviceapoio,,,] 17840 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1585827948061 with initial instances count: 0
+2020-04-02 08:45:48.070  INFO [sipladserviceapoio,,,] 17840 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SIPLADSERVICEAPOIO with eureka with status UP
+2020-04-02 08:45:48.071  INFO [sipladserviceapoio,,,] 17840 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1585827948071, current=UP, previous=STARTING]
+2020-04-02 08:45:48.078  INFO [sipladserviceapoio,,,] 17840 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300: registering service...
+2020-04-02 08:45:48.115  INFO [sipladserviceapoio,,,] 17840 --- [main] io.undertow                              : starting server: Undertow - 2.0.30.Final
+2020-04-02 08:45:48.123  INFO [sipladserviceapoio,,,] 17840 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2020-04-02 08:45:48.140  INFO [sipladserviceapoio,,,] 17840 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2020-04-02 08:45:48.191  INFO [sipladserviceapoio,,,] 17840 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 - registration status: 204
+2020-04-02 08:45:48.205  INFO [sipladserviceapoio,,,] 17840 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 9300 (http) with context path ''
+2020-04-02 08:45:48.206  INFO [sipladserviceapoio,,,] 17840 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9300
+2020-04-02 08:45:49.371  INFO [sipladserviceapoio,,,] 17840 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-02 08:45:49.372  INFO [sipladserviceapoio,,,] 17840 --- [main] m.d.s.s.a.SipladServiceApoioApplication  : Started SipladServiceApoioApplication in 10.909 seconds (JVM running for 11.622)
+2020-04-02 08:46:18.057  INFO [sipladserviceapoio,,,] 17840 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-04-02 08:46:18.057  INFO [sipladserviceapoio,,,] 17840 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-04-02 08:46:18.057  INFO [sipladserviceapoio,,,] 17840 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-04-02 08:46:18.057  INFO [sipladserviceapoio,,,] 17840 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-04-02 08:46:18.057  INFO [sipladserviceapoio,,,] 17840 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-04-02 08:46:18.057  INFO [sipladserviceapoio,,,] 17840 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2020-04-02 08:46:18.058  INFO [sipladserviceapoio,,,] 17840 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-04-02 08:46:18.086  INFO [sipladserviceapoio,,,] 17840 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-04-02 08:47:24.097  INFO [sipladserviceapoio,,,] 17840 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-02 08:47:24.097  INFO [sipladserviceapoio,,,] 17840 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-02 08:47:24.110  INFO [sipladserviceapoio,,,] 17840 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-04-02 08:47:24.198  INFO [sipladserviceapoio,0a2dc6d427db9bbe,8dd7dde66d075b91,false] 17840 --- [XNIO-1 task-2] m.d.s.s.a.controllers.AcaoController     : Username -> admin
+2020-04-02 08:47:24.198  INFO [sipladserviceapoio,0a2dc6d427db9bbe,8dd7dde66d075b91,false] 17840 --- [XNIO-1 task-2] m.d.s.s.a.controllers.AcaoController     : getById
+2020-04-02 08:47:54.979  INFO [sipladserviceapoio,21a83b733c98de0e,df6bf002f6d68411,false] 17840 --- [XNIO-1 task-4] m.d.s.s.a.controllers.AcaoController     : Username -> admin
+2020-04-02 08:47:54.979  INFO [sipladserviceapoio,21a83b733c98de0e,df6bf002f6d68411,false] 17840 --- [XNIO-1 task-4] m.d.s.s.a.controllers.AcaoController     : getById
+2020-04-02 08:48:14.980  INFO [sipladserviceapoio,535c18bde2101ff6,b3e29363d33a6dd2,false] 17840 --- [XNIO-1 task-6] m.d.s.s.a.controllers.AcaoController     : Username -> admin
+2020-04-02 08:48:14.981  INFO [sipladserviceapoio,535c18bde2101ff6,b3e29363d33a6dd2,false] 17840 --- [XNIO-1 task-6] m.d.s.s.a.controllers.AcaoController     : getById
+2020-04-02 08:49:17.543  INFO [sipladserviceapoio,e5c45a49427a107b,bbcb466b78171d87,false] 17840 --- [XNIO-1 task-8] m.d.s.s.a.controllers.AcaoController     : Username -> admin
+2020-04-02 08:49:17.544  INFO [sipladserviceapoio,e5c45a49427a107b,bbcb466b78171d87,false] 17840 --- [XNIO-1 task-8] m.d.s.s.a.controllers.AcaoController     : getById
+2020-04-02 08:50:47.826  INFO [sipladserviceapoio,,,] 17840 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 08:51:22.979  INFO [sipladserviceapoio,f302c9d44e87892d,4af05c8f4bbe68d0,false] 17840 --- [XNIO-1 task-9] m.d.s.s.a.controllers.AcaoController     : Username -> admin
+2020-04-02 08:51:22.979  INFO [sipladserviceapoio,f302c9d44e87892d,4af05c8f4bbe68d0,false] 17840 --- [XNIO-1 task-9] m.d.s.s.a.controllers.AcaoController     : getById
+2020-04-02 08:51:23.301  INFO [sipladserviceapoio,f302c9d44e87892d,b513d69c79744e50,false] 17840 --- [XNIO-1 task-10] m.d.s.s.a.controllers.AcaoController     : getById
+2020-04-02 08:51:26.568  INFO [sipladserviceapoio,ef5c07752309a866,79d1fd909a372659,false] 17840 --- [XNIO-1 task-11] m.d.s.s.a.controllers.AcaoController     : Username -> admin
+2020-04-02 08:51:26.568  INFO [sipladserviceapoio,ef5c07752309a866,79d1fd909a372659,false] 17840 --- [XNIO-1 task-11] m.d.s.s.a.controllers.AcaoController     : getById
+2020-04-02 08:51:26.576  INFO [sipladserviceapoio,ef5c07752309a866,c20891b7c05b4461,false] 17840 --- [XNIO-1 task-12] m.d.s.s.a.controllers.AcaoController     : getById
+2020-04-02 08:51:27.765  INFO [sipladserviceapoio,f26ebe4515b275bd,1aa9bbe7bdab0bb1,false] 17840 --- [XNIO-1 task-13] m.d.s.s.a.controllers.AcaoController     : Username -> admin
+2020-04-02 08:51:27.766  INFO [sipladserviceapoio,f26ebe4515b275bd,1aa9bbe7bdab0bb1,false] 17840 --- [XNIO-1 task-13] m.d.s.s.a.controllers.AcaoController     : getById
+2020-04-02 08:51:27.771  INFO [sipladserviceapoio,f26ebe4515b275bd,3509e71226dd1416,false] 17840 --- [XNIO-1 task-14] m.d.s.s.a.controllers.AcaoController     : getById
+2020-04-02 08:51:28.813  INFO [sipladserviceapoio,04acc32967cd7fc5,dae09110f8fa4e63,false] 17840 --- [XNIO-1 task-15] m.d.s.s.a.controllers.AcaoController     : Username -> admin
+2020-04-02 08:51:28.814  INFO [sipladserviceapoio,04acc32967cd7fc5,dae09110f8fa4e63,false] 17840 --- [XNIO-1 task-15] m.d.s.s.a.controllers.AcaoController     : getById
+2020-04-02 08:51:28.820  INFO [sipladserviceapoio,04acc32967cd7fc5,db793b6cff134a8c,false] 17840 --- [XNIO-1 task-16] m.d.s.s.a.controllers.AcaoController     : getById
+2020-04-02 08:55:18.134  INFO [sipladserviceapoio,d9d8bae7185a16a1,d9d8bae7185a16a1,false] 17840 --- [XNIO-1 task-17] m.d.s.s.a.controllers.AcaoController     : Username -> admin
+2020-04-02 08:55:18.134  INFO [sipladserviceapoio,d9d8bae7185a16a1,d9d8bae7185a16a1,false] 17840 --- [XNIO-1 task-17] m.d.s.s.a.controllers.AcaoController     : getById
+2020-04-02 08:55:47.828  INFO [sipladserviceapoio,,,] 17840 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 08:58:05.380  INFO [sipladserviceapoio,99503bced08436a6,77acbb408f99f5f7,false] 17840 --- [XNIO-1 task-19] m.d.s.s.a.controllers.AcaoController     : Username -> admin
+2020-04-02 08:58:05.380  INFO [sipladserviceapoio,99503bced08436a6,77acbb408f99f5f7,false] 17840 --- [XNIO-1 task-19] m.d.s.s.a.controllers.AcaoController     : getById
+2020-04-02 09:00:47.830  INFO [sipladserviceapoio,,,] 17840 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-02 09:00:49.673  INFO [sipladserviceapoio,,,] 17840 --- [RMI TCP Connection(24)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-04-02 09:00:49.673  INFO [sipladserviceapoio,,,] 17840 --- [RMI TCP Connection(24)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SIPLADSERVICEAPOIO with eureka with status DOWN
+2020-04-02 09:00:49.673  WARN [sipladserviceapoio,,,] 17840 --- [RMI TCP Connection(24)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1585828849673, current=DOWN, previous=UP]
+2020-04-02 09:00:49.673  INFO [sipladserviceapoio,,,] 17840 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300: registering service...
+2020-04-02 09:00:49.677  INFO [sipladserviceapoio,,,] 17840 --- [RMI TCP Connection(24)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-02 09:00:49.678  INFO [sipladserviceapoio,,,] 17840 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 - registration status: 204
+2020-04-02 09:00:49.680  INFO [sipladserviceapoio,,,] 17840 --- [RMI TCP Connection(24)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-04-02 09:00:52.683  INFO [sipladserviceapoio,,,] 17840 --- [RMI TCP Connection(24)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-04-02 09:00:52.686  INFO [sipladserviceapoio,,,] 17840 --- [RMI TCP Connection(24)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 - deregister  status: 200
+2020-04-02 09:00:52.695  INFO [sipladserviceapoio,,,] 17840 --- [RMI TCP Connection(24)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-04-02 09:00:52.696  INFO [sipladserviceapoio,,,] 17840 --- [RMI TCP Connection(24)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-02 09:00:52.697  INFO [sipladserviceapoio,,,] 17840 --- [RMI TCP Connection(24)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.0.30.Final

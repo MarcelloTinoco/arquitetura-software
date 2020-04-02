@@ -11,8 +11,7 @@ public class UsuarioDTO implements Serializable{
 	private String acesso;
 	private String nome;
 	private boolean status;
-	private String tipoAcesso;
-	
+		
 	public Long getId() {
 		return id;
 	}
@@ -43,12 +42,7 @@ public class UsuarioDTO implements Serializable{
 	public void setStatus(boolean status) {
 		this.status = status;
 	}
-	public String getTipoAcesso() {
-		return tipoAcesso;
-	}
-	public void setTipoAcesso(String tipoAcesso) {
-		this.tipoAcesso = tipoAcesso;
-	}
+	
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}

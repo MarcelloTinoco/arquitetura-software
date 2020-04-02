@@ -1,102 +1,143 @@
 {
 	"info": {
-		"_postman_id": "39f3d42a-f5a1-4b49-bf9f-f40aef65b977",
-		"name": "Siplad Arquitetura V3",
+		"_postman_id": "6ce1d57d-56b1-4d55-8059-eaf55fa28309",
+		"name": "Loterias",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "apoio/usuarios/getByUserName",
+			"name": "Apostas Usuario",
 			"request": {
-				"method": "POST",
+				"method": "GET",
 				"header": [
 					{
 						"key": "Content-Type",
 						"value": "application/json",
 						"type": "text"
-					},
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"type": "text"
 					}
 				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\"userName\" : \"admin\"\n}"
-				},
 				"url": {
-					"raw": "localhost:9300/v1/apoio/usuarios/getByUserName",
+					"raw": "localhost:9091/apostasUsuarioConcurso/1",
 					"host": [
 						"localhost"
 					],
-					"port": "9300",
+					"port": "9091",
 					"path": [
-						"v1",
-						"apoio",
-						"usuarios",
-						"getByUserName"
+						"apostasUsuarioConcurso",
+						"1"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "localhost:8900/api/v1/security/auth/login",
+			"name": "Aposta Usuario Concurso",
 			"request": {
-				"method": "POST",
+				"method": "GET",
 				"header": [
 					{
 						"key": "Content-Type",
 						"value": "application/json",
 						"type": "text"
-					},
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"type": "text"
 					}
 				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\"usuario\" : \"admin\",\n\t\"senha\": \"123456\" ,\n\t\"selectedProfileId\" : 1\n} "
-				},
 				"url": {
-					"raw": "localhost:8900/api/v1/security/auth/login",
+					"raw": "localhost:9091/apostasUsuarioConcurso/1/15628",
 					"host": [
 						"localhost"
 					],
-					"port": "8900",
+					"port": "9091",
 					"path": [
-						"api",
-						"v1",
-						"security",
-						"auth",
-						"login"
+						"apostasUsuarioConcurso",
+						"1",
+						"15628"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "localhost:9100/v1/security/auth/login",
+			"name": "localhost:9091/apostas/getRandomicamente",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
-						"key": "Accept",
-						"value": "application/json",
-						"type": "text"
-					},
-					{
 						"key": "Content-Type",
+						"name": "Content-Type",
 						"value": "application/json",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"usuario\" : \"admin\",\n\t\"senha\": \"123456\" ,\n\t\"selectedProfileId\" : 1\n} ",
+					"raw": "{\n\t\"randomica\": true,\n\t\"quantidadeApostas\": 2,\n\t\"numeroDezenas\": 6\n}"
+				},
+				"url": {
+					"raw": "localhost:9091/aposta/getRandomicamente?",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"aposta",
+						"getRandomicamente"
+					],
+					"query": [
+						{
+							"key": "conten",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9091/aposta/getBaseadoHistorico",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\t\"randomica\": false,\n\t\"quantidadeApostas\": 1,\n\t\"numeroDezenas\": 6,\n\t\"historicoSorteios\": 1\n}"
+				},
+				"url": {
+					"raw": "localhost:9091/aposta/getBaseadoHistorico",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"aposta",
+						"getBaseadoHistorico"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Concurso",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"tipoLoteria\": 1,\n\t\"dataRealizacaoConcurso\" : \"2020-02-22\",\n\t\"resultado\" : [ 7, 20, 38, 43, 45, 53 ]\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -104,134 +145,105 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:9100/v1/security/auth/login",
+					"raw": "localhost:9091/concurso/atualizarConcurso",
 					"host": [
 						"localhost"
 					],
-					"port": "9100",
+					"port": "9091",
 					"path": [
-						"v1",
-						"security",
-						"auth",
-						"login"
+						"concurso",
+						"atualizarConcurso"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "localhost:8900/api/v1/apoio/acoes/1",
+			"name": "Atualizar Concurso Numero",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [
 					{
 						"key": "Content-Type",
+						"name": "Content-Type",
 						"value": "application/json",
-						"type": "text"
-					},
-					{
-						"key": "Accept-Encoding",
-						"value": "application/json",
-						"type": "text"
-					},
-					{
-						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1ZCI6IlNJUExBRC1XZWIiLCJyb2xlIjoiUk9MRV9XRUIiLCJjcmVhdGVkIjoxNTg1Nzc5NzA1MDY3LCJ1c2VydG9rZW4iOnsidXNlcklkIjoxLCJ1c2VyTmFtZSI6ImFkbWluIiwic2VsZWN0ZWRQcm9maWxlSWQiOjF9LCJleHAiOjE1ODU3ODY5MDUsInVzZXJpZCI6MX0.fZ31xgxT1oUS2i0wEbwJFMbavCHMxMyf0o1P2DGN8pXd_AFsBAFeYFu9AqAGknULk4uLS7NawFBePpZgirnaVQ",
 						"type": "text"
 					}
 				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"tipoLoteria\": 1,\n\t\"dataRealizacaoConcurso\" : \"2020-02-22\",\n\t\"resultado\" : [ 7, 20, 38, 43, 45, 53 ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "localhost:8900/api/v1/apoio/acoes/1",
+					"raw": "localhost:9091/concurso/atualizarConcurso",
 					"host": [
 						"localhost"
 					],
-					"port": "8900",
+					"port": "9091",
 					"path": [
-						"api",
-						"v1",
-						"apoio",
-						"acoes",
-						"1"
+						"concurso",
+						"atualizarConcurso"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "localhost:9300/v1/apoio/acoes/1",
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"type": "text"
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "localhost:9300/v1/apoio/acoes/1",
-					"host": [
-						"localhost"
-					],
-					"port": "9300",
-					"path": [
-						"v1",
-						"apoio",
-						"acoes",
-						"1"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "localhost:9000/v1/fooservice/health",
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Accept-Encoding",
-						"value": "application/json",
-						"type": "text",
-						"disabled": true
-					}
-				],
-				"url": {
-					"raw": "localhost:9000/v1/fooservice/health",
-					"host": [
-						"localhost"
-					],
-					"port": "9000",
-					"path": [
-						"v1",
-						"fooservice",
-						"health"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "NGINX LoadBalancer - Nao Utilizado http://localhost/api/v1/fooservice/health",
+			"name": "Obter Concurso Vigente",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost/api/v1/fooservice/health",
-					"protocol": "http",
+					"raw": "localhost:9091/concurso/obterConcursoVigente/1",
 					"host": [
 						"localhost"
 					],
+					"port": "9091",
 					"path": [
-						"api",
-						"v1",
-						"fooservice",
-						"health"
+						"concurso",
+						"obterConcursoVigente",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Abrir Concurso",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9091/concurso/abrirConcurso/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"concurso",
+						"abrirConcurso",
+						"1"
 					]
 				}
 			},

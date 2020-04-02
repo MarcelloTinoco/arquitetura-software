@@ -31,3 +31,6 @@ management:
     prometheus:
       enabled: true
       
+# Configuracao do arquivo de log  - Sera utilizado quando utilizar o docker. Sera mapeado o volume do conteiner para o host para acessar os logs da aplicacao
+logging:
+  file: siplad-service-apoio.log
