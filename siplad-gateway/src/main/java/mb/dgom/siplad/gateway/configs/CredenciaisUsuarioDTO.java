@@ -2,6 +2,12 @@ package mb.dgom.siplad.gateway.configs;
 
 import java.io.Serializable;
 
+/**
+ * Classe DTO que representa as credenciais do usuario para autenticar na arquitetura
+ *
+ * @author Marcello Tinoco
+ *
+ */
 public class CredenciaisUsuarioDTO implements Serializable{
 
 	private static final long serialVersionUID = 6265622793283202638L;

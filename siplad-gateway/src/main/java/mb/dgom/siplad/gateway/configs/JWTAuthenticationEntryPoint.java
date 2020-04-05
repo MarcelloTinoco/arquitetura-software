@@ -9,6 +9,12 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.stereotype.Component;
 
+/**
+ * Classe utilizada em conjunto com a classe WebSecurityConfig para tratar a nao autorizacao de acesso a um caminho ou recurso
+ *
+ * @author Marcello Tinoco
+ *
+ */
 @Component
 public class JWTAuthenticationEntryPoint implements AuthenticationEntryPoint {
 

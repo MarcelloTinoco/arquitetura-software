@@ -88,12 +88,18 @@ public class AutenticacaoController {
 		
 		try {
 			
+			/**
+			 * Invoca o metodo authenticate de CustomAuthenticationManager, passando umm objeto do tipo Authentication, no nosso caso a classe UsernamePasswordAuthenticationToken do SpringSecurity
+			 */
 			Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(authDTO.getUsuario(), authDTO.getSenha()));
 			
 			UsuarioVO usuario = usuarioService.loadUserByUserName(authDTO.getUsuario());
 			if(usuario!=null && usuario.getId()!=null) {
 								
 				SecurityContextHolder.getContext().setAuthentication(authentication);
+				
+				//Refatorar. O username necessario para a criacao do Token ja esta no 
+				
 				UserDetails userDetails = userDetailsService.loadUserByUsername(authDTO.getUsuario());
 								
 				//String tokenJWE = jweTokenUtil.obterToken(userDetails, usuario);

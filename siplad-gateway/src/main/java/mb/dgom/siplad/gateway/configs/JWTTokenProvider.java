@@ -17,6 +17,12 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 
+/**
+ * Classe responsavel por encapsular os metodos para tratamento do TOKEN JWT
+ *
+ * @author Marcello Tinoco
+ *
+ */
 @Component
 public class JWTTokenProvider implements Serializable{
 

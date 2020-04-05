@@ -16,6 +16,17 @@ import mb.dgom.siplad.service.autenticacao.dtos.UsuarioDTO;
 import mb.dgom.siplad.service.autenticacao.service.UsuarioService;
 import mb.dgom.siplad.service.autenticacao.vos.UsuarioVO;
 
+/**
+ * Classe responsavel por implementar AuthenticationManager e sobrescrever o metodo authenticate.
+ * Este metodo recebe o objeto UsernamePasswordAuthenticationToken que foi colocado no contexto de seguranca do Spring na execucao de 
+ * 
+ * JWTAuthenticationTokenFilter.doFilter
+ * 
+ * e retorna
+ *
+ * @author Marcello Tinoco
+ *
+ */
 @Component
 public class CustomAuthenticationManager implements AuthenticationManager{
 

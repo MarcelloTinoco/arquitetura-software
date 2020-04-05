@@ -2,6 +2,12 @@ package mb.dgom.siplad.gateway.configs;
 
 import java.io.Serializable;
 
+/**
+ * Classe que representa as informacoes do usuario dentro do token JWT
+ *
+ * @author Marcello Tinoco
+ *
+ */
 public class UserTokenDTO implements Serializable {
 
 	private static final long serialVersionUID = 7655093792551181598L;

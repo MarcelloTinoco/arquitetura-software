@@ -6,6 +6,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+/**
+ * Interface responsavel por abstrair a chamada remota a outro servico.
+ * Ela esta apoiada sobre o Service Discovery para saber onde o servico se encontra, sem a necessidade de saber seu endereco fisico
+ *
+ * @author Marcello Tinoco
+ *
+ */
 
 @FeignClient("sipladserviceapoio")
 public interface UsuarioServiceAPI {

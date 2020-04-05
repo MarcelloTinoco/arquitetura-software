@@ -21,6 +21,11 @@ public class AutenticacaoService {
 		userToken.setUserName(userDetails.getUsername());
 		userToken.setSelectedProfileId(selectedProfileId);
 		
+		//Refatorar
+		/**
+		 * TODO
+		 */
+				
 		return tokenProvider.criarToken(userDetails, userToken);
 	}
 }

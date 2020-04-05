@@ -2,6 +2,13 @@ package mb.dgom.siplad.gateway.configs;
 
 import java.io.Serializable;
 
+/**
+ * Classe que representa um DTO que sera exposto para os clientes.
+ * 
+ *
+ * @author Marcello Tinoco
+ *
+ */
 public class UsuarioDTO implements Serializable{
 
 	private static final long serialVersionUID = 1309665924483943246L;

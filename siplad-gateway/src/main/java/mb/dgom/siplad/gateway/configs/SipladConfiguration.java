@@ -3,6 +3,12 @@ package mb.dgom.siplad.gateway.configs;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+/**
+ * Classe de configuracao reponsavel por encapsular as configuracoes pertinentes ao artefato e que estao presentes no arquivo application***.yml
+ *
+ * @author Marcello Tinoco
+ *
+ */
 @Component
 public class SipladConfiguration {
 

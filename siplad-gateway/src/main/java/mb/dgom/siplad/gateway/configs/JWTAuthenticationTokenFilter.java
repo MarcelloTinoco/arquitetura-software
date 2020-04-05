@@ -15,6 +15,13 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.web.filter.OncePerRequestFilter;
 
+/**
+ * Classe responsavel por atuar como um filtro na WebSecurity para verificar a validade do token enviado, caso esteja presente e
+ * colocar a classe UsernamePasswordAuthenticationToken no contexto de seguranca do Spring
+ *
+ * @author Marcello Tinoco
+ *
+ */
 public class JWTAuthenticationTokenFilter extends OncePerRequestFilter {
 
 	@Autowired

@@ -13,6 +13,13 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+/**
+ * Classe que implementa a interface UserDetailsService, de modo a verificar se o usuario informado existe
+ * ( primeiro ponto de validacao para a criacao e validacao do token, no nosso caso onde a seguranca e feita via JWT {JSON Web Tokens} )
+ *
+ * @author Marcello Tinoco
+ *
+ */
 @Service
 public class JWTUserDetailsServiceImpl implements UserDetailsService {
 
