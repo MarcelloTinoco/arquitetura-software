@@ -2234,3 +2234,521 @@ Caused by: java.net.SocketTimeoutException: connect timed out
 2020-04-06 18:08:55.704  INFO [sipladservicediscovery,,,] 13448 --- [RMI TCP Connection(40)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
 2020-04-06 18:08:55.706  INFO [sipladservicediscovery,,,] 13448 --- [RMI TCP Connection(40)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
 2020-04-06 18:08:55.707  INFO [sipladservicediscovery,,,] 13448 --- [RMI TCP Connection(40)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.0.29.Final
+2020-04-06 19:01:38.295  INFO [sipladservicediscovery,,,] 4432 --- [main] .d.s.s.SipladServiceDiscoveryApplication : The following profiles are active: default
+2020-04-06 19:01:38.977  WARN [sipladservicediscovery,,,] 4432 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-06 19:01:39.167  INFO [sipladservicediscovery,,,] 4432 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e0a071e2-5d87-3c8c-a01e-d5896ae202b9
+2020-04-06 19:01:39.648  WARN [sipladservicediscovery,,,] 4432 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-04-06 19:01:39.672  INFO [sipladservicediscovery,,,] 4432 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-04-06 19:01:39.672  INFO [sipladservicediscovery,,,] 4432 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1361 ms
+2020-04-06 19:01:39.770  WARN [sipladservicediscovery,,,] 4432 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-06 19:01:39.770  INFO [sipladservicediscovery,,,] 4432 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-06 19:01:39.780  INFO [sipladservicediscovery,,,] 4432 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@441b8382
+2020-04-06 19:01:41.320  INFO [sipladservicediscovery,,,] 4432 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-06 19:01:42.109  WARN [sipladservicediscovery,,,] 4432 --- [main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@2be818da}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out}]
+2020-04-06 19:01:42.331  WARN [sipladservicediscovery,,,] 4432 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-06 19:01:42.331  INFO [sipladservicediscovery,,,] 4432 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-06 19:01:42.549  INFO [sipladservicediscovery,,,] 4432 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-06 19:01:44.170  INFO [sipladservicediscovery,,,] 4432 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-06 19:01:44.211  WARN [sipladservicediscovery,,,] 4432 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-06 19:01:44.591  INFO [sipladservicediscovery,,,] 4432 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-04-06 19:01:44.616  INFO [sipladservicediscovery,,,] 4432 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-04-06 19:01:44.616  INFO [sipladservicediscovery,,,] 4432 --- [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2020-04-06 19:01:44.624  INFO [sipladservicediscovery,,,] 4432 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1586210504623 with initial instances count: 0
+2020-04-06 19:01:44.669  INFO [sipladservicediscovery,,,] 4432 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2020-04-06 19:01:44.671  INFO [sipladservicediscovery,,,] 4432 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8800/eureka/]
+2020-04-06 19:01:44.962  INFO [sipladservicediscovery,,,] 4432 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-04-06 19:01:44.962  INFO [sipladservicediscovery,,,] 4432 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-04-06 19:01:44.962  INFO [sipladservicediscovery,,,] 4432 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-04-06 19:01:44.962  INFO [sipladservicediscovery,,,] 4432 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-04-06 19:01:45.123  INFO [sipladservicediscovery,,,] 4432 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8800/eureka/
+2020-04-06 19:01:45.130  INFO [sipladservicediscovery,,,] 4432 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2020-04-06 19:01:45.130  INFO [sipladservicediscovery,,,] 4432 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2020-04-06 19:01:45.213  INFO [sipladservicediscovery,,,] 4432 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-06 19:01:45.292  INFO [sipladservicediscovery,,,] 4432 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SIPLADSERVICEDISCOVERY with eureka with status UP
+2020-04-06 19:01:45.294  INFO [sipladservicediscovery,,,] 4432 --- [Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2020-04-06 19:01:45.294  INFO [sipladservicediscovery,,,] 4432 --- [Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2020-04-06 19:01:45.295  INFO [sipladservicediscovery,,,] 4432 --- [Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2020-04-06 19:01:45.306  INFO [sipladservicediscovery,,,] 4432 --- [Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2020-04-06 19:01:45.307  INFO [sipladservicediscovery,,,] 4432 --- [Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2020-04-06 19:01:45.307  INFO [sipladservicediscovery,,,] 4432 --- [Thread-13] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2020-04-06 19:01:45.307  INFO [sipladservicediscovery,,,] 4432 --- [Thread-13] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2020-04-06 19:01:45.307  INFO [sipladservicediscovery,,,] 4432 --- [Thread-13] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2020-04-06 19:01:45.315  INFO [sipladservicediscovery,,,] 4432 --- [Thread-13] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2020-04-06 19:01:45.349  INFO [sipladservicediscovery,,,] 4432 --- [main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-04-06 19:01:45.382  INFO [sipladservicediscovery,,,] 4432 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-04-06 19:01:45.382  INFO [sipladservicediscovery,,,] 4432 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-04-06 19:01:45.383  INFO [sipladservicediscovery,,,] 4432 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-04-06 19:01:45.383  INFO [sipladservicediscovery,,,] 4432 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-04-06 19:01:45.648  INFO [sipladservicediscovery,,,] 4432 --- [main] io.undertow                              : starting server: Undertow - 2.0.29.Final
+2020-04-06 19:01:45.653  INFO [sipladservicediscovery,,,] 4432 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2020-04-06 19:01:45.662  INFO [sipladservicediscovery,,,] 4432 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2020-04-06 19:01:45.730  INFO [sipladservicediscovery,,,] 4432 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8800 (http) with context path ''
+2020-04-06 19:01:45.731  INFO [sipladservicediscovery,,,] 4432 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8800
+2020-04-06 19:01:46.886  INFO [sipladservicediscovery,,,] 4432 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-06 19:01:46.887  INFO [sipladservicediscovery,,,] 4432 --- [main] .d.s.s.SipladServiceDiscoveryApplication : Started SipladServiceDiscoveryApplication in 11.572 seconds (JVM running for 12.255)
+2020-04-06 19:02:45.308  INFO [sipladservicediscovery,,,] 4432 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 19:03:45.308  INFO [sipladservicediscovery,,,] 4432 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 19:04:45.309  INFO [sipladservicediscovery,,,] 4432 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 19:05:45.310  INFO [sipladservicediscovery,,,] 4432 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 19:06:45.310  INFO [sipladservicediscovery,,,] 4432 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 19:07:15.347  INFO [sipladservicediscovery,,,] 4432 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-06 19:07:15.347  INFO [sipladservicediscovery,,,] 4432 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-06 19:07:15.360  INFO [sipladservicediscovery,,,] 4432 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-04-06 19:07:15.576  INFO [sipladservicediscovery,f320a46b2580b1e5,f320a46b2580b1e5,true] 4432 --- [XNIO-1 task-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 with status UP (replication=false)
+2020-04-06 19:07:16.172  INFO [sipladservicediscovery,e5c8defb40b45042,e5c8defb40b45042,true] 4432 --- [XNIO-1 task-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 with status UP (replication=true)
+2020-04-06 19:07:16.294  WARN [sipladservicediscovery,,,] 4432 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@2be818da}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2020-04-06 19:07:16.298  WARN [sipladservicediscovery,,,] 4432 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@2be818da}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 2 spans due to ResourceAccessException(I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:641) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:142) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:132) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.19.3.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:284) ~[zipkin-reporter-2.12.1.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:358) [zipkin-reporter-2.12.1.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_221]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_221]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_221]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_221]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_221]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1226) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990) ~[na:1.8.0_221]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:739) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 9 common frames omitted
+
+2020-04-06 19:07:21.160  INFO [sipladservicediscovery,c060baea3d720f80,c060baea3d720f80,false] 4432 --- [XNIO-1 task-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICETESTE/localhost:sipladserviceteste:9600 with status UP (replication=false)
+2020-04-06 19:07:21.629  INFO [sipladservicediscovery,3d2a4ca7b56daad5,3d2a4ca7b56daad5,true] 4432 --- [XNIO-1 task-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAUTENTICACAO/localhost:sipladserviceautenticacao:9100 with status UP (replication=false)
+2020-04-06 19:07:21.666  INFO [sipladservicediscovery,f6298ae49524e596,f6298ae49524e596,true] 4432 --- [XNIO-1 task-11] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICETESTE/localhost:sipladserviceteste:9600 with status UP (replication=true)
+2020-04-06 19:07:21.667  INFO [sipladservicediscovery,f6298ae49524e596,f6298ae49524e596,true] 4432 --- [XNIO-1 task-11] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAUTENTICACAO/localhost:sipladserviceautenticacao:9100 with status UP (replication=true)
+2020-04-06 19:07:45.310  INFO [sipladservicediscovery,,,] 4432 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 19:08:45.310  INFO [sipladservicediscovery,,,] 4432 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 19:09:45.311  INFO [sipladservicediscovery,,,] 4432 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 19:10:45.312  INFO [sipladservicediscovery,,,] 4432 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 19:10:48.305  INFO [sipladservicediscovery,,,] 4432 --- [RMI TCP Connection(19)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-04-06 19:10:48.306  INFO [sipladservicediscovery,,,] 4432 --- [RMI TCP Connection(19)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SIPLADSERVICEDISCOVERY with eureka with status DOWN
+2020-04-06 19:10:48.308  INFO [sipladservicediscovery,,,] 4432 --- [RMI TCP Connection(19)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2020-04-06 19:10:48.325  INFO [sipladservicediscovery,,,] 4432 --- [RMI TCP Connection(19)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2020-04-06 19:10:48.328  INFO [sipladservicediscovery,,,] 4432 --- [RMI TCP Connection(19)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-06 19:10:48.995  INFO [sipladservicediscovery,,,] 4432 --- [RMI TCP Connection(19)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-04-06 19:10:48.996  INFO [sipladservicediscovery,,,] 4432 --- [RMI TCP Connection(19)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-04-06 19:10:48.998  INFO [sipladservicediscovery,,,] 4432 --- [RMI TCP Connection(19)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-06 19:10:48.999  INFO [sipladservicediscovery,,,] 4432 --- [RMI TCP Connection(19)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.0.29.Final
+2020-04-06 19:11:48.671  INFO [sipladservicediscovery,,,] 2256 --- [main] .d.s.s.SipladServiceDiscoveryApplication : The following profiles are active: default
+2020-04-06 19:11:49.248  WARN [sipladservicediscovery,,,] 2256 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-06 19:11:49.415  INFO [sipladservicediscovery,,,] 2256 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e0a071e2-5d87-3c8c-a01e-d5896ae202b9
+2020-04-06 19:11:49.848  WARN [sipladservicediscovery,,,] 2256 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-04-06 19:11:49.869  INFO [sipladservicediscovery,,,] 2256 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-04-06 19:11:49.869  INFO [sipladservicediscovery,,,] 2256 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1184 ms
+2020-04-06 19:11:49.958  WARN [sipladservicediscovery,,,] 2256 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-06 19:11:49.959  INFO [sipladservicediscovery,,,] 2256 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-06 19:11:49.966  INFO [sipladservicediscovery,,,] 2256 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6e43ddd6
+2020-04-06 19:11:51.482  INFO [sipladservicediscovery,,,] 2256 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-06 19:11:52.253  WARN [sipladservicediscovery,,,] 2256 --- [main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@5f9f3e58}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out}]
+2020-04-06 19:11:52.457  WARN [sipladservicediscovery,,,] 2256 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-06 19:11:52.457  INFO [sipladservicediscovery,,,] 2256 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-06 19:11:52.668  INFO [sipladservicediscovery,,,] 2256 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-06 19:11:54.224  INFO [sipladservicediscovery,,,] 2256 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-06 19:11:54.257  WARN [sipladservicediscovery,,,] 2256 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-06 19:11:54.564  INFO [sipladservicediscovery,,,] 2256 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-04-06 19:11:54.582  INFO [sipladservicediscovery,,,] 2256 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-04-06 19:11:54.582  INFO [sipladservicediscovery,,,] 2256 --- [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2020-04-06 19:11:54.586  INFO [sipladservicediscovery,,,] 2256 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1586211114585 with initial instances count: 0
+2020-04-06 19:11:54.622  INFO [sipladservicediscovery,,,] 2256 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2020-04-06 19:11:54.623  INFO [sipladservicediscovery,,,] 2256 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8800/eureka/]
+2020-04-06 19:11:54.856  INFO [sipladservicediscovery,,,] 2256 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-04-06 19:11:54.856  INFO [sipladservicediscovery,,,] 2256 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-04-06 19:11:54.856  INFO [sipladservicediscovery,,,] 2256 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-04-06 19:11:54.856  INFO [sipladservicediscovery,,,] 2256 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-04-06 19:11:54.988  INFO [sipladservicediscovery,,,] 2256 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8800/eureka/
+2020-04-06 19:11:54.995  INFO [sipladservicediscovery,,,] 2256 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2020-04-06 19:11:54.995  INFO [sipladservicediscovery,,,] 2256 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2020-04-06 19:11:55.069  INFO [sipladservicediscovery,,,] 2256 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-06 19:11:55.140  INFO [sipladservicediscovery,,,] 2256 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SIPLADSERVICEDISCOVERY with eureka with status UP
+2020-04-06 19:11:55.142  INFO [sipladservicediscovery,,,] 2256 --- [Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2020-04-06 19:11:55.142  INFO [sipladservicediscovery,,,] 2256 --- [Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2020-04-06 19:11:55.143  INFO [sipladservicediscovery,,,] 2256 --- [Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2020-04-06 19:11:55.154  INFO [sipladservicediscovery,,,] 2256 --- [Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2020-04-06 19:11:55.154  INFO [sipladservicediscovery,,,] 2256 --- [Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2020-04-06 19:11:55.154  INFO [sipladservicediscovery,,,] 2256 --- [Thread-13] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2020-04-06 19:11:55.154  INFO [sipladservicediscovery,,,] 2256 --- [Thread-13] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2020-04-06 19:11:55.155  INFO [sipladservicediscovery,,,] 2256 --- [Thread-13] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2020-04-06 19:11:55.162  INFO [sipladservicediscovery,,,] 2256 --- [Thread-13] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2020-04-06 19:11:55.189  INFO [sipladservicediscovery,,,] 2256 --- [main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-04-06 19:11:55.217  INFO [sipladservicediscovery,,,] 2256 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-04-06 19:11:55.217  INFO [sipladservicediscovery,,,] 2256 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-04-06 19:11:55.217  INFO [sipladservicediscovery,,,] 2256 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-04-06 19:11:55.217  INFO [sipladservicediscovery,,,] 2256 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-04-06 19:11:55.422  INFO [sipladservicediscovery,,,] 2256 --- [main] io.undertow                              : starting server: Undertow - 2.0.29.Final
+2020-04-06 19:11:55.427  INFO [sipladservicediscovery,,,] 2256 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2020-04-06 19:11:55.436  INFO [sipladservicediscovery,,,] 2256 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2020-04-06 19:11:55.506  INFO [sipladservicediscovery,,,] 2256 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8800 (http) with context path ''
+2020-04-06 19:11:55.506  INFO [sipladservicediscovery,,,] 2256 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8800
+2020-04-06 19:11:55.605  INFO [sipladservicediscovery,,,] 2256 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-06 19:11:55.606  INFO [sipladservicediscovery,,,] 2256 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-06 19:11:55.617  INFO [sipladservicediscovery,,,] 2256 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-04-06 19:11:56.234  WARN [sipladservicediscovery,,,] 2256 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@5f9f3e58}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2020-04-06 19:11:56.237  WARN [sipladservicediscovery,,,] 2256 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@5f9f3e58}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 2 spans due to ResourceAccessException(I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:641) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:142) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:132) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.19.3.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:284) ~[zipkin-reporter-2.12.1.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:358) [zipkin-reporter-2.12.1.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_221]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_221]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_221]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_221]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_221]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1226) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990) ~[na:1.8.0_221]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:739) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 9 common frames omitted
+
+2020-04-06 19:11:56.658  INFO [sipladservicediscovery,,,] 2256 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-06 19:11:56.659  INFO [sipladservicediscovery,,,] 2256 --- [main] .d.s.s.SipladServiceDiscoveryApplication : Started SipladServiceDiscoveryApplication in 10.881 seconds (JVM running for 11.534)
+2020-04-06 19:12:00.712  WARN [sipladservicediscovery,1259fb569156c924,1259fb569156c924,true] 2256 --- [XNIO-1 task-3] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: SIPLADSERVICEGATEWAY - localhost:sipladservicegateway:8900
+2020-04-06 19:12:00.712  WARN [sipladservicediscovery,1259fb569156c924,1259fb569156c924,true] 2256 --- [XNIO-1 task-3] c.n.eureka.resources.InstanceResource    : Not Found (Renew): SIPLADSERVICEGATEWAY - localhost:sipladservicegateway:8900
+2020-04-06 19:12:00.778  INFO [sipladservicediscovery,1ed6fff17ebbfb4b,1ed6fff17ebbfb4b,false] 2256 --- [XNIO-1 task-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 with status UP (replication=false)
+2020-04-06 19:12:01.352  INFO [sipladservicediscovery,514f3075bae8411f,514f3075bae8411f,true] 2256 --- [XNIO-1 task-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 with status UP (replication=true)
+2020-04-06 19:12:15.380  WARN [sipladservicediscovery,e4057d797dbab257,e4057d797dbab257,true] 2256 --- [XNIO-1 task-20] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: SIPLADSERVICETESTE - localhost:sipladserviceteste:9600
+2020-04-06 19:12:15.381  WARN [sipladservicediscovery,e4057d797dbab257,e4057d797dbab257,true] 2256 --- [XNIO-1 task-20] c.n.eureka.resources.InstanceResource    : Not Found (Renew): SIPLADSERVICETESTE - localhost:sipladserviceteste:9600
+2020-04-06 19:12:15.386  INFO [sipladservicediscovery,588f2fa2ea50c6f8,588f2fa2ea50c6f8,false] 2256 --- [XNIO-1 task-21] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICETESTE/localhost:sipladserviceteste:9600 with status UP (replication=false)
+2020-04-06 19:12:15.781  WARN [sipladservicediscovery,4584b249ca3ea7f7,4584b249ca3ea7f7,true] 2256 --- [XNIO-1 task-22] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: SIPLADSERVICEAPOIO - localhost:sipladserviceapoio:9300
+2020-04-06 19:12:15.782  WARN [sipladservicediscovery,4584b249ca3ea7f7,4584b249ca3ea7f7,true] 2256 --- [XNIO-1 task-22] c.n.eureka.resources.InstanceResource    : Not Found (Renew): SIPLADSERVICEAPOIO - localhost:sipladserviceapoio:9300
+2020-04-06 19:12:15.787  INFO [sipladservicediscovery,f647c38e57381d25,f647c38e57381d25,true] 2256 --- [XNIO-1 task-23] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 with status UP (replication=false)
+2020-04-06 19:12:15.876  WARN [sipladservicediscovery,e228f2d91eb29e95,e228f2d91eb29e95,true] 2256 --- [XNIO-1 task-25] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: SIPLADSERVICEAUTENTICACAO - localhost:sipladserviceautenticacao:9100
+2020-04-06 19:12:15.876  WARN [sipladservicediscovery,e228f2d91eb29e95,e228f2d91eb29e95,true] 2256 --- [XNIO-1 task-25] c.n.eureka.resources.InstanceResource    : Not Found (Renew): SIPLADSERVICEAUTENTICACAO - localhost:sipladserviceautenticacao:9100
+2020-04-06 19:12:15.882  INFO [sipladservicediscovery,d5bb4f2fc41ffc08,d5bb4f2fc41ffc08,true] 2256 --- [XNIO-1 task-26] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAUTENTICACAO/localhost:sipladserviceautenticacao:9100 with status UP (replication=false)
+2020-04-06 19:12:15.894  INFO [sipladservicediscovery,3f4ff781e7f69e65,3f4ff781e7f69e65,true] 2256 --- [XNIO-1 task-27] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICETESTE/localhost:sipladserviceteste:9600 with status UP (replication=true)
+2020-04-06 19:12:15.894  INFO [sipladservicediscovery,3f4ff781e7f69e65,3f4ff781e7f69e65,true] 2256 --- [XNIO-1 task-27] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 with status UP (replication=true)
+2020-04-06 19:12:15.895  INFO [sipladservicediscovery,3f4ff781e7f69e65,3f4ff781e7f69e65,true] 2256 --- [XNIO-1 task-27] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAUTENTICACAO/localhost:sipladserviceautenticacao:9100 with status UP (replication=true)
+2020-04-06 19:12:26.329 ERROR [sipladservicediscovery,1dc571b2db598732,1dc571b2db598732,false] 2256 --- [XNIO-1 task-45] o.s.c.s.i.web.ExceptionLoggingFilter     : Uncaught exception thrown
+
+java.io.IOException: Uma conexão estabelecida foi anulada pelo software no computador host
+	at sun.nio.ch.SocketDispatcher.writev0(Native Method) ~[na:1.8.0_221]
+	at sun.nio.ch.SocketDispatcher.writev(SocketDispatcher.java:55) ~[na:1.8.0_221]
+	at sun.nio.ch.IOUtil.write(IOUtil.java:148) ~[na:1.8.0_221]
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:504) ~[na:1.8.0_221]
+	at org.xnio.nio.NioSocketConduit.write(NioSocketConduit.java:184) ~[xnio-nio-3.3.8.Final.jar:3.3.8.Final]
+	at io.undertow.server.protocol.http.HttpResponseConduit.write(HttpResponseConduit.java:647) ~[undertow-core-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.conduits.ChunkedStreamSinkConduit.doWrite(ChunkedStreamSinkConduit.java:166) ~[undertow-core-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.conduits.ChunkedStreamSinkConduit.write(ChunkedStreamSinkConduit.java:128) ~[undertow-core-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.conduits.ChunkedStreamSinkConduit.write(ChunkedStreamSinkConduit.java:219) ~[undertow-core-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.conduits.DeflatingStreamSinkConduit.performFlushIfRequired(DeflatingStreamSinkConduit.java:441) ~[undertow-core-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.conduits.DeflatingStreamSinkConduit.deflateData(DeflatingStreamSinkConduit.java:511) ~[undertow-core-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.conduits.DeflatingStreamSinkConduit.flush(DeflatingStreamSinkConduit.java:328) ~[undertow-core-2.0.29.Final.jar:2.0.29.Final]
+	at org.xnio.conduits.ConduitStreamSinkChannel.flush(ConduitStreamSinkChannel.java:162) ~[xnio-api-3.3.8.Final.jar:3.3.8.Final]
+	at io.undertow.channels.DetachableStreamSinkChannel.flush(DetachableStreamSinkChannel.java:119) ~[undertow-core-2.0.29.Final.jar:2.0.29.Final]
+	at org.xnio.channels.Channels.flushBlocking(Channels.java:63) ~[xnio-api-3.3.8.Final.jar:3.3.8.Final]
+	at io.undertow.servlet.spec.ServletOutputStreamImpl.close(ServletOutputStreamImpl.java:618) ~[undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.spec.ServletOutputStreamImpl.updateWritten(ServletOutputStreamImpl.java:371) ~[undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.spec.ServletOutputStreamImpl.write(ServletOutputStreamImpl.java:153) ~[undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at org.springframework.util.StreamUtils.copy(StreamUtils.java:143) ~[spring-core-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.http.converter.ResourceHttpMessageConverter.writeContent(ResourceHttpMessageConverter.java:137) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.http.converter.ResourceHttpMessageConverter.writeInternal(ResourceHttpMessageConverter.java:129) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.http.converter.ResourceHttpMessageConverter.writeInternal(ResourceHttpMessageConverter.java:45) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:227) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:522) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:53) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:503) ~[jakarta.servlet-api-4.0.3.jar:4.0.3]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[jakarta.servlet-api-4.0.3.jar:4.0.3]
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74) ~[undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:67) [brave-instrumentation-servlet-5.10.1.jar:na]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:887) ~[jersey-servlet-1.19.1.jar:1.19.1]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:875) ~[jersey-servlet-1.19.1.jar:1.19.1]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:829) ~[jersey-servlet-1.19.1.jar:1.19.1]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at org.springframework.cloud.sleuth.instrument.web.ExceptionLoggingFilter.doFilter(ExceptionLoggingFilter.java:50) ~[spring-cloud-sleuth-core-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at brave.servlet.TracingFilter.doFilter(TracingFilter.java:84) [brave-instrumentation-servlet-5.10.1.jar:na]
+	at org.springframework.cloud.sleuth.instrument.web.LazyTracingFilter.doFilter(TraceWebServletAutoConfiguration.java:138) [spring-cloud-sleuth-core-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:109) [spring-boot-actuator-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46) [undertow-core-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60) [undertow-core-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43) [undertow-core-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43) [undertow-core-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:269) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:78) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:133) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:130) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:249) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:78) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:99) [undertow-servlet-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:376) [undertow-core-2.0.29.Final.jar:2.0.29.Final]
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830) [undertow-core-2.0.29.Final.jar:2.0.29.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+
+2020-04-06 19:12:55.156  INFO [sipladservicediscovery,,,] 2256 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 19:13:55.156  INFO [sipladservicediscovery,,,] 2256 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 19:14:55.156  INFO [sipladservicediscovery,,,] 2256 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 19:14:56.633  INFO [sipladservicediscovery,cf5156191102b5b7,cf5156191102b5b7,true] 2256 --- [XNIO-1 task-72] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 with status DOWN (replication=false)
+2020-04-06 19:14:57.146  INFO [sipladservicediscovery,625b5c2a1940f3a1,625b5c2a1940f3a1,true] 2256 --- [XNIO-1 task-73] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 with status DOWN (replication=true)
+2020-04-06 19:15:00.256  INFO [sipladservicediscovery,555ea04e2b23a4e8,555ea04e2b23a4e8,true] 2256 --- [XNIO-1 task-79] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 (replication=false)
+2020-04-06 19:15:00.760  WARN [sipladservicediscovery,2c98aed11a578b15,2c98aed11a578b15,true] 2256 --- [XNIO-1 task-81] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900
+2020-04-06 19:15:00.760  INFO [sipladservicediscovery,2c98aed11a578b15,2c98aed11a578b15,true] 2256 --- [XNIO-1 task-81] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): SIPLADSERVICEGATEWAY - localhost:sipladservicegateway:8900
+2020-04-06 19:15:00.761  WARN [sipladservicediscovery,,,] 2256 --- [TaskBatchingWorker-target_localhost-1] c.n.eureka.cluster.ReplicationTask       : The replication of task SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900:Cancel@localhost failed with response code 404
+2020-04-06 19:15:00.761  WARN [sipladservicediscovery,,,] 2256 --- [TaskBatchingWorker-target_localhost-1] c.netflix.eureka.cluster.PeerEurekaNode  : SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900:Cancel@localhost: missing entry.
+2020-04-06 19:15:55.156  INFO [sipladservicediscovery,,,] 2256 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 19:16:00.138  INFO [sipladservicediscovery,73e2e45329555032,73e2e45329555032,true] 2256 --- [XNIO-1 task-40] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 with status UP (replication=false)
+2020-04-06 19:16:00.649  INFO [sipladservicediscovery,d3e6db2474eade4b,d3e6db2474eade4b,true] 2256 --- [XNIO-1 task-41] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 with status UP (replication=true)
+2020-04-06 19:16:55.157  INFO [sipladservicediscovery,,,] 2256 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 19:16:56.322  INFO [sipladservicediscovery,992fc50c047920ea,992fc50c047920ea,true] 2256 --- [XNIO-1 task-35] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 with status DOWN (replication=false)
+2020-04-06 19:16:56.824  INFO [sipladservicediscovery,611847f13093d3d0,611847f13093d3d0,true] 2256 --- [XNIO-1 task-36] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 with status DOWN (replication=true)
+2020-04-06 19:17:00.168  INFO [sipladservicediscovery,5155ccbf51108a96,5155ccbf51108a96,true] 2256 --- [XNIO-1 task-44] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 (replication=false)
+2020-04-06 19:17:00.674  WARN [sipladservicediscovery,d9185aa309621c4d,d9185aa309621c4d,true] 2256 --- [XNIO-1 task-46] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900
+2020-04-06 19:17:00.675  INFO [sipladservicediscovery,d9185aa309621c4d,d9185aa309621c4d,true] 2256 --- [XNIO-1 task-46] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): SIPLADSERVICEGATEWAY - localhost:sipladservicegateway:8900
+2020-04-06 19:17:00.675  WARN [sipladservicediscovery,,,] 2256 --- [TaskBatchingWorker-target_localhost-0] c.n.eureka.cluster.ReplicationTask       : The replication of task SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900:Cancel@localhost failed with response code 404
+2020-04-06 19:17:00.675  WARN [sipladservicediscovery,,,] 2256 --- [TaskBatchingWorker-target_localhost-0] c.netflix.eureka.cluster.PeerEurekaNode  : SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900:Cancel@localhost: missing entry.
+2020-04-06 19:17:04.687  INFO [sipladservicediscovery,e81ea5bd0b596dc1,e81ea5bd0b596dc1,true] 2256 --- [XNIO-1 task-56] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 with status DOWN (replication=false)
+2020-04-06 19:17:05.199  INFO [sipladservicediscovery,b67d43afe8ed3e92,b67d43afe8ed3e92,true] 2256 --- [XNIO-1 task-57] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 with status DOWN (replication=true)
+2020-04-06 19:17:08.455  INFO [sipladservicediscovery,05a12b96acf28a80,05a12b96acf28a80,true] 2256 --- [XNIO-1 task-62] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 (replication=false)
+2020-04-06 19:17:08.963  WARN [sipladservicediscovery,c1701ae860508385,c1701ae860508385,true] 2256 --- [XNIO-1 task-63] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300
+2020-04-06 19:17:08.963  INFO [sipladservicediscovery,c1701ae860508385,c1701ae860508385,true] 2256 --- [XNIO-1 task-63] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): SIPLADSERVICEAPOIO - localhost:sipladserviceapoio:9300
+2020-04-06 19:17:08.964  WARN [sipladservicediscovery,,,] 2256 --- [TaskBatchingWorker-target_localhost-2] c.n.eureka.cluster.ReplicationTask       : The replication of task SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300:Cancel@localhost failed with response code 404
+2020-04-06 19:17:08.964  WARN [sipladservicediscovery,,,] 2256 --- [TaskBatchingWorker-target_localhost-2] c.netflix.eureka.cluster.PeerEurekaNode  : SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300:Cancel@localhost: missing entry.
+2020-04-06 19:17:12.861  INFO [sipladservicediscovery,8a96bd82571b5595,8a96bd82571b5595,true] 2256 --- [XNIO-1 task-68] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAUTENTICACAO/localhost:sipladserviceautenticacao:9100 with status DOWN (replication=false)
+2020-04-06 19:17:13.230  INFO [sipladservicediscovery,ff8e3f0f21d41027,ff8e3f0f21d41027,true] 2256 --- [XNIO-1 task-70] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAUTENTICACAO/localhost:sipladserviceautenticacao:9100 with status DOWN (replication=true)
+2020-04-06 19:17:16.773  INFO [sipladservicediscovery,b45445aa12db019b,b45445aa12db019b,true] 2256 --- [XNIO-1 task-74] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SIPLADSERVICEAUTENTICACAO/localhost:sipladserviceautenticacao:9100 (replication=false)
+2020-04-06 19:17:17.277  WARN [sipladservicediscovery,dfcb3630334049ba,dfcb3630334049ba,true] 2256 --- [XNIO-1 task-75] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: SIPLADSERVICEAUTENTICACAO/localhost:sipladserviceautenticacao:9100
+2020-04-06 19:17:17.277  INFO [sipladservicediscovery,dfcb3630334049ba,dfcb3630334049ba,true] 2256 --- [XNIO-1 task-75] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): SIPLADSERVICEAUTENTICACAO - localhost:sipladserviceautenticacao:9100
+2020-04-06 19:17:17.278  WARN [sipladservicediscovery,,,] 2256 --- [TaskBatchingWorker-target_localhost-0] c.n.eureka.cluster.ReplicationTask       : The replication of task SIPLADSERVICEAUTENTICACAO/localhost:sipladserviceautenticacao:9100:Cancel@localhost failed with response code 404
+2020-04-06 19:17:17.278  WARN [sipladservicediscovery,,,] 2256 --- [TaskBatchingWorker-target_localhost-0] c.netflix.eureka.cluster.PeerEurekaNode  : SIPLADSERVICEAUTENTICACAO/localhost:sipladserviceautenticacao:9100:Cancel@localhost: missing entry.
+2020-04-06 19:17:21.172  INFO [sipladservicediscovery,,,] 2256 --- [RMI TCP Connection(17)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-04-06 19:17:21.172  INFO [sipladservicediscovery,,,] 2256 --- [RMI TCP Connection(17)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SIPLADSERVICEDISCOVERY with eureka with status DOWN
+2020-04-06 19:17:21.174  INFO [sipladservicediscovery,,,] 2256 --- [RMI TCP Connection(17)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2020-04-06 19:17:21.189  INFO [sipladservicediscovery,,,] 2256 --- [RMI TCP Connection(17)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2020-04-06 19:17:21.192  INFO [sipladservicediscovery,,,] 2256 --- [RMI TCP Connection(17)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-06 19:17:22.194  WARN [sipladservicediscovery,,,] 2256 --- [RMI TCP Connection(17)-127.0.0.1] z.r.AsyncReporter$BoundedAsyncReporter   : Timed out waiting for in-flight spans to send
+2020-04-06 19:17:22.196  INFO [sipladservicediscovery,,,] 2256 --- [RMI TCP Connection(17)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-04-06 19:17:22.197  INFO [sipladservicediscovery,,,] 2256 --- [RMI TCP Connection(17)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-04-06 19:17:22.199  INFO [sipladservicediscovery,,,] 2256 --- [RMI TCP Connection(17)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-06 19:17:22.200  INFO [sipladservicediscovery,,,] 2256 --- [RMI TCP Connection(17)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.0.29.Final
+2020-04-06 19:58:34.630  INFO [sipladservicediscovery,,,] 14636 --- [main] .d.s.s.SipladServiceDiscoveryApplication : The following profiles are active: default
+2020-04-06 19:58:35.351  WARN [sipladservicediscovery,,,] 14636 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-06 19:58:35.557  INFO [sipladservicediscovery,,,] 14636 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e0a071e2-5d87-3c8c-a01e-d5896ae202b9
+2020-04-06 19:58:36.041  WARN [sipladservicediscovery,,,] 14636 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-04-06 19:58:36.062  INFO [sipladservicediscovery,,,] 14636 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-04-06 19:58:36.062  INFO [sipladservicediscovery,,,] 14636 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1415 ms
+2020-04-06 19:58:36.154  WARN [sipladservicediscovery,,,] 14636 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-06 19:58:36.154  INFO [sipladservicediscovery,,,] 14636 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-06 19:58:36.162  INFO [sipladservicediscovery,,,] 14636 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@ef60710
+2020-04-06 19:58:37.694  INFO [sipladservicediscovery,,,] 14636 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-06 19:58:38.255  WARN [sipladservicediscovery,,,] 14636 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-06 19:58:38.255  INFO [sipladservicediscovery,,,] 14636 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-06 19:58:38.494  INFO [sipladservicediscovery,,,] 14636 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-06 19:58:40.111  INFO [sipladservicediscovery,,,] 14636 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-06 19:58:40.153  WARN [sipladservicediscovery,,,] 14636 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-06 19:58:40.497  INFO [sipladservicediscovery,,,] 14636 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-04-06 19:58:40.515  INFO [sipladservicediscovery,,,] 14636 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-04-06 19:58:40.516  INFO [sipladservicediscovery,,,] 14636 --- [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2020-04-06 19:58:40.521  INFO [sipladservicediscovery,,,] 14636 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1586213920520 with initial instances count: 0
+2020-04-06 19:58:40.561  INFO [sipladservicediscovery,,,] 14636 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2020-04-06 19:58:40.563  INFO [sipladservicediscovery,,,] 14636 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8800/eureka/]
+2020-04-06 19:58:40.829  INFO [sipladservicediscovery,,,] 14636 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-04-06 19:58:40.829  INFO [sipladservicediscovery,,,] 14636 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-04-06 19:58:40.829  INFO [sipladservicediscovery,,,] 14636 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-04-06 19:58:40.829  INFO [sipladservicediscovery,,,] 14636 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-04-06 19:58:40.972  INFO [sipladservicediscovery,,,] 14636 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8800/eureka/
+2020-04-06 19:58:40.978  INFO [sipladservicediscovery,,,] 14636 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2020-04-06 19:58:40.979  INFO [sipladservicediscovery,,,] 14636 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2020-04-06 19:58:41.062  INFO [sipladservicediscovery,,,] 14636 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-06 19:58:41.140  INFO [sipladservicediscovery,,,] 14636 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SIPLADSERVICEDISCOVERY with eureka with status UP
+2020-04-06 19:58:41.142  INFO [sipladservicediscovery,,,] 14636 --- [Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2020-04-06 19:58:41.143  INFO [sipladservicediscovery,,,] 14636 --- [Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2020-04-06 19:58:41.143  INFO [sipladservicediscovery,,,] 14636 --- [Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2020-04-06 19:58:41.153  INFO [sipladservicediscovery,,,] 14636 --- [Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2020-04-06 19:58:41.153  INFO [sipladservicediscovery,,,] 14636 --- [Thread-13] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2020-04-06 19:58:41.154  INFO [sipladservicediscovery,,,] 14636 --- [Thread-13] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2020-04-06 19:58:41.154  INFO [sipladservicediscovery,,,] 14636 --- [Thread-13] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2020-04-06 19:58:41.154  INFO [sipladservicediscovery,,,] 14636 --- [Thread-13] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2020-04-06 19:58:41.162  INFO [sipladservicediscovery,,,] 14636 --- [Thread-13] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2020-04-06 19:58:41.190  INFO [sipladservicediscovery,,,] 14636 --- [main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-04-06 19:58:41.220  INFO [sipladservicediscovery,,,] 14636 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-04-06 19:58:41.220  INFO [sipladservicediscovery,,,] 14636 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-04-06 19:58:41.220  INFO [sipladservicediscovery,,,] 14636 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-04-06 19:58:41.220  INFO [sipladservicediscovery,,,] 14636 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-04-06 19:58:41.442  INFO [sipladservicediscovery,,,] 14636 --- [main] io.undertow                              : starting server: Undertow - 2.0.29.Final
+2020-04-06 19:58:41.447  INFO [sipladservicediscovery,,,] 14636 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2020-04-06 19:58:41.455  INFO [sipladservicediscovery,,,] 14636 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2020-04-06 19:58:41.510  INFO [sipladservicediscovery,,,] 14636 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8800 (http) with context path ''
+2020-04-06 19:58:41.510  INFO [sipladservicediscovery,,,] 14636 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8800
+2020-04-06 19:58:41.562  INFO [sipladservicediscovery,,,] 14636 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-06 19:58:41.562  INFO [sipladservicediscovery,,,] 14636 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-06 19:58:41.575  INFO [sipladservicediscovery,,,] 14636 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-04-06 19:58:41.736  INFO [sipladservicediscovery,4357399f194e7639,4357399f194e7639,true] 14636 --- [XNIO-1 task-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 with status UP (replication=false)
+2020-04-06 19:58:41.736  INFO [sipladservicediscovery,38c360bd3c1cefc7,38c360bd3c1cefc7,true] 14636 --- [XNIO-1 task-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAUTENTICACAO/localhost:sipladserviceautenticacao:9100 with status UP (replication=false)
+2020-04-06 19:58:42.332  INFO [sipladservicediscovery,038ba107f0e235bb,038ba107f0e235bb,true] 14636 --- [XNIO-1 task-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 with status UP (replication=true)
+2020-04-06 19:58:42.332  INFO [sipladservicediscovery,038ba107f0e235bb,038ba107f0e235bb,true] 14636 --- [XNIO-1 task-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAUTENTICACAO/localhost:sipladserviceautenticacao:9100 with status UP (replication=true)
+2020-04-06 19:58:42.671  INFO [sipladservicediscovery,,,] 14636 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-06 19:58:42.672  INFO [sipladservicediscovery,,,] 14636 --- [main] .d.s.s.SipladServiceDiscoveryApplication : Started SipladServiceDiscoveryApplication in 11.026 seconds (JVM running for 11.72)
+2020-04-06 19:58:43.037  INFO [sipladservicediscovery,026a0b6c814df0ee,026a0b6c814df0ee,true] 14636 --- [XNIO-1 task-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICETESTE/localhost:sipladserviceteste:9600 with status UP (replication=false)
+2020-04-06 19:58:43.393  INFO [sipladservicediscovery,ac3134065bcc09bf,ac3134065bcc09bf,true] 14636 --- [XNIO-1 task-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 with status UP (replication=false)
+2020-04-06 19:58:43.552  INFO [sipladservicediscovery,f8e0434e3b2c2396,f8e0434e3b2c2396,true] 14636 --- [XNIO-1 task-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICETESTE/localhost:sipladserviceteste:9600 with status UP (replication=true)
+2020-04-06 19:58:43.552  INFO [sipladservicediscovery,f8e0434e3b2c2396,f8e0434e3b2c2396,true] 14636 --- [XNIO-1 task-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 with status UP (replication=true)
+2020-04-06 19:59:41.156  INFO [sipladservicediscovery,,,] 14636 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 20:00:41.156  INFO [sipladservicediscovery,,,] 14636 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 20:01:41.157  INFO [sipladservicediscovery,,,] 14636 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 20:02:41.157  INFO [sipladservicediscovery,,,] 14636 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 20:03:41.157  INFO [sipladservicediscovery,,,] 14636 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 20:04:41.158  INFO [sipladservicediscovery,,,] 14636 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 20:05:41.159  INFO [sipladservicediscovery,,,] 14636 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 20:06:41.159  INFO [sipladservicediscovery,,,] 14636 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 20:07:41.159  INFO [sipladservicediscovery,,,] 14636 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 20:07:52.121  WARN [sipladservicediscovery,,,] 14636 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@4b325930}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2020-04-06 20:07:52.124  WARN [sipladservicediscovery,,,] 14636 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@4b325930}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:641) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:142) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:132) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.19.3.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:284) ~[zipkin-reporter-2.12.1.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:358) [zipkin-reporter-2.12.1.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_221]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_221]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_221]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_221]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_221]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1226) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990) ~[na:1.8.0_221]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:739) ~[spring-web-5.2.4.RELEASE.jar:5.2.4.RELEASE]
+	... 9 common frames omitted
+
+2020-04-06 20:08:21.436  INFO [sipladservicediscovery,b8db46e57a143fe1,b8db46e57a143fe1,true] 14636 --- [XNIO-1 task-87] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 with status DOWN (replication=false)
+2020-04-06 20:08:21.945  INFO [sipladservicediscovery,02400125eb13dbdb,02400125eb13dbdb,true] 14636 --- [XNIO-1 task-91] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 with status DOWN (replication=true)
+2020-04-06 20:08:25.464  INFO [sipladservicediscovery,d1381c847559cb6f,d1381c847559cb6f,true] 14636 --- [XNIO-1 task-98] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 (replication=false)
+2020-04-06 20:08:25.976  WARN [sipladservicediscovery,3add022e31135e19,3add022e31135e19,true] 14636 --- [XNIO-1 task-100] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900
+2020-04-06 20:08:25.976  INFO [sipladservicediscovery,3add022e31135e19,3add022e31135e19,true] 14636 --- [XNIO-1 task-100] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): SIPLADSERVICEGATEWAY - localhost:sipladservicegateway:8900
+2020-04-06 20:08:25.977  WARN [sipladservicediscovery,,,] 14636 --- [TaskBatchingWorker-target_localhost-13] c.n.eureka.cluster.ReplicationTask       : The replication of task SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900:Cancel@localhost failed with response code 404
+2020-04-06 20:08:25.977  WARN [sipladservicediscovery,,,] 14636 --- [TaskBatchingWorker-target_localhost-13] c.netflix.eureka.cluster.PeerEurekaNode  : SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900:Cancel@localhost: missing entry.
+2020-04-06 20:08:29.985  INFO [sipladservicediscovery,d53f5be33415d1e5,d53f5be33415d1e5,true] 14636 --- [XNIO-1 task-106] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 with status DOWN (replication=false)
+2020-04-06 20:08:30.494  INFO [sipladservicediscovery,9508ce4a7566a491,9508ce4a7566a491,true] 14636 --- [XNIO-1 task-107] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 with status DOWN (replication=true)
+2020-04-06 20:08:34.001  INFO [sipladservicediscovery,7fc931eb632a1e67,7fc931eb632a1e67,true] 14636 --- [XNIO-1 task-115] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 (replication=false)
+2020-04-06 20:08:34.012  WARN [sipladservicediscovery,3880998b311f4de1,3880998b311f4de1,true] 14636 --- [XNIO-1 task-116] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: SIPLADSERVICEAPOIO - localhost:sipladserviceapoio:9300
+2020-04-06 20:08:34.012  WARN [sipladservicediscovery,3880998b311f4de1,3880998b311f4de1,true] 14636 --- [XNIO-1 task-116] c.n.eureka.resources.InstanceResource    : Not Found (Renew): SIPLADSERVICEAPOIO - localhost:sipladserviceapoio:9300
+2020-04-06 20:08:34.013  WARN [sipladservicediscovery,3880998b311f4de1,3880998b311f4de1,true] 14636 --- [XNIO-1 task-116] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300
+2020-04-06 20:08:34.013  INFO [sipladservicediscovery,3880998b311f4de1,3880998b311f4de1,true] 14636 --- [XNIO-1 task-116] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): SIPLADSERVICEAPOIO - localhost:sipladserviceapoio:9300
+2020-04-06 20:08:34.013  WARN [sipladservicediscovery,,,] 14636 --- [TaskBatchingWorker-target_localhost-15] c.n.eureka.cluster.ReplicationTask       : The replication of task SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300:Heartbeat@localhost failed with response code 404
+2020-04-06 20:08:34.013  WARN [sipladservicediscovery,,,] 14636 --- [TaskBatchingWorker-target_localhost-15] c.netflix.eureka.cluster.PeerEurekaNode  : SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300:Heartbeat@localhost: missing entry.
+2020-04-06 20:08:34.013  WARN [sipladservicediscovery,,,] 14636 --- [TaskBatchingWorker-target_localhost-15] c.netflix.eureka.cluster.PeerEurekaNode  : SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300:Heartbeat@localhost: cannot find instance id localhost:sipladserviceapoio:9300 and hence replicating the instance with status DOWN
+2020-04-06 20:08:34.013  WARN [sipladservicediscovery,,,] 14636 --- [TaskBatchingWorker-target_localhost-15] c.n.eureka.cluster.ReplicationTask       : The replication of task SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300:Cancel@localhost failed with response code 404
+2020-04-06 20:08:34.013  WARN [sipladservicediscovery,,,] 14636 --- [TaskBatchingWorker-target_localhost-15] c.netflix.eureka.cluster.PeerEurekaNode  : SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300:Cancel@localhost: missing entry.
+2020-04-06 20:08:34.523  INFO [sipladservicediscovery,0f8020e9acf9a277,0f8020e9acf9a277,true] 14636 --- [XNIO-1 task-117] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 with status DOWN (replication=true)
+2020-04-06 20:08:38.422  INFO [sipladservicediscovery,4973ae9d1a547458,4973ae9d1a547458,true] 14636 --- [XNIO-1 task-124] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAUTENTICACAO/localhost:sipladserviceautenticacao:9100 with status DOWN (replication=false)
+2020-04-06 20:08:38.930  INFO [sipladservicediscovery,da79e23d3172e8a8,da79e23d3172e8a8,true] 14636 --- [XNIO-1 task-125] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAUTENTICACAO/localhost:sipladserviceautenticacao:9100 with status DOWN (replication=true)
+2020-04-06 20:08:41.159  INFO [sipladservicediscovery,,,] 14636 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-06 20:08:42.437  INFO [sipladservicediscovery,734dba7d9b5e36bd,734dba7d9b5e36bd,true] 14636 --- [XNIO-1 task-4] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SIPLADSERVICEAUTENTICACAO/localhost:sipladserviceautenticacao:9100 (replication=false)
+2020-04-06 20:08:42.946  WARN [sipladservicediscovery,f4fcb0fb9d1ff5c5,f4fcb0fb9d1ff5c5,true] 14636 --- [XNIO-1 task-3] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: SIPLADSERVICEAUTENTICACAO/localhost:sipladserviceautenticacao:9100
+2020-04-06 20:08:42.946  INFO [sipladservicediscovery,f4fcb0fb9d1ff5c5,f4fcb0fb9d1ff5c5,true] 14636 --- [XNIO-1 task-3] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): SIPLADSERVICEAUTENTICACAO - localhost:sipladserviceautenticacao:9100
+2020-04-06 20:08:42.947  WARN [sipladservicediscovery,,,] 14636 --- [TaskBatchingWorker-target_localhost-19] c.n.eureka.cluster.ReplicationTask       : The replication of task SIPLADSERVICEAUTENTICACAO/localhost:sipladserviceautenticacao:9100:Cancel@localhost failed with response code 404
+2020-04-06 20:08:42.947  WARN [sipladservicediscovery,,,] 14636 --- [TaskBatchingWorker-target_localhost-19] c.netflix.eureka.cluster.PeerEurekaNode  : SIPLADSERVICEAUTENTICACAO/localhost:sipladserviceautenticacao:9100:Cancel@localhost: missing entry.
+2020-04-06 20:08:46.849  INFO [sipladservicediscovery,,,] 14636 --- [RMI TCP Connection(19)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-04-06 20:08:46.850  INFO [sipladservicediscovery,,,] 14636 --- [RMI TCP Connection(19)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SIPLADSERVICEDISCOVERY with eureka with status DOWN
+2020-04-06 20:08:46.851  INFO [sipladservicediscovery,,,] 14636 --- [RMI TCP Connection(19)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2020-04-06 20:08:46.866  INFO [sipladservicediscovery,,,] 14636 --- [RMI TCP Connection(19)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2020-04-06 20:08:46.869  INFO [sipladservicediscovery,,,] 14636 --- [RMI TCP Connection(19)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-06 20:08:47.696  INFO [sipladservicediscovery,,,] 14636 --- [RMI TCP Connection(19)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-04-06 20:08:47.697  INFO [sipladservicediscovery,,,] 14636 --- [RMI TCP Connection(19)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-04-06 20:08:47.699  INFO [sipladservicediscovery,,,] 14636 --- [RMI TCP Connection(19)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-06 20:08:47.700  INFO [sipladservicediscovery,,,] 14636 --- [RMI TCP Connection(19)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.0.29.Final

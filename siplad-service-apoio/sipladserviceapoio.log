@@ -6603,3 +6603,814 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2020-04-06 18:12:14.544  INFO [sipladserviceapoio,,,] 19400 --- [RMI TCP Connection(52)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
 2020-04-06 18:12:14.545  INFO [sipladserviceapoio,,,] 19400 --- [RMI TCP Connection(52)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.0.30.Final
 2020-04-06 18:12:14.550  INFO [sipladserviceapoio,,,] 19400 --- [Thread-14] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater
+2020-04-06 19:07:07.323  INFO [sipladserviceapoio,,,] 8412 --- [main] m.d.s.SipladServiceApoioApplication      : The following profiles are active: default
+2020-04-06 19:07:08.235  WARN [sipladserviceapoio,,,] 8412 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-06 19:07:08.426  INFO [sipladserviceapoio,,,] 8412 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=06c8e4e8-d58f-3320-856a-d433be0f9802
+2020-04-06 19:07:08.691  INFO [sipladserviceapoio,,,] 8412 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-06 19:07:08.697  INFO [sipladserviceapoio,,,] 8412 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-06 19:07:08.702  INFO [sipladserviceapoio,,,] 8412 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4f89331f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-06 19:07:08.703  INFO [sipladserviceapoio,,,] 8412 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-06 19:07:08.714  INFO [sipladserviceapoio,,,] 8412 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-06 19:07:08.941  WARN [sipladserviceapoio,,,] 8412 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-04-06 19:07:08.964  INFO [sipladserviceapoio,,,] 8412 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-04-06 19:07:08.964  INFO [sipladserviceapoio,,,] 8412 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1625 ms
+2020-04-06 19:07:09.111  WARN [sipladserviceapoio,,,] 8412 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-06 19:07:09.112  INFO [sipladserviceapoio,,,] 8412 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-06 19:07:09.163  INFO [sipladserviceapoio,,,] 8412 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3f598450
+2020-04-06 19:07:10.476  INFO [sipladserviceapoio,,,] 8412 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-06 19:07:11.611  WARN [sipladserviceapoio,,,] 8412 --- [main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@14b31e37}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out}]
+2020-04-06 19:07:12.056  INFO [sipladserviceapoio,,,] 8412 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@289f15e9, org.springframework.security.web.context.SecurityContextPersistenceFilter@42a0786f, org.springframework.security.web.header.HeaderWriterFilter@2d4a3e13, org.springframework.security.web.authentication.logout.LogoutFilter@755a7218, mb.dgom.siplad.security.web.JWTAuthenticationTokenFilter@5a622fe8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40c8067, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e95973c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f22687e, org.springframework.security.web.session.SessionManagementFilter@565d7d2f, org.springframework.security.web.access.ExceptionTranslationFilter@703e8050, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1edfedf1]
+2020-04-06 19:07:12.085  WARN [sipladserviceapoio,,,] 8412 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-06 19:07:12.085  INFO [sipladserviceapoio,,,] 8412 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-06 19:07:12.322  INFO [sipladserviceapoio,,,] 8412 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-06 19:07:14.013  INFO [sipladserviceapoio,,,] 8412 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-06 19:07:14.065  WARN [sipladserviceapoio,,,] 8412 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-06 19:07:14.440  INFO [sipladserviceapoio,,,] 8412 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2020-04-06 19:07:14.548  INFO [sipladserviceapoio,,,] 8412 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-04-06 19:07:14.577  INFO [sipladserviceapoio,,,] 8412 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-04-06 19:07:14.873  INFO [sipladserviceapoio,,,] 8412 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-04-06 19:07:14.873  INFO [sipladserviceapoio,,,] 8412 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-04-06 19:07:14.966  INFO [sipladserviceapoio,,,] 8412 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-04-06 19:07:14.967  INFO [sipladserviceapoio,,,] 8412 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-04-06 19:07:15.116  INFO [sipladserviceapoio,,,] 8412 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-06 19:07:15.235  INFO [sipladserviceapoio,,,] 8412 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-04-06 19:07:15.235  INFO [sipladserviceapoio,,,] 8412 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-04-06 19:07:15.236  INFO [sipladserviceapoio,,,] 8412 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-04-06 19:07:15.236  INFO [sipladserviceapoio,,,] 8412 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-04-06 19:07:15.236  INFO [sipladserviceapoio,,,] 8412 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-04-06 19:07:15.236  INFO [sipladserviceapoio,,,] 8412 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-04-06 19:07:15.236  INFO [sipladserviceapoio,,,] 8412 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-04-06 19:07:15.455  INFO [sipladserviceapoio,,,] 8412 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-04-06 19:07:15.475  INFO [sipladserviceapoio,,,] 8412 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 3
+2020-04-06 19:07:15.477  INFO [sipladserviceapoio,,,] 8412 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-06 19:07:15.480  INFO [sipladserviceapoio,,,] 8412 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1586210835479 with initial instances count: 0
+2020-04-06 19:07:15.489  INFO [sipladserviceapoio,,,] 8412 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SIPLADSERVICEAPOIO with eureka with status UP
+2020-04-06 19:07:15.490  INFO [sipladserviceapoio,,,] 8412 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1586210835490, current=UP, previous=STARTING]
+2020-04-06 19:07:15.492  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300: registering service...
+2020-04-06 19:07:15.534  INFO [sipladserviceapoio,,,] 8412 --- [main] io.undertow                              : starting server: Undertow - 2.0.30.Final
+2020-04-06 19:07:15.542  INFO [sipladserviceapoio,,,] 8412 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2020-04-06 19:07:15.558  INFO [sipladserviceapoio,,,] 8412 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2020-04-06 19:07:15.580  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 - registration status: 204
+2020-04-06 19:07:15.631  INFO [sipladserviceapoio,,,] 8412 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 9300 (http) with context path ''
+2020-04-06 19:07:15.632  INFO [sipladserviceapoio,,,] 8412 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9300
+2020-04-06 19:07:16.831  INFO [sipladserviceapoio,,,] 8412 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-06 19:07:16.832  INFO [sipladserviceapoio,,,] 8412 --- [main] m.d.s.SipladServiceApoioApplication      : Started SipladServiceApoioApplication in 12.404 seconds (JVM running for 13.061)
+2020-04-06 19:07:45.476  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-04-06 19:07:45.476  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-04-06 19:07:45.476  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-04-06 19:07:45.476  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-04-06 19:07:45.476  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-04-06 19:07:45.476  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2020-04-06 19:07:45.476  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-04-06 19:07:45.505  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-04-06 19:10:13.599  INFO [sipladserviceapoio,,,] 8412 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-06 19:10:13.599  INFO [sipladserviceapoio,,,] 8412 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-06 19:10:13.613  INFO [sipladserviceapoio,,,] 8412 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-04-06 19:10:13.711  INFO [sipladserviceapoio,cae2a7c221beaa47,a472265f1746a263,true] 8412 --- [XNIO-1 task-2] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 19:10:13.718  INFO [sipladserviceapoio,cae2a7c221beaa47,e6c0c7498564b493,true] 8412 --- [XNIO-1 task-3] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 19:10:14.705  WARN [sipladserviceapoio,,,] 8412 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@14b31e37}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2020-04-06 19:10:14.707  WARN [sipladserviceapoio,,,] 8412 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@14b31e37}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 3 spans due to ResourceAccessException(I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:641) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:142) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:132) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.19.3.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:284) ~[zipkin-reporter-2.12.1.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:358) [zipkin-reporter-2.12.1.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_221]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_221]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_221]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_221]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_221]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1226) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990) ~[na:1.8.0_221]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:739) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 9 common frames omitted
+
+2020-04-06 19:10:54.772  WARN [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-0] c.netflix.discovery.TimedSupervisorTask  : task supervisor timed out
+
+java.util.concurrent.TimeoutException: null
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205) [na:1.8.0_221]
+	at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:68) ~[eureka-client-1.9.17.jar:1.9.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+
+2020-04-06 19:10:55.787 ERROR [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8800/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:103) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:867) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1436) [eureka-client-1.9.17.jar:1.9.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_221]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_221]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_221]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_221]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_221]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.12.jar:4.5.12]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 26 common frames omitted
+
+2020-04-06 19:10:55.788  WARN [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-04-06 19:10:59.804 ERROR [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8800/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:103) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:867) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1436) [eureka-client-1.9.17.jar:1.9.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_221]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_221]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_221]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_221]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_221]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.12.jar:4.5.12]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 27 common frames omitted
+
+2020-04-06 19:10:59.805  WARN [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-04-06 19:10:59.805 ERROR [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:867) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1436) [eureka-client-1.9.17.jar:1.9.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+
+2020-04-06 19:11:03.774  WARN [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-0] c.netflix.discovery.TimedSupervisorTask  : task supervisor timed out
+
+java.util.concurrent.TimeoutException: null
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205) [na:1.8.0_221]
+	at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:68) ~[eureka-client-1.9.17.jar:1.9.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+
+2020-04-06 19:11:04.789 ERROR [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8800/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:103) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:867) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1436) [eureka-client-1.9.17.jar:1.9.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_221]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_221]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_221]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_221]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_221]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.12.jar:4.5.12]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 27 common frames omitted
+
+2020-04-06 19:11:04.790  WARN [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-04-06 19:11:04.790 ERROR [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:867) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1436) [eureka-client-1.9.17.jar:1.9.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+
+2020-04-06 19:11:18.777  WARN [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-0] c.netflix.discovery.TimedSupervisorTask  : task supervisor timed out
+
+java.util.concurrent.TimeoutException: null
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205) [na:1.8.0_221]
+	at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:68) ~[eureka-client-1.9.17.jar:1.9.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+
+2020-04-06 19:11:19.553 ERROR [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8800/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:196) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:172) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1108) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:990) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1510) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1477) [eureka-client-1.9.17.jar:1.9.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_221]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_221]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_221]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_221]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_221]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.12.jar:4.5.12]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 29 common frames omitted
+
+2020-04-06 19:11:19.554  WARN [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-04-06 19:11:19.791 ERROR [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8800/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:103) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:867) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1436) [eureka-client-1.9.17.jar:1.9.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_221]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_221]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_221]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_221]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_221]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.12.jar:4.5.12]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 27 common frames omitted
+
+2020-04-06 19:11:19.792  WARN [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-04-06 19:11:19.792 ERROR [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:867) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1436) [eureka-client-1.9.17.jar:1.9.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+
+2020-04-06 19:11:23.568 ERROR [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8800/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:196) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:172) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1108) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:990) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1510) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1477) [eureka-client-1.9.17.jar:1.9.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_221]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_221]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_221]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_221]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_221]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.12.jar:4.5.12]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 30 common frames omitted
+
+2020-04-06 19:11:23.569  WARN [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-04-06 19:11:23.569 ERROR [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 - was unable to refresh its cache! status = Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1108) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:990) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1510) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1477) [eureka-client-1.9.17.jar:1.9.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+
+2020-04-06 19:11:45.778  WARN [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-0] c.netflix.discovery.TimedSupervisorTask  : task supervisor timed out
+
+java.util.concurrent.TimeoutException: null
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205) [na:1.8.0_221]
+	at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:68) ~[eureka-client-1.9.17.jar:1.9.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_221]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+
+2020-04-06 19:11:46.782 ERROR [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8800/eureka/}
+
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:103) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:867) [eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1436) [eureka-client-1.9.17.jar:1.9.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_221]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_221]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_221]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_221]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_221]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.12.jar:4.5.12]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.12.jar:4.5.12]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 27 common frames omitted
+
+2020-04-06 19:11:46.783  WARN [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-04-06 19:11:46.783 ERROR [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:867) ~[eureka-client-1.9.17.jar:1.9.17]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1436) [eureka-client-1.9.17.jar:1.9.17]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_221]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+
+2020-04-06 19:12:15.242  INFO [sipladserviceapoio,,,] 8412 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-06 19:12:15.782  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 - Re-registering apps/SIPLADSERVICEAPOIO
+2020-04-06 19:12:15.783  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300: registering service...
+2020-04-06 19:12:15.788  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 - registration status: 204
+2020-04-06 19:12:25.672  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-04-06 19:12:25.672  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-04-06 19:12:25.672  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-04-06 19:12:25.672  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-04-06 19:12:25.672  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-04-06 19:12:25.672  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2020-04-06 19:12:25.672  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-04-06 19:12:25.675  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-04-06 19:12:55.677  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-04-06 19:12:55.677  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-04-06 19:12:55.677  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-04-06 19:12:55.677  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-04-06 19:12:55.677  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-04-06 19:12:55.677  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2020-04-06 19:12:55.677  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-04-06 19:12:55.680  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-04-06 19:13:24.038  INFO [sipladserviceapoio,d54a6ef5b6ca149d,226d5e37e90c32ba,true] 8412 --- [XNIO-1 task-6] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 19:13:24.043  INFO [sipladserviceapoio,d54a6ef5b6ca149d,be5def5a9f2108dc,true] 8412 --- [XNIO-1 task-7] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 19:13:33.179  INFO [sipladserviceapoio,25f4d449988194a3,48f3b57b3fe38d9b,true] 8412 --- [XNIO-1 task-8] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 19:13:49.885  INFO [sipladserviceapoio,7a686f429f77f695,3ff4eb4ba0f0d3a7,true] 8412 --- [XNIO-1 task-10] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 19:16:27.100  INFO [sipladserviceapoio,5b90e85542cc320d,e1997b0cdb9d8c99,true] 8412 --- [XNIO-1 task-13] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 19:16:27.105  INFO [sipladserviceapoio,5b90e85542cc320d,325639fa30ebdcbf,true] 8412 --- [XNIO-1 task-14] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 19:16:34.216  INFO [sipladserviceapoio,cccda906740cf0c4,75f9b4d43d54a253,true] 8412 --- [XNIO-1 task-15] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 19:16:34.556  INFO [sipladserviceapoio,cccda906740cf0c4,6f7b3617b6a0387f,true] 8412 --- [XNIO-1 task-16] c.netflix.config.ChainedDynamicProperty  : Flipping property: sipladserviceapoio.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-04-06 19:16:34.579  INFO [sipladserviceapoio,cccda906740cf0c4,6f7b3617b6a0387f,true] 8412 --- [XNIO-1 task-16] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-sipladserviceapoio
+2020-04-06 19:16:34.579  INFO [sipladserviceapoio,cccda906740cf0c4,6f7b3617b6a0387f,true] 8412 --- [XNIO-1 task-16] c.netflix.loadbalancer.BaseLoadBalancer  : Client: sipladserviceapoio instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=sipladserviceapoio,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-04-06 19:16:34.584  INFO [sipladserviceapoio,cccda906740cf0c4,6f7b3617b6a0387f,true] 8412 --- [XNIO-1 task-16] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2020-04-06 19:16:34.604  INFO [sipladserviceapoio,cccda906740cf0c4,6f7b3617b6a0387f,true] 8412 --- [XNIO-1 task-16] c.netflix.config.ChainedDynamicProperty  : Flipping property: sipladserviceapoio.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-04-06 19:16:34.605  INFO [sipladserviceapoio,cccda906740cf0c4,6f7b3617b6a0387f,true] 8412 --- [XNIO-1 task-16] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client sipladserviceapoio initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=sipladserviceapoio,current list of Servers=[192.168.126.1:9300],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.126.1:9300;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Wed Dec 31 21:00:00 BRT 1969;	First connection made: Wed Dec 31 21:00:00 BRT 1969;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@59706647
+2020-04-06 19:16:34.650  INFO [sipladserviceapoio,cccda906740cf0c4,285f8a40cb858295,true] 8412 --- [XNIO-1 task-17] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 19:16:34.664  INFO [sipladserviceapoio,cccda906740cf0c4,6f7b3617b6a0387f,true] 8412 --- [XNIO-1 task-16] m.d.siplad.controllers.AcaoController    : getById
+2020-04-06 19:16:35.586  INFO [sipladserviceapoio,,,] 8412 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: sipladserviceapoio.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-04-06 19:16:41.438  INFO [sipladserviceapoio,188d93f8c4082b2e,a8026fa6d2f4b4bf,true] 8412 --- [XNIO-1 task-18] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 19:16:41.908  INFO [sipladserviceapoio,8963a34eaffbf5f4,8963a34eaffbf5f4,true] 8412 --- [XNIO-1 task-19] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 19:16:41.935  INFO [sipladserviceapoio,478bf00f9f0084c6,3fb47240c535dffc,false] 8412 --- [XNIO-1 task-21] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 19:16:41.939  INFO [sipladserviceapoio,478bf00f9f0084c6,478bf00f9f0084c6,false] 8412 --- [XNIO-1 task-20] m.d.siplad.controllers.AcaoController    : getById
+2020-04-06 19:17:04.683  INFO [sipladserviceapoio,,,] 8412 --- [RMI TCP Connection(19)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-04-06 19:17:04.683  INFO [sipladserviceapoio,,,] 8412 --- [RMI TCP Connection(19)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SIPLADSERVICEAPOIO with eureka with status DOWN
+2020-04-06 19:17:04.684  WARN [sipladserviceapoio,,,] 8412 --- [RMI TCP Connection(19)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1586211424684, current=DOWN, previous=UP]
+2020-04-06 19:17:04.684  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300: registering service...
+2020-04-06 19:17:04.686  INFO [sipladserviceapoio,,,] 8412 --- [RMI TCP Connection(19)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-06 19:17:04.687  INFO [sipladserviceapoio,,,] 8412 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 - registration status: 204
+2020-04-06 19:17:05.443  INFO [sipladserviceapoio,,,] 8412 --- [RMI TCP Connection(19)-127.0.0.1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook removed for: NFLoadBalancer-PingTimer-sipladserviceapoio
+2020-04-06 19:17:05.449  INFO [sipladserviceapoio,,,] 8412 --- [RMI TCP Connection(19)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-04-06 19:17:08.451  INFO [sipladserviceapoio,,,] 8412 --- [RMI TCP Connection(19)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-04-06 19:17:08.456  INFO [sipladserviceapoio,,,] 8412 --- [RMI TCP Connection(19)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 - deregister  status: 200
+2020-04-06 19:17:08.464  INFO [sipladserviceapoio,,,] 8412 --- [RMI TCP Connection(19)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-04-06 19:17:08.466  INFO [sipladserviceapoio,,,] 8412 --- [RMI TCP Connection(19)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-06 19:17:08.467  INFO [sipladserviceapoio,,,] 8412 --- [RMI TCP Connection(19)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.0.30.Final
+2020-04-06 19:17:08.471  INFO [sipladserviceapoio,,,] 8412 --- [Thread-14] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater
+2020-04-06 19:58:33.432  INFO [sipladserviceapoio,,,] 10300 --- [main] m.d.s.SipladServiceApoioApplication      : The following profiles are active: default
+2020-04-06 19:58:34.188  WARN [sipladserviceapoio,,,] 10300 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-06 19:58:34.421  INFO [sipladserviceapoio,,,] 10300 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=06c8e4e8-d58f-3320-856a-d433be0f9802
+2020-04-06 19:58:34.708  INFO [sipladserviceapoio,,,] 10300 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-06 19:58:34.716  INFO [sipladserviceapoio,,,] 10300 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-06 19:58:34.722  INFO [sipladserviceapoio,,,] 10300 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2b7962a2' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-06 19:58:34.725  INFO [sipladserviceapoio,,,] 10300 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-06 19:58:34.736  INFO [sipladserviceapoio,,,] 10300 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-06 19:58:35.016  WARN [sipladserviceapoio,,,] 10300 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-04-06 19:58:35.044  INFO [sipladserviceapoio,,,] 10300 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-04-06 19:58:35.044  INFO [sipladserviceapoio,,,] 10300 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1595 ms
+2020-04-06 19:58:35.209  WARN [sipladserviceapoio,,,] 10300 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-06 19:58:35.209  INFO [sipladserviceapoio,,,] 10300 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-06 19:58:35.264  INFO [sipladserviceapoio,,,] 10300 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@42383cb0
+2020-04-06 19:58:36.661  INFO [sipladserviceapoio,,,] 10300 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-06 19:58:37.823  INFO [sipladserviceapoio,,,] 10300 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@597d48ca, org.springframework.security.web.context.SecurityContextPersistenceFilter@7ea42c82, org.springframework.security.web.header.HeaderWriterFilter@1c84d80a, org.springframework.security.web.authentication.logout.LogoutFilter@78116659, mb.dgom.siplad.security.web.JWTAuthenticationTokenFilter@2a140ce5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76a362a4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5122e4bf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77324a58, org.springframework.security.web.session.SessionManagementFilter@624b3544, org.springframework.security.web.access.ExceptionTranslationFilter@477523ba, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1bee0085]
+2020-04-06 19:58:37.852  WARN [sipladserviceapoio,,,] 10300 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-06 19:58:37.852  INFO [sipladserviceapoio,,,] 10300 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-06 19:58:38.060  INFO [sipladserviceapoio,,,] 10300 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-06 19:58:39.770  INFO [sipladserviceapoio,,,] 10300 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-06 19:58:39.815  WARN [sipladserviceapoio,,,] 10300 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-06 19:58:40.178  INFO [sipladserviceapoio,,,] 10300 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2020-04-06 19:58:40.288  INFO [sipladserviceapoio,,,] 10300 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-04-06 19:58:40.316  INFO [sipladserviceapoio,,,] 10300 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-04-06 19:58:40.605  INFO [sipladserviceapoio,,,] 10300 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-04-06 19:58:40.605  INFO [sipladserviceapoio,,,] 10300 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-04-06 19:58:40.696  INFO [sipladserviceapoio,,,] 10300 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-04-06 19:58:40.696  INFO [sipladserviceapoio,,,] 10300 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-04-06 19:58:40.854  INFO [sipladserviceapoio,,,] 10300 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-06 19:58:40.976  INFO [sipladserviceapoio,,,] 10300 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-04-06 19:58:40.976  INFO [sipladserviceapoio,,,] 10300 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-04-06 19:58:40.976  INFO [sipladserviceapoio,,,] 10300 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-04-06 19:58:40.976  INFO [sipladserviceapoio,,,] 10300 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-04-06 19:58:40.976  INFO [sipladserviceapoio,,,] 10300 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-04-06 19:58:40.977  INFO [sipladserviceapoio,,,] 10300 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-04-06 19:58:40.977  INFO [sipladserviceapoio,,,] 10300 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-04-06 19:58:41.645  INFO [sipladserviceapoio,,,] 10300 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-04-06 19:58:41.647  INFO [sipladserviceapoio,,,] 10300 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 3
+2020-04-06 19:58:41.649  INFO [sipladserviceapoio,,,] 10300 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-06 19:58:41.652  INFO [sipladserviceapoio,,,] 10300 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1586213921651 with initial instances count: 0
+2020-04-06 19:58:41.660  INFO [sipladserviceapoio,,,] 10300 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SIPLADSERVICEAPOIO with eureka with status UP
+2020-04-06 19:58:41.661  INFO [sipladserviceapoio,,,] 10300 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1586213921661, current=UP, previous=STARTING]
+2020-04-06 19:58:41.663  INFO [sipladserviceapoio,,,] 10300 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300: registering service...
+2020-04-06 19:58:41.701  INFO [sipladserviceapoio,,,] 10300 --- [main] io.undertow                              : starting server: Undertow - 2.0.30.Final
+2020-04-06 19:58:41.707  INFO [sipladserviceapoio,,,] 10300 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2020-04-06 19:58:41.718  INFO [sipladserviceapoio,,,] 10300 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2020-04-06 19:58:41.740  INFO [sipladserviceapoio,,,] 10300 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 - registration status: 204
+2020-04-06 19:58:41.778  INFO [sipladserviceapoio,,,] 10300 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 9300 (http) with context path ''
+2020-04-06 19:58:41.779  INFO [sipladserviceapoio,,,] 10300 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9300
+2020-04-06 19:58:41.902  INFO [sipladserviceapoio,,,] 10300 --- [RMI TCP Connection(1)-127.0.0.1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-06 19:58:41.902  INFO [sipladserviceapoio,,,] 10300 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-06 19:58:41.917  INFO [sipladserviceapoio,,,] 10300 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-04-06 19:58:42.984  INFO [sipladserviceapoio,,,] 10300 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-06 19:58:42.985  INFO [sipladserviceapoio,,,] 10300 --- [main] m.d.s.SipladServiceApoioApplication      : Started SipladServiceApoioApplication in 12.478 seconds (JVM running for 13.19)
+2020-04-06 19:59:11.649  INFO [sipladserviceapoio,,,] 10300 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-04-06 19:59:11.649  INFO [sipladserviceapoio,,,] 10300 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-04-06 19:59:11.649  INFO [sipladserviceapoio,,,] 10300 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-04-06 19:59:11.649  INFO [sipladserviceapoio,,,] 10300 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-04-06 19:59:11.649  INFO [sipladserviceapoio,,,] 10300 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-04-06 19:59:11.649  INFO [sipladserviceapoio,,,] 10300 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2020-04-06 19:59:11.649  INFO [sipladserviceapoio,,,] 10300 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-04-06 19:59:11.675  INFO [sipladserviceapoio,,,] 10300 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-04-06 19:59:34.604  INFO [sipladserviceapoio,988c34d430baa828,f1cc1bdf7d4e5810,true] 10300 --- [XNIO-1 task-2] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 19:59:34.612  INFO [sipladserviceapoio,988c34d430baa828,21e2084e4ba1bb36,true] 10300 --- [XNIO-1 task-3] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 19:59:45.208  INFO [sipladserviceapoio,78eeb47385cc2f72,e06826c76368bcd8,true] 10300 --- [XNIO-1 task-4] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 19:59:45.542  INFO [sipladserviceapoio,78eeb47385cc2f72,2af847534f629d49,true] 10300 --- [XNIO-1 task-5] c.netflix.config.ChainedDynamicProperty  : Flipping property: sipladserviceapoio.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-04-06 19:59:45.564  INFO [sipladserviceapoio,78eeb47385cc2f72,2af847534f629d49,true] 10300 --- [XNIO-1 task-5] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-sipladserviceapoio
+2020-04-06 19:59:45.565  INFO [sipladserviceapoio,78eeb47385cc2f72,2af847534f629d49,true] 10300 --- [XNIO-1 task-5] c.netflix.loadbalancer.BaseLoadBalancer  : Client: sipladserviceapoio instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=sipladserviceapoio,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-04-06 19:59:45.570  INFO [sipladserviceapoio,78eeb47385cc2f72,2af847534f629d49,true] 10300 --- [XNIO-1 task-5] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2020-04-06 19:59:45.589  INFO [sipladserviceapoio,78eeb47385cc2f72,2af847534f629d49,true] 10300 --- [XNIO-1 task-5] c.netflix.config.ChainedDynamicProperty  : Flipping property: sipladserviceapoio.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-04-06 19:59:45.591  INFO [sipladserviceapoio,78eeb47385cc2f72,2af847534f629d49,true] 10300 --- [XNIO-1 task-5] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client sipladserviceapoio initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=sipladserviceapoio,current list of Servers=[192.168.126.1:9300],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.126.1:9300;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Wed Dec 31 21:00:00 BRT 1969;	First connection made: Wed Dec 31 21:00:00 BRT 1969;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@1bd1fe57
+2020-04-06 19:59:45.774  INFO [sipladserviceapoio,78eeb47385cc2f72,396b9b993b7a1ded,true] 10300 --- [XNIO-1 task-6] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 19:59:45.787  INFO [sipladserviceapoio,78eeb47385cc2f72,2af847534f629d49,true] 10300 --- [XNIO-1 task-5] m.d.siplad.controllers.AcaoController    : getById
+2020-04-06 19:59:46.573  INFO [sipladserviceapoio,,,] 10300 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: sipladserviceapoio.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-04-06 19:59:48.758  INFO [sipladserviceapoio,b479be26ed41ff78,4f8c17093261b8db,true] 10300 --- [XNIO-1 task-7] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 19:59:49.249  INFO [sipladserviceapoio,b479be26ed41ff78,4038b96021685b55,true] 10300 --- [XNIO-1 task-8] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 19:59:49.299  INFO [sipladserviceapoio,b479be26ed41ff78,b3895ad6c3805ebd,true] 10300 --- [XNIO-1 task-10] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 19:59:49.302  INFO [sipladserviceapoio,b479be26ed41ff78,e3e09483a2e7413a,true] 10300 --- [XNIO-1 task-9] m.d.siplad.controllers.AcaoController    : getById
+2020-04-06 19:59:52.331  INFO [sipladserviceapoio,b5debebc8a5e9067,4319a719ae53fd9b,true] 10300 --- [XNIO-1 task-11] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 19:59:52.345  INFO [sipladserviceapoio,b5debebc8a5e9067,deccf5ed045ca72a,true] 10300 --- [XNIO-1 task-13] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 19:59:52.348  INFO [sipladserviceapoio,b5debebc8a5e9067,acde7d7d960c62c9,true] 10300 --- [XNIO-1 task-12] m.d.siplad.controllers.AcaoController    : getById
+2020-04-06 20:03:40.981  INFO [sipladserviceapoio,,,] 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-06 20:04:32.603  INFO [sipladserviceapoio,b9d6849201996676,77932f4d6eab1256,true] 10300 --- [XNIO-1 task-14] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 20:04:32.616  INFO [sipladserviceapoio,b9d6849201996676,b00ee5f986908954,true] 10300 --- [XNIO-1 task-15] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 20:04:32.626  INFO [sipladserviceapoio,b9d6849201996676,6cbf55af2e460e59,true] 10300 --- [XNIO-1 task-17] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-06 20:04:32.630  INFO [sipladserviceapoio,b9d6849201996676,9d1b505244d4a596,true] 10300 --- [XNIO-1 task-16] m.d.siplad.controllers.AcaoController    : getById
+2020-04-06 20:08:29.980  INFO [sipladserviceapoio,,,] 10300 --- [RMI TCP Connection(20)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-04-06 20:08:29.980  INFO [sipladserviceapoio,,,] 10300 --- [RMI TCP Connection(20)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SIPLADSERVICEAPOIO with eureka with status DOWN
+2020-04-06 20:08:29.980  WARN [sipladserviceapoio,,,] 10300 --- [RMI TCP Connection(20)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1586214509980, current=DOWN, previous=UP]
+2020-04-06 20:08:29.981  INFO [sipladserviceapoio,,,] 10300 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300: registering service...
+2020-04-06 20:08:29.982  INFO [sipladserviceapoio,,,] 10300 --- [RMI TCP Connection(20)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-06 20:08:29.985  INFO [sipladserviceapoio,,,] 10300 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 - registration status: 204
+2020-04-06 20:08:30.988  WARN [sipladserviceapoio,,,] 10300 --- [RMI TCP Connection(20)-127.0.0.1] z.r.AsyncReporter$BoundedAsyncReporter   : Timed out waiting for in-flight spans to send
+2020-04-06 20:08:30.990  INFO [sipladserviceapoio,,,] 10300 --- [RMI TCP Connection(20)-127.0.0.1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook removed for: NFLoadBalancer-PingTimer-sipladserviceapoio
+2020-04-06 20:08:30.994  INFO [sipladserviceapoio,,,] 10300 --- [RMI TCP Connection(20)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-04-06 20:08:31.415  WARN [sipladserviceapoio,,,] 10300 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@552fee7a}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2020-04-06 20:08:31.418  WARN [sipladserviceapoio,,,] 10300 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@552fee7a}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 0 spans due to ResourceAccessException(I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:641) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:142) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:132) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.19.3.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:284) ~[zipkin-reporter-2.12.1.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:358) [zipkin-reporter-2.12.1.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_221]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_221]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_221]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_221]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_221]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1226) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990) ~[na:1.8.0_221]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:739) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 9 common frames omitted
+
+2020-04-06 20:08:33.998  INFO [sipladserviceapoio,,,] 10300 --- [RMI TCP Connection(20)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-04-06 20:08:34.001  INFO [sipladserviceapoio,,,] 10300 --- [RMI TCP Connection(20)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/localhost:sipladserviceapoio:9300 - deregister  status: 200
+2020-04-06 20:08:34.011  INFO [sipladserviceapoio,,,] 10300 --- [RMI TCP Connection(20)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-04-06 20:08:34.012  INFO [sipladserviceapoio,,,] 10300 --- [RMI TCP Connection(20)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-06 20:08:34.014  INFO [sipladserviceapoio,,,] 10300 --- [RMI TCP Connection(20)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.0.30.Final
+2020-04-06 20:08:34.017  INFO [sipladserviceapoio,,,] 10300 --- [Thread-14] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater

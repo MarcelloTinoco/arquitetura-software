@@ -14,6 +14,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+import mb.dgom.siplad.security.web.JWTAuthenticationEntryPoint;
+import mb.dgom.siplad.security.web.JWTAuthenticationTokenFilter;
 
 /**
  * Classe responsavel por configurar a seguranca da aplicacao ( no nosso caso o servico )
@@ -54,9 +56,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 			exceptionHandling().authenticationEntryPoint(unauthorizedHandler).
 			and()
 				.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).
-			and().authorizeRequests()
-				.antMatchers("/api/v1/security/auth/login/**").permitAll()
-				.antMatchers("/actuator/**").permitAll().
+			and()
+			    .authorizeRequests().
 			anyRequest().authenticated();
 		httpSecurity.addFilterBefore(authenticationTokenFilterBean(), UsernamePasswordAuthenticationFilter.class);
 		httpSecurity.headers().cacheControl();

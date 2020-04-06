@@ -20,6 +20,9 @@ eureka:
     prefer-ip-address: true
   
 zuul:
+  sensitive-headers:
+  - Cookie
+  - Set-Cookie
   prefix: /api #prefixa a URI com /api
   ignored-services:
   - '*'
@@ -85,4 +88,4 @@ jwk:
 rsa:
   path:
     keys: C:\desenvolvimento\chaves\services\
-    #mobilepublickey: C:\desenvolvimento\chaves\mobile\
+    publickey: C:\desenvolvimento\chaves\mobile\
