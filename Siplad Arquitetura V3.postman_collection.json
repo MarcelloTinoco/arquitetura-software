@@ -1,29 +1,149 @@
 {
 	"info": {
-		"_postman_id": "6ce1d57d-56b1-4d55-8059-eaf55fa28309",
-		"name": "Loterias",
+		"_postman_id": "39f3d42a-f5a1-4b49-bf9f-f40aef65b977",
+		"name": "Siplad Arquitetura V3",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "Apostas Usuario",
+			"name": "Gateway - Obter Rotas Mapeadas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{host}}:8900/actuator/routes",
+					"host": [
+						"{{host}}"
+					],
+					"port": "8900",
+					"path": [
+						"actuator",
+						"routes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gateway - Atenticacao Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "60fb0d58-31c8-4338-b31c-fb5d977e0bc2",
+						"exec": [
+							"if(responseCode.code >=200 && responseCode.code <= 299){",
+							"    var jsonData = JSON.parse(responseBody);",
+							"    postman.setEnvironmentVariable('bearer_token', jsonData.data.token);",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"usuario\" : \"{{usuario}}\",\n\t\"senha\": \"{{senha}}\" ,\n\t\"selectedProfileId\" : 1\n} "
+				},
+				"url": {
+					"raw": "{{host}}:8900/api/v1/security/auth/login",
+					"host": [
+						"{{host}}"
+					],
+					"port": "8900",
+					"path": [
+						"api",
+						"v1",
+						"security",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gateway - Obter Usuario pelo UserName ( Nao precisa de Token )",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userName\" : \"admin\"\n}"
+				},
+				"url": {
+					"raw": "{{host}}:9300/v1/apoio/usuarios/getByUserName",
+					"host": [
+						"{{host}}"
+					],
+					"port": "9300",
+					"path": [
+						"v1",
+						"apoio",
+						"usuarios",
+						"getByUserName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gateway - Obter Acao Pelo ID",
 			"request": {
 				"method": "GET",
 				"header": [
 					{
 						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Encoding",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{bearer_token}}"
 					}
 				],
 				"url": {
-					"raw": "localhost:9091/apostasUsuarioConcurso/1",
+					"raw": "{{host}}:8900/api/v1/apoio/acoes/1",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
-					"port": "9091",
+					"port": "8900",
 					"path": [
-						"apostasUsuarioConcurso",
+						"api",
+						"v1",
+						"apoio",
+						"acoes",
 						"1"
 					]
 				}
@@ -31,218 +151,150 @@
 			"response": []
 		},
 		{
-			"name": "Aposta Usuario Concurso",
+			"name": "Autenticacao - Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cbc6f476-14c4-43df-8073-d93971be0b55",
+						"exec": [
+							"if(responseCode.code >=200 && responseCode.code <= 299){",
+							"    var jsonData = JSON.parse(responseBody);",
+							"    postman.setEnvironmentVariable('bearer_token', jsonData.data.token);",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"usuario\" : \"{{usuario}}\",\n\t\"senha\": \"{{senha}}\" ,\n\t\"selectedProfileId\" : 1\n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}:9100/v1/security/auth/login",
+					"host": [
+						"{{host}}"
+					],
+					"port": "9100",
+					"path": [
+						"v1",
+						"security",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Apoio - Obter Acao Pelo ID",
 			"request": {
 				"method": "GET",
 				"header": [
 					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "localhost:9091/apostasUsuarioConcurso/1/15628",
-					"host": [
-						"localhost"
-					],
-					"port": "9091",
-					"path": [
-						"apostasUsuarioConcurso",
-						"1",
-						"15628"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "localhost:9091/apostas/getRandomicamente",
-			"request": {
-				"method": "POST",
-				"header": [
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
 					{
 						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\"randomica\": true,\n\t\"quantidadeApostas\": 2,\n\t\"numeroDezenas\": 6\n}"
-				},
-				"url": {
-					"raw": "localhost:9091/aposta/getRandomicamente?",
-					"host": [
-						"localhost"
-					],
-					"port": "9091",
-					"path": [
-						"aposta",
-						"getRandomicamente"
-					],
-					"query": [
-						{
-							"key": "conten",
-							"value": "",
-							"disabled": true
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "localhost:9091/aposta/getBaseadoHistorico",
-			"request": {
-				"method": "POST",
-				"header": [
+						"type": "text",
+						"value": "application/json"
+					},
 					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer {{bearer_token}}"
 					}
 				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\n\t\"randomica\": false,\n\t\"quantidadeApostas\": 1,\n\t\"numeroDezenas\": 6,\n\t\"historicoSorteios\": 1\n}"
-				},
 				"url": {
-					"raw": "localhost:9091/aposta/getBaseadoHistorico",
+					"raw": "{{host}}:9300/v1/apoio/acoes/1",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
-					"port": "9091",
+					"port": "9300",
 					"path": [
-						"aposta",
-						"getBaseadoHistorico"
+						"v1",
+						"apoio",
+						"acoes",
+						"1"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Atualizar Concurso",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\"tipoLoteria\": 1,\n\t\"dataRealizacaoConcurso\" : \"2020-02-22\",\n\t\"resultado\" : [ 7, 20, 38, 43, 45, 53 ]\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:9091/concurso/atualizarConcurso",
-					"host": [
-						"localhost"
-					],
-					"port": "9091",
-					"path": [
-						"concurso",
-						"atualizarConcurso"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Atualizar Concurso Numero",
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\"tipoLoteria\": 1,\n\t\"dataRealizacaoConcurso\" : \"2020-02-22\",\n\t\"resultado\" : [ 7, 20, 38, 43, 45, 53 ]\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:9091/concurso/atualizarConcurso",
-					"host": [
-						"localhost"
-					],
-					"port": "9091",
-					"path": [
-						"concurso",
-						"atualizarConcurso"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Obter Concurso Vigente",
+			"name": "NGINX LoadBalancer - Nao Utilizado http://localhost/api/v1/fooservice/health",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:9091/concurso/obterConcursoVigente/1",
+					"raw": "{{host}}:/api/v1/fooservice/health",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
-					"port": "9091",
+					"port": "",
 					"path": [
-						"concurso",
-						"obterConcursoVigente",
-						"1"
+						"api",
+						"v1",
+						"fooservice",
+						"health"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Abrir Concurso",
+			"name": "{{host}}:8900/api/v1/testes/1",
 			"request": {
-				"method": "PUT",
+				"method": "GET",
 				"header": [
 					{
-						"key": "Content-Type",
-						"name": "Content-Type",
+						"key": "Accept",
 						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{bearer_token}}",
 						"type": "text"
 					}
 				],
-				"body": {
-					"mode": "raw",
-					"raw": "{}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
 				"url": {
-					"raw": "localhost:9091/concurso/abrirConcurso/1",
+					"raw": "{{host}}:8900/api/v1/testes/1",
 					"host": [
-						"localhost"
+						"{{host}}"
 					],
-					"port": "9091",
+					"port": "8900",
 					"path": [
-						"concurso",
-						"abrirConcurso",
+						"api",
+						"v1",
+						"testes",
 						"1"
 					]
 				}
