@@ -1,0 +1,76 @@
+    1  ping www.google.com
+    2  sudo apt udpate
+    3  sudo apt update
+    4  sudo apt install net-tools
+    5  ifconfig
+    6  sudo add-apt-repository ppa:git-core/ppa
+    7  sudo apt update
+    8  sudo apt install git
+    9  git --version
+   10  sudo apt-get update
+   11  sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+   12  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add –
+   13  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   14  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+   15  sudo apt-get update
+   16  sudo apt-get install docker-ce
+   17  systemctl status docker
+   18  sudo apt-get install openjdk-8-jdk
+   19  java -version
+   20  sudo apt install maven
+   21  mvn -version
+   22  ifconfig
+   23  exit
+   24  ifconfig
+   25  ping 192.168.15.13
+   26  ping 192.168.15.3
+   27  exit
+   28  ifconfig
+   29  exit
+   30  ifconfig
+   31  exit
+   32  docker conteiner ps -a
+   33  docker conteiner p
+   34  docker conteiner ps
+   35  docker conteiners ps
+   36  docker
+   37  docker container ps
+   38  docker container ps -a
+   39  docker images
+   40  docker rmi ad13c30ec346
+   41  docker volumes
+   42  docker volume
+   43  docker volume ls
+   44  docker network
+   45  docker network ls
+   46  exit
+   47  docker run
+   48  docker run --name prometheus --rm -d -p 9090:9090 prom/prometheus
+   49  docker container ls
+   50  docker stop prometheus
+   51  docker container ls
+   52  docker container ls  -a
+   53  shutdown -h now
+   54  docker run -d --name=grafana -p 3000:3000 grafana/grafana
+   55  docker container stop grafana
+   56  docker run -d -p 9411:9411 openzipkin/zipkin
+   57  docker container ls
+   58  ipconfig
+   59  ifconfig
+   60  docker run --name prometheus --rm -d -p 9090:9090 prom/prometheus
+   61  docker run -d --name grafana -p 3000:3000 grafana/grafana
+   62  docker container ls -a
+   63  docker container rm ebc51c561d51
+   64  docker run --name grafana --rm -d -p 3000:3000 grafana/grafana
+   65  ls
+   66  cd siplad_v3/
+   67  ls
+   68  docker container ls
+   69  docker container stop a7241f4b19f5 45cb843f8347 baddfd1f5337
+   70  exit
+   71  history
+   72  pwd
+   73  ls -la
+   74  cd siplad_v3/
+   75  ls -la
+   76  history > historico.txt

@@ -40,6 +40,11 @@ zuul:
       service-id: sipladserviceautenticacao # localizado pelo service discovery pelo service-id sipladserviceapoio
       strip-prefix: false  
       
+    sipladserviceteste: #sipladserviceteste
+      path: /v1/testes/** # mapeia para o /v1/apoio
+      service-id: sipladserviceteste # localizado pelo service discovery pelo service-id sipladserviceapoio
+      strip-prefix: false
+      
 management:
   endpoints:
     web:

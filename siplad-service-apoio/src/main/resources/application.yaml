@@ -34,3 +34,28 @@ management:
 # Configuracao do arquivo de log  - Sera utilizado quando utilizar o docker. Sera mapeado o volume do conteiner para o host para acessar os logs da aplicacao
 logging:
   file: ${spring.application.name}.log
+
+#O Ambiente em execucao
+siplad:
+  environment: localhost
+
+# Propriedades do Token JWT
+jwt:
+  secret: _sipladS3C4et_ # chave secreta de codificação / decodificação do token
+  expiration: 7200 # quanto tempo em segundos o token será valido 60 * 60 * 2 = 2 horas
+
+# Propriedade do JWK
+jwk:
+  kid: '_S3CRet@35677)_'
+  signing:
+    private: 'eGx1XYnqI14r3TrlP6w2-GUkmKuj7flwHVxbdChnaVjqu2PK7uzyrM6Itay6SjHpGbEM1wVWLV7lG3-HbxkyPqU38smWT-iTBfQG4B7qe8XxmaczV17pPGB2FhsEW1IXavzC4Pyflublk1O9ydYuFoRN4PW0kZhpvS7ubHDON2MwPd9S0Otac5ikFyJk5_5AqpWQ9QJewFJenH9orFdt7buslmF13oMC8Zu_D4SUmuUfO3SYL3UAaW9wOKcypfZ_zjCyCGrUQ4LChfZ9QpYIlk5izZfwZzuj_N1Ivf3GH8s1sQJDT2jTzxZiZdz0WMi40_WTQWMoeQrQl2_xWFjXHQ'
+    public: 'vw_riS1YV0M-iQTbCRN1OrwAQlbnr1ErTo5i5yDpiFQQNuzrfzccoxnPQHToy8y63U0YDYx_nGAs-97GWTxHa0G6ZvMvJ1Qf2JP6AHHmvkc3vnXSEVRrfCcPOxM-_-jppv4fD29URt19NZw9VxfduEKc9zQDPj9fGRw2-vTng9FPzUsbxFzpuYoNT10Ryh_1BBQVeq_6l6ODuO-sHWMijBgq-SIfg4y3HUTPIulkzq5NDQD-33x7Plwe40kq9zdS_qa_cRC9lvV9nGW5TLKOsKO2hdxRIr0f0FN9Lqa1Ssv9anNJWws0s0Jcmm8sB81AyEDMoOzWSJTYecFIF8RsiQ'
+  encryption:
+    private: 'YqGukM86JMYvw9_uux32ye2R9Hy7r50juAiGHbZyLh6y55wgyIleZRsfXldIhv0ss3m1zWBGFVnR5mmsADrIZUz4fs9s5lKZar6xtOUJrkFsTquLSFWiJauX1kA3GHbfd5hdHEu_E5KUkNYmn5avSPeX_hUITUGZTOnjGoZvfqK2z8fIVK17K8gYcejMUSGfX3eU31-mgDvMTg8r3o9r-D39Cz675xgFvxPKeY1f3W9mfPUXcFPf8VR6SszK28ItQlF612Hybju1xl9JG0zfM3WD3Lxb-HrfncUW9t5vukOXt9cQGWHrs9oGEGaGIQ5NNy9Z_InN9J0buzpaiSKQAQ'
+    public: 'pdiZV9dMAa8BU8FHN_3OPTDx7nD5JSekFHfKceUzhjTDFsxZxxuURbzFht_jMaPcKyEPLfbhPtfnM0FG5VoDktiuhvzsmJZ81HDX-_IeZIoNjqi8PgJhfjLY6yPRgIMZhuHet4u9XkbiYxDCI7aI00bWUQFNklnKSgEn9prCPX-qRr_aSJ1dvHjUKtEiVvkpM-NNJZ34UWaNSLEGXzmHA1ch0dsCXdQoHRzzY78uHyJ_PjMhe-UzvbO6azLC_T9S2uZvfcim3VOTk00LnY6k8sVm9FmYKEoTm6ORAi0kPX3aKDXkKiJeMrpr2So-RJO_Tqc3O1L3afZC85vCgDgEnQ'
+
+# RSA
+rsa:
+  path:
+    keys: C:\desenvolvimento\chaves\services\
+    publickey: C:\desenvolvimento\chaves\mobile\

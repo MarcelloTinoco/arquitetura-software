@@ -1,0 +1,32 @@
+1 - Executar o prometheus (--rm apaga o conteiner ao executar o comando stop)
+
+docker run 
+  --name prometheus 
+  --rm
+  -d
+  -p 9090:9090
+  prom/prometheus
+
+
+# docker run --name prometheus --rm -d -p 9090:9090 prom/prometheus
+# docker container ls
+
+docker run 
+  --name prometheus 
+  --rm
+  -d
+  -p 9090:9090
+  -v {caminho absoluto}\prometheus.yml:/etc/prometheus/prometheus.yml
+  prom/prometheus
+
+#docker container restart prometheus
+
+2 - Executar o Grafana
+
+docker run --name grafana --rm -d -p 3000:3000 grafana/grafana
+
+Senha inicial admin/admin
+
+admin/mjtinoco2019
+
+
