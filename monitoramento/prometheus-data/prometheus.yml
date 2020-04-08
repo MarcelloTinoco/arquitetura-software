@@ -39,7 +39,7 @@ scrape_configs:
   scheme: http
   static_configs:
   - targets:
-    - sipladnetwork:8900
+    - serivcegateway:8900
     
 - job_name: sipladserviceautenticacao
   scrape_interval: 15s
@@ -48,7 +48,7 @@ scrape_configs:
   scheme: http
   static_configs:
   - targets:
-    - sipladnetwork:9100
+    - serviceautenticacao:9100
  
  - job_name: sipladserviceapoio
   scrape_interval: 15s
@@ -57,4 +57,13 @@ scrape_configs:
   scheme: http
   static_configs:
   - targets:
-    - sipladnetwork:9300
+    - serviceapoio:9300
+ 
+- job_name: sipladserviceteste
+  scrape_interval: 15s
+  scrape_timeout: 10s
+  metrics_path: /actuator/prometheus
+  scheme: http
+  static_configs:
+  - targets:
+    - serviceteste:9300

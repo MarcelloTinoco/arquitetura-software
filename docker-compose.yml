@@ -12,6 +12,8 @@ services:
         reservations:
           memory: 256M  
     restart: always
+    environment:
+    - SPRING_ZIPKIN_BASE-URL=http://zipkin:9411
     ports:
        - "8800:8800"
     networks: 
@@ -22,6 +24,7 @@ services:
     restart: always
     environment:
     - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://servicediscovery:8800/eureka/
+    - SPRING_ZIPKIN_BASE-URL=http://zipkin:9411
     ports:
     - "8900:8900"
     networks: 
@@ -34,6 +37,7 @@ services:
     restart: always
     environment:
     - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://servicediscovery:8800/eureka/
+    - SPRING_ZIPKIN_BASE-URL=http://zipkin:9411
     ports:
     - "9300:9300"
     networks: 
@@ -47,15 +51,27 @@ services:
     restart: always
     environment:
     - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://servicediscovery:8800/eureka/
+    - SPRING_ZIPKIN_BASE-URL=http://zipkin:9411
     ports:
     - "9100:9100"
     networks: 
       - sipladnetwork
     depends_on:
       - servicediscovery
+  
+  servicesipladteste:
+    image: siplad/service-teste:1.0
+    restart: always
+    environment:
+    - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://servicediscovery:8800/eureka/
+    - SPRING_ZIPKIN_BASE-URL=http://zipkin:9411
+    ports:
+    - "9600:9600"
+    networks: 
+      - sipladnetwork
+    depends_on:
+      - servicediscovery
       - servicegateway
-      - serviceapoio
-
 networks: 
   sipladnetwork:   
   
