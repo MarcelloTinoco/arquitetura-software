@@ -1,4 +1,4 @@
-version: '3'
+version: '3.7'
 volumes:
   grafana-storage:
   prometheus:
@@ -30,4 +30,11 @@ services:
     ports:
       - 9411:9411
     networks:
-      - sipladnetwork    
+      - sipladnetwork
+
+networks:
+  sipladnetwork:
+    external: true
+    name: sipladnetwork
+
+
