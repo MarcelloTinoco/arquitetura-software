@@ -4,13 +4,6 @@ services:
 
   servicediscovery:
     image: siplad/service-discovery:1.0
-    deploy:
-      resources:
-        limits:
-          cpus: "0.2"
-          memory: 512M
-        reservations:
-          memory: 256M  
     restart: always
     environment:
     - SPRING_ZIPKIN_BASE-URL=http://monitoramento_zipkin:9411

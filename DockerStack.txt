@@ -1,0 +1,7 @@
+cd siplad-service-discovery
+docker stack deploy -c servicediscovery.yml servicediscovery
+docker stack rm servicediscovery
+
+cd siplad-gateway
+docker stack deploy -c sipladgateway.yml sipladgateway
+docker stack rm sipladgateway

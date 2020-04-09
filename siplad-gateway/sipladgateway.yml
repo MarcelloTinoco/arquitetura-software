@@ -8,10 +8,9 @@ services:
       - sipladnetwork-overlay
     environment:
     - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://servicediscovery:8800/eureka/
+    - SPRING_ZIPKIN_BASE-URL=http://zipkin:9411
     ports:
     - "8900:8900"
-    depends_on:
-      - servicediscovery    
     
 networks:
   sipladnetwork-overlay:

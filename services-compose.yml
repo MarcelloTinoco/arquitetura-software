@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+
+  serviceapoio:
+    image: siplad/service-apoio:1.0
+    networks:
+      - sipladnetwork-overlay
+    environment:
+    - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://servicediscovery:8800/eureka/
+    - SPRING_ZIPKIN_BASE-URL=http://zipkin:9411
+    ports:
+    - "9300:9300"
+      
+  serviceautenticacao:
+    image: siplad/service-autenticacao:1.0
+    networks:
+      - sipladnetwork-overlay
+    environment:
+    - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://servicediscovery:8800/eureka/
+    - SPRING_ZIPKIN_BASE-URL=http://zipkin:9411
+    ports:
+    - "9100:9100"
+      
+  servicesipladteste:
+    image: siplad/service-teste:1.0
+    networks:
+      - sipladnetwork-overlay
+    environment:
+    - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://servicediscovery:8800/eureka/
+    - SPRING_ZIPKIN_BASE-URL=http://zipkin:9411
+    ports:
+    - "9600:9600"
+    
+networks:
+  sipladnetwork-overlay:
+    external:
+      name: sipladnetwork-overlay

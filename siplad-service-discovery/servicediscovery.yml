@@ -8,7 +8,8 @@ services:
       sipladnetwork-overlay:
         aliases:
         - eureka
-    restart: always
+    environment:
+    - SPRING_ZIPKIN_BASE-URL=http://zipkin:9411
     ports:
        - "8800:8800"
 

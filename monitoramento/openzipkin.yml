@@ -1,0 +1,19 @@
+version: '3'
+volumes:
+  grafana-storage:
+  prometheus:
+services:
+
+  zipkin:
+    image: openzipkin/zipkin
+    networks:
+      - sipladnetwork-overlay
+    ports:
+      - 9411:9411
+
+networks:
+  sipladnetwork-overlay:
+    external:
+      name: sipladnetwork-overlay
+
+
