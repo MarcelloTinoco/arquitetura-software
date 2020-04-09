@@ -265,24 +265,24 @@
 			"response": []
 		},
 		{
-			"name": "{{host}}:8900/api/v1/testes/1",
+			"name": "Gateway - Obter Acao pelo servico de Teste",
 			"request": {
 				"method": "GET",
 				"header": [
 					{
 						"key": "Accept",
-						"value": "application/json",
-						"type": "text"
+						"type": "text",
+						"value": "application/json"
 					},
 					{
 						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"type": "text",
+						"value": "application/json"
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer {{bearer_token}}",
-						"type": "text"
+						"type": "text",
+						"value": "Bearer {{bearer_token}}"
 					}
 				],
 				"url": {

@@ -20,3 +20,25 @@ The following guides illustrate how to use some features concretely:
 # Criar a imagem
 
 - docker build -t siplad/service-discovery:1.0 .
+
+# Implantando com Docker Stack
+
+- `docker stack deploy -c servicediscovery.yml servicediscovery`
+
+## Removendo a stack
+
+- `docker stack rm servicediscovery`
+
+
+### Links 
+
+https://stackoverflow.com/questions/56560452/netflix-eureka-server-and-client-instance-registration-issue-with-docker-swarm
+
+
+https://github.com/spring-cloud/spring-cloud-netflix/issues/2384
+
+https://github.com/Netflix/eureka/issues/1083
+
+https://github.com/spring-cloud/spring-cloud-netflix/issues/3069
+
+https://github.com/spring-cloud/spring-cloud-netflix/issues/432
