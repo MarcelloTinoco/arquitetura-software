@@ -3,51 +3,40 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-    <groupId>mb.dgom.siplad</groupId>
+	<groupId>mb.dgom.siplad</groupId>
 	<artifactId>siplad-parent-pom</artifactId>
 	<version>1.0</version>
 	<packaging>pom</packaging>
 	
 	<name>siplad-parent-pom</name>
-    <description>Parent Pom for the siplad v3 architecture project</description>
+        <description>Parent Pom for the siplad v3 architecture project</description>
 
 	<parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.3.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-parent</artifactId>
+          <version>2.2.3.RELEASE</version>
+          <relativePath/> <!-- lookup parent from repository -->
+        </parent>
 
-    <properties>
-	 <docker.image.prefix>siplad</docker.image.prefix>
-	</properties>
-	
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
-		<spring-cloud.version>Hoxton.SR3</spring-cloud.version>
-	</properties>
-
-	<modules>
-		<module>siplad-service-discovery</module>
-		<module>siplad-gateway</module>
-		<module>siplad-service-apoio</module>
-		<module>siplad-service-autenticacao</module>
-		<module>siplad-service-teste</module>
+        <modules>
+	  <module>siplad-service-discovery</module>
+	  <module>siplad-gateway</module>
+	  <module>siplad-service-apoio</module>
+	  <module>siplad-service-autenticacao</module>
+	  <module>siplad-service-teste</module>
 	</modules>
 	
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>com.spotify</groupId>
-				<artifactId>dockerfile-maven-plugin</artifactId>
-				<version>1.4.13</version>
-				<configuration>
-					<skip>true</skip>
-				</configuration>
-			</plugin>
-		</plugins>
-  </build>
+	  <plugins>
+	    <plugin>
+	      <groupId>com.spotify</groupId>
+	      <artifactId>dockerfile-maven-plugin</artifactId>
+	      <version>1.4.13</version>
+	      <configuration>
+	        <skip>true</skip>
+	      </configuration>
+	    </plugin>
+	  </plugins>
+  	</build>
 
 </project>

@@ -5,7 +5,9 @@ services:
   zipkin:
     image: openzipkin/zipkin
     networks:
-      - siplad_backend
+      siplad_backend:
+        aliases:
+          - "zipkin"
     ports:
       - 9411:9411
 

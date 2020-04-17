@@ -1,4 +1,4 @@
-version: '2.1'
+version: '3.7'
 services:
 
   servicediscovery:
@@ -8,10 +8,8 @@ services:
     ports:
       - "8800:8800"
     networks:
-      siplad_backend:
-        aliases:
-          - "servicediscovery"
-
+      - sipladnetwork-overlay
+  
   servicegateway:
     image: siplad/siplad-gateway:1.0
     environment:
@@ -20,7 +18,7 @@ services:
     ports:
       - "8900:8900"
     networks:
-      - siplad_backend
+      - sipladnetwork-overlay
 
   serviceapoio:
     image: siplad/siplad-service-apoio:1.0
@@ -30,7 +28,7 @@ services:
     ports:
     - "9300:9300"
     networks:
-      - siplad_backend
+      - sipladnetwork-overlay
 
   serviceautenticacao:
     image: siplad/siplad-service-autenticacao:1.0
@@ -40,7 +38,7 @@ services:
     ports:
     - "9100:9100"
     networks:
-      - siplad_backend
+      - sipladnetwork-overlay
       
   servicesipladteste:
     image: siplad/siplad-service-teste:1.0
@@ -50,8 +48,9 @@ services:
     ports:
     - "9600:9600"
     networks:
-      - siplad_backend
+      - sipladnetwork-overlay
 
 networks:
-  siplad_backend:
-    driver: bridge
+  sipladnetwork-overlay:
+    external:
+      name: sipladnetwork-overlay
