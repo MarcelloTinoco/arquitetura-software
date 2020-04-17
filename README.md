@@ -71,8 +71,24 @@ https://vsupalov.com/docker-arg-env-variable-guide/
 
 - `2 - Depois executar o docker build, de cada artefato para criar as imagens`
 
-- `3 - Ao final, depois que todas as imagens foram geradas, rodar o docker-compose que se encontra na raiz`
+- `3 - Criar a rede no docker. `
+- `docker network create -d overlay sipladnetwork-overlay`
+Para listar as redes 
 
-## Docker stack
+- `docker network ls `
 
-`docker stack deploy -c docker-compose.yml siplad_v3`
+Para remover uma rede
+
+- `docker network rm {nome da reder} 
+
+- `3 - Os Artefatos Service Discovery e Gateway estão separados. Então para implantar cada um no docker, leia o respectivo README.md de cada artefato`
+
+## Docker stack service
+
+- `1 - Já estar com o service discovery em execução`
+- `2 - docker stack deploy -c services-compose.yml siplad_v3`
+- `O passo 2 implanta os serviços`
+
+## Implantando o Gateway
+
+- `1 - Seguir o README.md do artefato`
