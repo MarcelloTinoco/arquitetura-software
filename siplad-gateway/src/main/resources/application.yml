@@ -4,21 +4,36 @@ spring:
     - default
   zipkin:
     base-url: http://192.168.126.5:9411
+     
 server:
   port: ${PORT:8900}
   compression:
     enabled: true
 
+ribbon:
+  eureka:
+    enabled: true
+
+
+feign:
+  client:
+    config:
+      default:
+        connect-timeout: 160000
+        read-timeout: 160000
+             
 eureka:
   client:
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://localhost:8800/eureka/
+      defaultZone: http://192.168.126.5:8800/eureka/
   instance:
     leaseRenewalIntervalInSeconds: 3
     leaseExpirationDurationInSeconds: 30
     prefer-ip-address: true
-  
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    hostname: ${spring.cloud.client.ip-address}
+
 zuul:
   sensitive-headers:
   - Cookie
@@ -26,6 +41,8 @@ zuul:
   prefix: /api #prefixa a URI com /api
   ignored-services:
   - '*'
+  ribbon-isolation-strategy: thread 
+  
   routes:
 
 ##    fooservice: #fooservice
@@ -47,7 +64,7 @@ zuul:
       path: /v1/testes/** # mapeia para o /v1/apoio
       service-id: sipladserviceteste # localizado pelo service discovery pelo service-id sipladserviceapoio
       strip-prefix: false
-      
+        
 management:
   endpoints:
     web:

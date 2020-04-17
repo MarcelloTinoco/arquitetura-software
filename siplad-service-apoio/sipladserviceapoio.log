@@ -1,239 +1,87 @@
-2020-04-09 08:50:43.273  INFO [sipladserviceapoio,,,] 4621 --- [main] m.d.s.SipladServiceApoioApplication      : The following profiles are active: default
-2020-04-09 08:50:45.568  WARN [sipladserviceapoio,,,] 4621 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-04-09 08:50:46.216  INFO [sipladserviceapoio,,,] 4621 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a178943d-9216-350d-a0d0-e1641fc79d18
-2020-04-09 08:50:46.975  INFO [sipladserviceapoio,,,] 4621 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-09 08:50:46.983  INFO [sipladserviceapoio,,,] 4621 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-09 08:50:47.009  INFO [sipladserviceapoio,,,] 4621 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@8519cb4' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-09 08:50:47.031  INFO [sipladserviceapoio,,,] 4621 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-09 08:50:47.054  INFO [sipladserviceapoio,,,] 4621 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-04-09 08:50:47.533  INFO [sipladserviceapoio,,,] 4621 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9300 (http)
-2020-04-09 08:50:47.543  INFO [sipladserviceapoio,,,] 4621 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-04-09 08:50:47.545  INFO [sipladserviceapoio,,,] 4621 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
-2020-04-09 08:50:47.648  INFO [sipladserviceapoio,,,] 4621 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-04-09 08:50:47.649  INFO [sipladserviceapoio,,,] 4621 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4276 ms
-2020-04-09 08:50:47.992  WARN [sipladserviceapoio,,,] 4621 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-04-09 08:50:47.992  INFO [sipladserviceapoio,,,] 4621 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-04-09 08:50:48.035  INFO [sipladserviceapoio,,,] 4621 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@72ade7e3
-2020-04-09 08:50:49.812  WARN [sipladserviceapoio,,,] 4621 --- [main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@29a0cdb}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)}]
-2020-04-09 08:50:50.293  INFO [sipladserviceapoio,,,] 4621 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@93cf163, org.springframework.security.web.context.SecurityContextPersistenceFilter@28ec166e, org.springframework.security.web.header.HeaderWriterFilter@b1712f3, org.springframework.security.web.authentication.logout.LogoutFilter@2654635, mb.dgom.siplad.security.web.JWTAuthenticationTokenFilter@66c92293, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2da59753, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12c7a01b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1852a3ff, org.springframework.security.web.session.SessionManagementFilter@4879dfad, org.springframework.security.web.access.ExceptionTranslationFilter@2a898881, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@495b0487]
-2020-04-09 08:50:50.335  WARN [sipladserviceapoio,,,] 4621 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-04-09 08:50:50.335  INFO [sipladserviceapoio,,,] 4621 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-04-09 08:50:50.670  INFO [sipladserviceapoio,,,] 4621 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-04-09 08:50:51.839  WARN [sipladserviceapoio,,,] 4621 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2020-04-09 08:50:52.271  INFO [sipladserviceapoio,,,] 4621 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
-2020-04-09 08:50:52.377  INFO [sipladserviceapoio,,,] 4621 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2020-04-09 08:50:52.515  INFO [sipladserviceapoio,,,] 4621 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2020-04-09 08:50:52.826  INFO [sipladserviceapoio,,,] 4621 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2020-04-09 08:50:52.826  INFO [sipladserviceapoio,,,] 4621 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2020-04-09 08:50:53.050  INFO [sipladserviceapoio,,,] 4621 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2020-04-09 08:50:53.050  INFO [sipladserviceapoio,,,] 4621 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2020-04-09 08:50:53.306  INFO [sipladserviceapoio,,,] 4621 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-09 08:50:53.376  INFO [sipladserviceapoio,,,] 4621 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2020-04-09 08:50:53.376  INFO [sipladserviceapoio,,,] 4621 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2020-04-09 08:50:53.376  INFO [sipladserviceapoio,,,] 4621 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2020-04-09 08:50:53.376  INFO [sipladserviceapoio,,,] 4621 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2020-04-09 08:50:53.376  INFO [sipladserviceapoio,,,] 4621 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2020-04-09 08:50:53.377  INFO [sipladserviceapoio,,,] 4621 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2020-04-09 08:50:53.377  INFO [sipladserviceapoio,,,] 4621 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2020-04-09 08:50:53.606  INFO [sipladserviceapoio,,,] 4621 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2020-04-09 08:50:53.608  INFO [sipladserviceapoio,,,] 4621 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 3
-2020-04-09 08:50:53.610  INFO [sipladserviceapoio,,,] 4621 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2020-04-09 08:50:53.614  INFO [sipladserviceapoio,,,] 4621 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1586433053613 with initial instances count: 0
-2020-04-09 08:50:53.635  INFO [sipladserviceapoio,,,] 4621 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SIPLADSERVICEAPOIO with eureka with status UP
-2020-04-09 08:50:53.636  INFO [sipladserviceapoio,,,] 4621 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1586433053636, current=UP, previous=STARTING]
-2020-04-09 08:50:53.646  INFO [sipladserviceapoio,,,] 4621 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/10.0.2.15:sipladserviceapoio:9300: registering service...
-2020-04-09 08:50:54.080  INFO [sipladserviceapoio,,,] 4621 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9300 (http) with context path ''
-2020-04-09 08:50:54.097  INFO [sipladserviceapoio,,,] 4621 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9300
-2020-04-09 08:50:54.101  INFO [sipladserviceapoio,,,] 4621 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/10.0.2.15:sipladserviceapoio:9300 - registration status: 204
-2020-04-09 08:50:54.131  INFO [sipladserviceapoio,,,] 4621 --- [main] m.d.s.SipladServiceApoioApplication      : Started SipladServiceApoioApplication in 12.821 seconds (JVM running for 13.607)
-2020-04-09 08:51:23.608  INFO [sipladserviceapoio,,,] 4621 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2020-04-09 08:51:23.609  INFO [sipladserviceapoio,,,] 4621 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2020-04-09 08:51:23.609  INFO [sipladserviceapoio,,,] 4621 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2020-04-09 08:51:23.609  INFO [sipladserviceapoio,,,] 4621 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2020-04-09 08:51:23.609  INFO [sipladserviceapoio,,,] 4621 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2020-04-09 08:51:23.609  INFO [sipladserviceapoio,,,] 4621 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2020-04-09 08:51:23.609  INFO [sipladserviceapoio,,,] 4621 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2020-04-09 08:51:23.655  INFO [sipladserviceapoio,,,] 4621 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2020-04-09 08:55:53.466  INFO [sipladserviceapoio,,,] 4621 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-09 08:56:34.499  INFO [sipladserviceapoio,,,] 4621 --- [http-nio-9300-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-04-09 08:56:34.499  INFO [sipladserviceapoio,,,] 4621 --- [http-nio-9300-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-04-09 08:56:34.589  INFO [sipladserviceapoio,,,] 4621 --- [http-nio-9300-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 90 ms
-2020-04-09 08:56:34.862  INFO [sipladserviceapoio,457638a75f0da3c6,bef110a22599f6bf,true] 4621 --- [http-nio-9300-exec-2] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:56:34.882  INFO [sipladserviceapoio,457638a75f0da3c6,392cc97a063be0b5,true] 4621 --- [http-nio-9300-exec-3] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:56:35.478  WARN [sipladserviceapoio,,,] 4621 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@29a0cdb}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
-2020-04-09 08:56:35.485  WARN [sipladserviceapoio,,,] 4621 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@29a0cdb}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 3 spans due to ResourceAccessException(I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused))
-
-org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748) ~[siplad-service-core-1.0.jar!/:1.0]
-	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar!/:2.2.2.RELEASE]
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:641) ~[siplad-service-core-1.0.jar!/:1.0]
-	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar!/:2.2.2.RELEASE]
-	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:142) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar!/:2.2.2.RELEASE]
-	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:132) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar!/:2.2.2.RELEASE]
-	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.19.3.jar!/:na]
-	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:284) ~[zipkin-reporter-2.12.1.jar!/:na]
-	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:358) [zipkin-reporter-2.12.1.jar!/:na]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_242]
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_242]
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_242]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_242]
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_242]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_242]
-	at java.net.Socket.connect(Socket.java:607) ~[na:1.8.0_242]
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[na:1.8.0_242]
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_242]
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_242]
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_242]
-	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_242]
-	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_242]
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1226) ~[na:1.8.0_242]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162) ~[na:1.8.0_242]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056) ~[na:1.8.0_242]
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990) ~[na:1.8.0_242]
-	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[siplad-service-core-1.0.jar!/:1.0]
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[siplad-service-core-1.0.jar!/:1.0]
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[siplad-service-core-1.0.jar!/:1.0]
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:739) ~[siplad-service-core-1.0.jar!/:1.0]
-	... 9 common frames omitted
-
-2020-04-09 08:57:29.590  INFO [sipladserviceapoio,612fc45228838a51,bff01d0dc707ad1e,true] 4621 --- [http-nio-9300-exec-5] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:29.601  INFO [sipladserviceapoio,612fc45228838a51,10981094c3e4ba22,true] 4621 --- [http-nio-9300-exec-7] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:30.508  INFO [sipladserviceapoio,6c1cf02fa1a035fa,8b27c2cfb1593f1e,true] 4621 --- [http-nio-9300-exec-8] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:30.523  INFO [sipladserviceapoio,6c1cf02fa1a035fa,be281a5bd16ed953,true] 4621 --- [http-nio-9300-exec-9] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:31.226  INFO [sipladserviceapoio,007aec6543c54503,59363d1e7be8ca63,true] 4621 --- [http-nio-9300-exec-1] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:31.240  INFO [sipladserviceapoio,007aec6543c54503,21b3ab3797b2150b,true] 4621 --- [http-nio-9300-exec-2] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:31.889  INFO [sipladserviceapoio,44bb7fcafe35085d,4daa4a1cc3d4a6a4,true] 4621 --- [http-nio-9300-exec-4] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:31.913  INFO [sipladserviceapoio,44bb7fcafe35085d,7885057b28db9033,true] 4621 --- [http-nio-9300-exec-5] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:32.485  INFO [sipladserviceapoio,478290794e1742e5,12090f82c3ac392a,true] 4621 --- [http-nio-9300-exec-6] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:32.501  INFO [sipladserviceapoio,478290794e1742e5,93bb66e4787516a7,true] 4621 --- [http-nio-9300-exec-8] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:33.133  INFO [sipladserviceapoio,a9e266c424dc69f7,8dabb88a304a2191,true] 4621 --- [http-nio-9300-exec-10] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:33.142  INFO [sipladserviceapoio,a9e266c424dc69f7,e2aec74275def6c5,true] 4621 --- [http-nio-9300-exec-1] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:33.766  INFO [sipladserviceapoio,3e53a0bf0b565fad,6f0eade0c8109582,true] 4621 --- [http-nio-9300-exec-3] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:33.784  INFO [sipladserviceapoio,3e53a0bf0b565fad,fa4b7cac29f5fd8c,true] 4621 --- [http-nio-9300-exec-4] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:34.841  INFO [sipladserviceapoio,7a6869ccfa5b8885,25ffc69e8818eb32,true] 4621 --- [http-nio-9300-exec-7] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:34.848  INFO [sipladserviceapoio,7a6869ccfa5b8885,616d8c4eb6f61d43,true] 4621 --- [http-nio-9300-exec-6] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:35.460  INFO [sipladserviceapoio,352d56c2e2bfda46,52110c58f38dc458,true] 4621 --- [http-nio-9300-exec-9] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:35.467  INFO [sipladserviceapoio,352d56c2e2bfda46,f0adb6b22ee2e4f4,true] 4621 --- [http-nio-9300-exec-10] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:44.770  INFO [sipladserviceapoio,b1a61ad684b7b400,5d39e9a4bcb9e30e,true] 4621 --- [http-nio-9300-exec-2] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:44.783  INFO [sipladserviceapoio,b1a61ad684b7b400,180b6859a155da75,true] 4621 --- [http-nio-9300-exec-3] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:46.806  INFO [sipladserviceapoio,6511c941fc5e7bb1,1794b690fa0e6e8a,true] 4621 --- [http-nio-9300-exec-5] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:46.816  INFO [sipladserviceapoio,6511c941fc5e7bb1,b422bf1707fe0fbc,true] 4621 --- [http-nio-9300-exec-7] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:47.683  INFO [sipladserviceapoio,0c7ef1d2fdad4a8e,17a24ffa6ff58124,true] 4621 --- [http-nio-9300-exec-8] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:47.694  INFO [sipladserviceapoio,0c7ef1d2fdad4a8e,d57331dc23459af1,true] 4621 --- [http-nio-9300-exec-9] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:52.690  INFO [sipladserviceapoio,1f69f5473ba1e672,a49d7a7c5cdf4ade,true] 4621 --- [http-nio-9300-exec-10] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:55.291  INFO [sipladserviceapoio,1f69f5473ba1e672,161918a61ffa2bd6,true] 4621 --- [http-nio-9300-exec-1] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:56.340  INFO [sipladserviceapoio,1f69f5473ba1e672,dd13a421c710cd30,true] 4621 --- [http-nio-9300-exec-2] c.netflix.config.ChainedDynamicProperty  : Flipping property: sipladserviceapoio.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2020-04-09 08:57:56.500  INFO [sipladserviceapoio,1f69f5473ba1e672,dd13a421c710cd30,true] 4621 --- [http-nio-9300-exec-2] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-sipladserviceapoio
-2020-04-09 08:57:56.501  INFO [sipladserviceapoio,1f69f5473ba1e672,dd13a421c710cd30,true] 4621 --- [http-nio-9300-exec-2] c.netflix.loadbalancer.BaseLoadBalancer  : Client: sipladserviceapoio instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=sipladserviceapoio,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
-2020-04-09 08:57:56.533  INFO [sipladserviceapoio,1f69f5473ba1e672,dd13a421c710cd30,true] 4621 --- [http-nio-9300-exec-2] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
-2020-04-09 08:57:56.653  INFO [sipladserviceapoio,1f69f5473ba1e672,dd13a421c710cd30,true] 4621 --- [http-nio-9300-exec-2] c.netflix.config.ChainedDynamicProperty  : Flipping property: sipladserviceapoio.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2020-04-09 08:57:56.658  INFO [sipladserviceapoio,1f69f5473ba1e672,dd13a421c710cd30,true] 4621 --- [http-nio-9300-exec-2] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client sipladserviceapoio initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=sipladserviceapoio,current list of Servers=[10.0.2.15:9300],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
-},Server stats: [[Server:10.0.2.15:9300;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Wed Dec 31 21:00:00 BRT 1969;	First connection made: Wed Dec 31 21:00:00 BRT 1969;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
-]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@2515ddd1
-2020-04-09 08:57:56.839  INFO [sipladserviceapoio,878a9295114e5ab0,5616afba0432f928,true] 4621 --- [http-nio-9300-exec-4] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:56.876  INFO [sipladserviceapoio,878a9295114e5ab0,16146817b76c0bdc,true] 4621 --- [http-nio-9300-exec-5] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:56.892  INFO [sipladserviceapoio,1f69f5473ba1e672,56ead3dce762a61a,true] 4621 --- [http-nio-9300-exec-7] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:56.911  INFO [sipladserviceapoio,1f69f5473ba1e672,bf2fda45049f47eb,true] 4621 --- [http-nio-9300-exec-6] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:56.936  INFO [sipladserviceapoio,878a9295114e5ab0,28d4c32904b552e2,true] 4621 --- [http-nio-9300-exec-9] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:56.975  INFO [sipladserviceapoio,1f69f5473ba1e672,dd13a421c710cd30,true] 4621 --- [http-nio-9300-exec-2] m.d.siplad.controllers.AcaoController    : getById
-2020-04-09 08:57:56.976  INFO [sipladserviceapoio,1f69f5473ba1e672,50c36f13372b0b94,true] 4621 --- [http-nio-9300-exec-3] m.d.siplad.controllers.AcaoController    : getById
-2020-04-09 08:57:56.980  INFO [sipladserviceapoio,878a9295114e5ab0,6b84c93a7c042b98,true] 4621 --- [http-nio-9300-exec-8] m.d.siplad.controllers.AcaoController    : getById
-2020-04-09 08:57:57.537  INFO [sipladserviceapoio,,,] 4621 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: sipladserviceapoio.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-2020-04-09 08:57:58.760  INFO [sipladserviceapoio,08208dd3d95b276a,631f8c558dba0017,true] 4621 --- [http-nio-9300-exec-10] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:58.791  INFO [sipladserviceapoio,08208dd3d95b276a,fdbfe6c393909e98,true] 4621 --- [http-nio-9300-exec-1] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:58.813  INFO [sipladserviceapoio,08208dd3d95b276a,305120813b06f03e,true] 4621 --- [http-nio-9300-exec-7] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:58.817  INFO [sipladserviceapoio,08208dd3d95b276a,e42d9e788ca07371,true] 4621 --- [http-nio-9300-exec-4] m.d.siplad.controllers.AcaoController    : getById
-2020-04-09 08:57:59.732  INFO [sipladserviceapoio,8bdbb0688c6e4ee7,9977c17af73bc955,true] 4621 --- [http-nio-9300-exec-5] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:59.744  INFO [sipladserviceapoio,8bdbb0688c6e4ee7,5ec00f079858001c,true] 4621 --- [http-nio-9300-exec-6] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:59.771  INFO [sipladserviceapoio,8bdbb0688c6e4ee7,978bd392c1fdc64f,true] 4621 --- [http-nio-9300-exec-2] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:57:59.775  INFO [sipladserviceapoio,8bdbb0688c6e4ee7,feba7d3575b4aa31,true] 4621 --- [http-nio-9300-exec-9] m.d.siplad.controllers.AcaoController    : getById
-2020-04-09 08:58:09.618  INFO [sipladserviceapoio,662e1ab62b9f4f68,d38de35d37958847,true] 4621 --- [http-nio-9300-exec-3] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:58:09.632  INFO [sipladserviceapoio,662e1ab62b9f4f68,21ceb5f7451be97f,true] 4621 --- [http-nio-9300-exec-8] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:58:09.646  INFO [sipladserviceapoio,662e1ab62b9f4f68,e61356ddde6ae56c,true] 4621 --- [http-nio-9300-exec-1] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:58:09.655  INFO [sipladserviceapoio,662e1ab62b9f4f68,5a653fb1e145aa26,true] 4621 --- [http-nio-9300-exec-10] m.d.siplad.controllers.AcaoController    : getById
-2020-04-09 08:58:10.978  INFO [sipladserviceapoio,882dc3d5f6b6f1f1,d4f63e3c37aed31a,true] 4621 --- [http-nio-9300-exec-7] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:58:10.993  INFO [sipladserviceapoio,882dc3d5f6b6f1f1,a674327847b55978,true] 4621 --- [http-nio-9300-exec-4] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:58:11.015  INFO [sipladserviceapoio,882dc3d5f6b6f1f1,6e4859669b5a33af,true] 4621 --- [http-nio-9300-exec-6] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:58:11.018  INFO [sipladserviceapoio,882dc3d5f6b6f1f1,e684a22be5a6c54f,true] 4621 --- [http-nio-9300-exec-5] m.d.siplad.controllers.AcaoController    : getById
-2020-04-09 08:58:11.595  INFO [sipladserviceapoio,773ec4ec20b7225f,b710238e9c126ca4,true] 4621 --- [http-nio-9300-exec-2] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:58:11.609  INFO [sipladserviceapoio,773ec4ec20b7225f,6290d4719b678d88,true] 4621 --- [http-nio-9300-exec-9] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:58:11.639  INFO [sipladserviceapoio,773ec4ec20b7225f,6da9f5275cdbbfc4,true] 4621 --- [http-nio-9300-exec-8] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:58:11.646  INFO [sipladserviceapoio,773ec4ec20b7225f,e539cc7273985e82,true] 4621 --- [http-nio-9300-exec-3] m.d.siplad.controllers.AcaoController    : getById
-2020-04-09 08:58:12.230  INFO [sipladserviceapoio,80da5c63207be7ba,f704a78c1e75b934,true] 4621 --- [http-nio-9300-exec-1] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:58:12.246  INFO [sipladserviceapoio,80da5c63207be7ba,37c0fb86471f780e,true] 4621 --- [http-nio-9300-exec-10] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:58:12.294  INFO [sipladserviceapoio,80da5c63207be7ba,66396082eccc5777,true] 4621 --- [http-nio-9300-exec-4] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 08:58:12.300  INFO [sipladserviceapoio,80da5c63207be7ba,155bdbc0ce00cdf8,true] 4621 --- [http-nio-9300-exec-7] m.d.siplad.controllers.AcaoController    : getById
-2020-04-09 09:00:34.997  INFO [sipladserviceapoio,df32355bff1f99be,895177dd43163976,true] 4621 --- [http-nio-9300-exec-9] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 09:00:35.030  INFO [sipladserviceapoio,df32355bff1f99be,8009bd67acfd16be,true] 4621 --- [http-nio-9300-exec-8] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 09:00:35.046  INFO [sipladserviceapoio,df32355bff1f99be,ae3b10308bf3e02c,true] 4621 --- [http-nio-9300-exec-1] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 09:00:35.053  INFO [sipladserviceapoio,df32355bff1f99be,4f3fd3a42b489e5d,true] 4621 --- [http-nio-9300-exec-3] m.d.siplad.controllers.AcaoController    : getById
-2020-04-09 09:00:35.728  INFO [sipladserviceapoio,432c9f3f33fa6762,574f3fac3b01ff87,true] 4621 --- [http-nio-9300-exec-10] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 09:00:35.743  INFO [sipladserviceapoio,432c9f3f33fa6762,fc3a7c242df729ca,true] 4621 --- [http-nio-9300-exec-4] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 09:00:35.758  INFO [sipladserviceapoio,432c9f3f33fa6762,3ca24cd01610dcac,true] 4621 --- [http-nio-9300-exec-6] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 09:00:35.762  INFO [sipladserviceapoio,432c9f3f33fa6762,d0df7d123a1e2ced,true] 4621 --- [http-nio-9300-exec-7] m.d.siplad.controllers.AcaoController    : getById
-2020-04-09 09:00:38.432  INFO [sipladserviceapoio,d050c39b29090aa5,2dfc2aea8faa6fa6,true] 4621 --- [http-nio-9300-exec-2] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 09:00:38.440  INFO [sipladserviceapoio,d050c39b29090aa5,d70be96acf7809e2,true] 4621 --- [http-nio-9300-exec-9] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 09:00:40.833  INFO [sipladserviceapoio,eaa4279b42dc9af1,828d9d1e69c0f438,true] 4621 --- [http-nio-9300-exec-1] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 09:00:40.839  INFO [sipladserviceapoio,eaa4279b42dc9af1,cf976673496385d9,true] 4621 --- [http-nio-9300-exec-3] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 09:00:44.043  INFO [sipladserviceapoio,10da8174562b62db,9ae2fb7546b4f522,true] 4621 --- [http-nio-9300-exec-10] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 09:00:44.078  INFO [sipladserviceapoio,10da8174562b62db,1e2a428cfd5125d0,true] 4621 --- [http-nio-9300-exec-6] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 09:00:44.093  INFO [sipladserviceapoio,10da8174562b62db,8c91ad1a69530b37,true] 4621 --- [http-nio-9300-exec-4] m.d.siplad.controllers.AcaoController    : getById
-2020-04-09 09:00:47.861  INFO [sipladserviceapoio,2c7aa2a0b69368f8,4f7030ff179b1503,true] 4621 --- [http-nio-9300-exec-5] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 09:00:47.865  INFO [sipladserviceapoio,2c7aa2a0b69368f8,2c7aa2a0b69368f8,true] 4621 --- [http-nio-9300-exec-7] m.d.siplad.controllers.AcaoController    : getById
-2020-04-09 09:00:48.751  INFO [sipladserviceapoio,78b1f3610c7b77e1,c586002916748348,true] 4621 --- [http-nio-9300-exec-9] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 09:00:48.763  INFO [sipladserviceapoio,78b1f3610c7b77e1,78b1f3610c7b77e1,true] 4621 --- [http-nio-9300-exec-2] m.d.siplad.controllers.AcaoController    : getById
-2020-04-09 09:00:51.313  INFO [sipladserviceapoio,26f31b071660030e,21a7b8d0e9e4f246,true] 4621 --- [http-nio-9300-exec-8] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 09:00:51.332  INFO [sipladserviceapoio,26f31b071660030e,542f4e7de283d7a7,true] 4621 --- [http-nio-9300-exec-1] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 09:00:51.353  INFO [sipladserviceapoio,26f31b071660030e,92161ef2af638ebe,true] 4621 --- [http-nio-9300-exec-10] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 09:00:51.358  INFO [sipladserviceapoio,26f31b071660030e,b2c4b510680b15bd,true] 4621 --- [http-nio-9300-exec-3] m.d.siplad.controllers.AcaoController    : getById
-2020-04-09 09:00:52.071  INFO [sipladserviceapoio,2ac5821d3ac7dd12,bdf568569aa5911e,true] 4621 --- [http-nio-9300-exec-6] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 09:00:52.081  INFO [sipladserviceapoio,2ac5821d3ac7dd12,ef33385508b8f63d,true] 4621 --- [http-nio-9300-exec-4] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 09:00:52.100  INFO [sipladserviceapoio,2ac5821d3ac7dd12,525765c0fe757a60,true] 4621 --- [http-nio-9300-exec-7] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
-2020-04-09 09:00:52.106  INFO [sipladserviceapoio,2ac5821d3ac7dd12,ca1b47839314a4ca,true] 4621 --- [http-nio-9300-exec-5] m.d.siplad.controllers.AcaoController    : getById
-2020-04-09 09:00:53.467  INFO [sipladserviceapoio,,,] 4621 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2020-04-09 09:01:57.935  INFO [sipladserviceapoio,,,] 4621 --- [Thread-12] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater
-2020-04-09 09:01:57.938  INFO [sipladserviceapoio,,,] 4621 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SIPLADSERVICEAPOIO with eureka with status DOWN
-2020-04-09 09:01:57.939  WARN [sipladserviceapoio,,,] 4621 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1586433717939, current=DOWN, previous=UP]
-2020-04-09 09:01:57.939  INFO [sipladserviceapoio,,,] 4621 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/10.0.2.15:sipladserviceapoio:9300: registering service...
-2020-04-09 09:01:57.943  INFO [sipladserviceapoio,,,] 4621 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/10.0.2.15:sipladserviceapoio:9300 - registration status: 204
-2020-04-09 09:01:57.949  INFO [sipladserviceapoio,,,] 4621 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-04-09 09:01:58.817  INFO [sipladserviceapoio,,,] 4621 --- [SpringContextShutdownHook] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook removed for: NFLoadBalancer-PingTimer-sipladserviceapoio
-2020-04-09 09:01:58.818  INFO [sipladserviceapoio,,,] 4621 --- [SpringContextShutdownHook] c.n.u.concurrent.ShutdownEnabledTimer    : Exception caught (might be ok if at shutdown)
-
-java.lang.IllegalStateException: Shutdown in progress
-	at java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82) ~[na:1.8.0_242]
-	at java.lang.Runtime.removeShutdownHook(Runtime.java:240) ~[na:1.8.0_242]
-	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70) ~[netflix-commons-util-0.3.0.jar!/:0.3.0]
-	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:632) [ribbon-loadbalancer-2.3.0.jar!/:2.3.0]
-	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:883) [ribbon-loadbalancer-2.3.0.jar!/:2.3.0]
-	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:285) [ribbon-loadbalancer-2.3.0.jar!/:2.3.0]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_242]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_242]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_242]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_242]
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:339) [siplad-service-core-1.0.jar!/:1.0]
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:273) [siplad-service-core-1.0.jar!/:1.0]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) [siplad-service-core-1.0.jar!/:1.0]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) [siplad-service-core-1.0.jar!/:1.0]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1075) [siplad-service-core-1.0.jar!/:1.0]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) [siplad-service-core-1.0.jar!/:1.0]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1068) [siplad-service-core-1.0.jar!/:1.0]
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1060) [spring-context-5.2.5.RELEASE.jar!/:5.2.5.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1029) [spring-context-5.2.5.RELEASE.jar!/:5.2.5.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978) [spring-context-5.2.5.RELEASE.jar!/:5.2.5.RELEASE]
-	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:92) [siplad-service-core-1.0.jar!/:1.0]
-	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258) [siplad-service-core-1.0.jar!/:1.0]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571) [siplad-service-core-1.0.jar!/:1.0]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543) [siplad-service-core-1.0.jar!/:1.0]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1075) [siplad-service-core-1.0.jar!/:1.0]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504) [siplad-service-core-1.0.jar!/:1.0]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1068) [siplad-service-core-1.0.jar!/:1.0]
-	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1060) [spring-context-5.2.5.RELEASE.jar!/:5.2.5.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1029) [spring-context-5.2.5.RELEASE.jar!/:5.2.5.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:948) [spring-context-5.2.5.RELEASE.jar!/:5.2.5.RELEASE]
-
-2020-04-09 09:01:58.834  INFO [sipladserviceapoio,,,] 4621 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2020-04-09 09:02:01.836  INFO [sipladserviceapoio,,,] 4621 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2020-04-09 09:02:01.844  INFO [sipladserviceapoio,,,] 4621 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/10.0.2.15:sipladserviceapoio:9300 - deregister  status: 200
-2020-04-09 09:02:01.860  INFO [sipladserviceapoio,,,] 4621 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-04-17 09:46:55.384  INFO [sipladserviceapoio,,,] 13848 --- [main] m.d.s.SipladServiceApoioApplication      : The following profiles are active: default
+2020-04-17 09:46:56.187  WARN [sipladserviceapoio,,,] 13848 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-17 09:46:56.390  INFO [sipladserviceapoio,,,] 13848 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=06c8e4e8-d58f-3320-856a-d433be0f9802
+2020-04-17 09:46:56.647  INFO [sipladserviceapoio,,,] 13848 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 09:46:56.654  INFO [sipladserviceapoio,,,] 13848 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 09:46:56.659  INFO [sipladserviceapoio,,,] 13848 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6caf7803' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 09:46:56.661  INFO [sipladserviceapoio,,,] 13848 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 09:46:56.672  INFO [sipladserviceapoio,,,] 13848 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 09:46:56.908  WARN [sipladserviceapoio,,,] 13848 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-04-17 09:46:56.931  INFO [sipladserviceapoio,,,] 13848 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-04-17 09:46:56.931  INFO [sipladserviceapoio,,,] 13848 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1527 ms
+2020-04-17 09:46:57.079  WARN [sipladserviceapoio,,,] 13848 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-17 09:46:57.079  INFO [sipladserviceapoio,,,] 13848 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-17 09:46:57.129  INFO [sipladserviceapoio,,,] 13848 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@bc6288b
+2020-04-17 09:46:58.480  INFO [sipladserviceapoio,,,] 13848 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-17 09:46:59.606  INFO [sipladserviceapoio,,,] 13848 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ce524d2, org.springframework.security.web.context.SecurityContextPersistenceFilter@2365ea38, org.springframework.security.web.header.HeaderWriterFilter@4f5f474c, org.springframework.security.web.authentication.logout.LogoutFilter@3a40bb52, mb.dgom.siplad.security.web.JWTAuthenticationTokenFilter@285005b8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7781263c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ca4dce5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3869a6e5, org.springframework.security.web.session.SessionManagementFilter@57cabdc3, org.springframework.security.web.access.ExceptionTranslationFilter@5a30722c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@27f71195]
+2020-04-17 09:46:59.633  WARN [sipladserviceapoio,,,] 13848 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-17 09:46:59.633  INFO [sipladserviceapoio,,,] 13848 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-17 09:46:59.830  INFO [sipladserviceapoio,,,] 13848 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-17 09:47:01.457  INFO [sipladserviceapoio,,,] 13848 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-17 09:47:01.499  WARN [sipladserviceapoio,,,] 13848 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-17 09:47:01.852  INFO [sipladserviceapoio,,,] 13848 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2020-04-17 09:47:01.959  INFO [sipladserviceapoio,,,] 13848 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-04-17 09:47:01.987  INFO [sipladserviceapoio,,,] 13848 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-04-17 09:47:02.259  INFO [sipladserviceapoio,,,] 13848 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-04-17 09:47:02.259  INFO [sipladserviceapoio,,,] 13848 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-04-17 09:47:02.347  INFO [sipladserviceapoio,,,] 13848 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-04-17 09:47:02.348  INFO [sipladserviceapoio,,,] 13848 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-04-17 09:47:02.490  INFO [sipladserviceapoio,,,] 13848 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-17 09:47:02.603  INFO [sipladserviceapoio,,,] 13848 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-04-17 09:47:02.603  INFO [sipladserviceapoio,,,] 13848 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-04-17 09:47:02.603  INFO [sipladserviceapoio,,,] 13848 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-04-17 09:47:02.603  INFO [sipladserviceapoio,,,] 13848 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-04-17 09:47:02.603  INFO [sipladserviceapoio,,,] 13848 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-04-17 09:47:02.604  INFO [sipladserviceapoio,,,] 13848 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-04-17 09:47:02.604  INFO [sipladserviceapoio,,,] 13848 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-04-17 09:47:02.732  INFO [sipladserviceapoio,,,] 13848 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-04-17 09:47:02.734  INFO [sipladserviceapoio,,,] 13848 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 3
+2020-04-17 09:47:02.736  INFO [sipladserviceapoio,,,] 13848 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-04-17 09:47:02.739  INFO [sipladserviceapoio,,,] 13848 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1587127622738 with initial instances count: 3
+2020-04-17 09:47:02.747  INFO [sipladserviceapoio,,,] 13848 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SIPLADSERVICEAPOIO with eureka with status UP
+2020-04-17 09:47:02.748  INFO [sipladserviceapoio,,,] 13848 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1587127622748, current=UP, previous=STARTING]
+2020-04-17 09:47:02.749  INFO [sipladserviceapoio,,,] 13848 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/192.168.126.1:9300: registering service...
+2020-04-17 09:47:02.778  INFO [sipladserviceapoio,,,] 13848 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/192.168.126.1:9300 - registration status: 204
+2020-04-17 09:47:02.784  INFO [sipladserviceapoio,,,] 13848 --- [main] io.undertow                              : starting server: Undertow - 2.0.30.Final
+2020-04-17 09:47:02.790  INFO [sipladserviceapoio,,,] 13848 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2020-04-17 09:47:02.799  INFO [sipladserviceapoio,,,] 13848 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2020-04-17 09:47:02.857  INFO [sipladserviceapoio,,,] 13848 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 9300 (http) with context path ''
+2020-04-17 09:47:02.857  INFO [sipladserviceapoio,,,] 13848 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9300
+2020-04-17 09:47:04.008  INFO [sipladserviceapoio,,,] 13848 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-17 09:47:04.009  INFO [sipladserviceapoio,,,] 13848 --- [main] m.d.s.SipladServiceApoioApplication      : Started SipladServiceApoioApplication in 11.502 seconds (JVM running for 12.177)
+2020-04-17 09:49:17.571  INFO [sipladserviceapoio,,,] 13848 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-17 09:49:17.571  INFO [sipladserviceapoio,,,] 13848 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-17 09:49:17.608  INFO [sipladserviceapoio,,,] 13848 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 37 ms
+2020-04-17 09:49:17.714  INFO [sipladserviceapoio,f9bee178799f2f22,6d0783d798e65b06,true] 13848 --- [XNIO-1 task-2] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-17 09:49:17.722  INFO [sipladserviceapoio,f9bee178799f2f22,cea750f1869922d2,true] 13848 --- [XNIO-1 task-3] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-17 09:49:47.249  INFO [sipladserviceapoio,3d3bfd4f78fbfc1d,b15b1207c553d9f9,true] 13848 --- [XNIO-1 task-4] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-17 09:49:47.607  INFO [sipladserviceapoio,3d3bfd4f78fbfc1d,890b783cf92f21a5,true] 13848 --- [XNIO-1 task-5] c.netflix.config.ChainedDynamicProperty  : Flipping property: sipladserviceapoio.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-04-17 09:49:47.630  INFO [sipladserviceapoio,3d3bfd4f78fbfc1d,890b783cf92f21a5,true] 13848 --- [XNIO-1 task-5] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-sipladserviceapoio
+2020-04-17 09:49:47.630  INFO [sipladserviceapoio,3d3bfd4f78fbfc1d,890b783cf92f21a5,true] 13848 --- [XNIO-1 task-5] c.netflix.loadbalancer.BaseLoadBalancer  : Client: sipladserviceapoio instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=sipladserviceapoio,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-04-17 09:49:47.635  INFO [sipladserviceapoio,3d3bfd4f78fbfc1d,890b783cf92f21a5,true] 13848 --- [XNIO-1 task-5] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2020-04-17 09:49:47.656  INFO [sipladserviceapoio,3d3bfd4f78fbfc1d,890b783cf92f21a5,true] 13848 --- [XNIO-1 task-5] c.netflix.config.ChainedDynamicProperty  : Flipping property: sipladserviceapoio.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-04-17 09:49:47.657  INFO [sipladserviceapoio,3d3bfd4f78fbfc1d,890b783cf92f21a5,true] 13848 --- [XNIO-1 task-5] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client sipladserviceapoio initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=sipladserviceapoio,current list of Servers=[192.168.126.1:9300],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.126.1:9300;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Wed Dec 31 21:00:00 BRT 1969;	First connection made: Wed Dec 31 21:00:00 BRT 1969;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@4fc25856
+2020-04-17 09:49:47.709  INFO [sipladserviceapoio,3d3bfd4f78fbfc1d,c394f3c3f0ff8d8d,true] 13848 --- [XNIO-1 task-6] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-17 09:49:47.722  INFO [sipladserviceapoio,3d3bfd4f78fbfc1d,890b783cf92f21a5,true] 13848 --- [XNIO-1 task-5] m.d.siplad.controllers.AcaoController    : getById
+2020-04-17 09:49:48.638  INFO [sipladserviceapoio,,,] 13848 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: sipladserviceapoio.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-04-17 09:49:51.180  INFO [sipladserviceapoio,f0d4c25946c20a99,bd121dc18ae31c26,true] 13848 --- [XNIO-1 task-7] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-17 09:49:51.755  INFO [sipladserviceapoio,f0d4c25946c20a99,df422dfcf6e3050c,true] 13848 --- [XNIO-1 task-8] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-17 09:49:51.809  INFO [sipladserviceapoio,f0d4c25946c20a99,80bf8fc125803c94,true] 13848 --- [XNIO-1 task-10] m.d.siplad.controllers.AcaoController    : UsuarioController >>>>> Username -> admin
+2020-04-17 09:49:51.812  INFO [sipladserviceapoio,f0d4c25946c20a99,925010450d4c1b1b,true] 13848 --- [XNIO-1 task-9] m.d.siplad.controllers.AcaoController    : getById
+2020-04-17 09:52:02.608  INFO [sipladserviceapoio,,,] 13848 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-04-17 09:56:24.952  INFO [sipladserviceapoio,,,] 13848 --- [RMI TCP Connection(19)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-04-17 09:56:24.952  INFO [sipladserviceapoio,,,] 13848 --- [RMI TCP Connection(19)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SIPLADSERVICEAPOIO with eureka with status DOWN
+2020-04-17 09:56:24.952  WARN [sipladserviceapoio,,,] 13848 --- [RMI TCP Connection(19)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1587128184952, current=DOWN, previous=UP]
+2020-04-17 09:56:24.952  INFO [sipladserviceapoio,,,] 13848 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/192.168.126.1:9300: registering service...
+2020-04-17 09:56:24.954  INFO [sipladserviceapoio,,,] 13848 --- [RMI TCP Connection(19)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-17 09:56:24.956  INFO [sipladserviceapoio,,,] 13848 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/192.168.126.1:9300 - registration status: 204
+2020-04-17 09:56:25.712  INFO [sipladserviceapoio,,,] 13848 --- [RMI TCP Connection(19)-127.0.0.1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook removed for: NFLoadBalancer-PingTimer-sipladserviceapoio
+2020-04-17 09:56:25.720  INFO [sipladserviceapoio,,,] 13848 --- [RMI TCP Connection(19)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-04-17 09:56:28.721  INFO [sipladserviceapoio,,,] 13848 --- [RMI TCP Connection(19)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-04-17 09:56:28.725  INFO [sipladserviceapoio,,,] 13848 --- [RMI TCP Connection(19)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SIPLADSERVICEAPOIO/192.168.126.1:9300 - deregister  status: 200
+2020-04-17 09:56:28.734  INFO [sipladserviceapoio,,,] 13848 --- [RMI TCP Connection(19)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-04-17 09:56:28.736  INFO [sipladserviceapoio,,,] 13848 --- [RMI TCP Connection(19)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-17 09:56:28.737  INFO [sipladserviceapoio,,,] 13848 --- [RMI TCP Connection(19)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.0.30.Final
+2020-04-17 09:56:28.740  INFO [sipladserviceapoio,,,] 13848 --- [Thread-14] c.n.l.PollingServerListUpdater           : Shutting down the Executor Pool for PollingServerListUpdater

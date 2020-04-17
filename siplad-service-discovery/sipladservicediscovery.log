@@ -1,151 +1,149 @@
-2020-04-09 08:48:02.076  INFO [sipladservicediscovery,,,] 4433 --- [main] .d.s.s.SipladServiceDiscoveryApplication : The following profiles are active: default
-2020-04-09 08:48:04.545  WARN [sipladservicediscovery,,,] 4433 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2020-04-09 08:48:05.107  INFO [sipladservicediscovery,,,] 4433 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c99a8fd1-7322-36f1-a3fd-4214ae16d067
-2020-04-09 08:48:06.386  WARN [sipladservicediscovery,,,] 4433 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
-2020-04-09 08:48:06.439  INFO [sipladservicediscovery,,,] 4433 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
-2020-04-09 08:48:06.447  INFO [sipladservicediscovery,,,] 4433 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4266 ms
-2020-04-09 08:48:06.634  WARN [sipladservicediscovery,,,] 4433 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-04-09 08:48:06.634  INFO [sipladservicediscovery,,,] 4433 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-04-09 08:48:06.694  INFO [sipladservicediscovery,,,] 4433 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5890e879
-2020-04-09 08:48:07.727  WARN [sipladservicediscovery,,,] 4433 --- [main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@2f666ebb}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)}]
-2020-04-09 08:48:08.313  WARN [sipladservicediscovery,,,] 4433 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2020-04-09 08:48:08.313  INFO [sipladservicediscovery,,,] 4433 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-04-09 08:48:09.136  INFO [sipladservicediscovery,,,] 4433 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-04-09 08:48:09.957  WARN [sipladservicediscovery,,,] 4433 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2020-04-09 08:48:10.314  INFO [sipladservicediscovery,,,] 4433 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2020-04-09 08:48:10.452  INFO [sipladservicediscovery,,,] 4433 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2020-04-09 08:48:10.453  INFO [sipladservicediscovery,,,] 4433 --- [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
-2020-04-09 08:48:10.514  INFO [sipladservicediscovery,,,] 4433 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1586432890512 with initial instances count: 0
-2020-04-09 08:48:10.630  INFO [sipladservicediscovery,,,] 4433 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
-2020-04-09 08:48:10.632  INFO [sipladservicediscovery,,,] 4433 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8800/eureka/]
-2020-04-09 08:48:10.972  INFO [sipladservicediscovery,,,] 4433 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2020-04-09 08:48:10.972  INFO [sipladservicediscovery,,,] 4433 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2020-04-09 08:48:10.973  INFO [sipladservicediscovery,,,] 4433 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2020-04-09 08:48:10.973  INFO [sipladservicediscovery,,,] 4433 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2020-04-09 08:48:11.302  INFO [sipladservicediscovery,,,] 4433 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8800/eureka/
-2020-04-09 08:48:11.315  INFO [sipladservicediscovery,,,] 4433 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
-2020-04-09 08:48:11.316  INFO [sipladservicediscovery,,,] 4433 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
-2020-04-09 08:48:11.518  INFO [sipladservicediscovery,,,] 4433 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2020-04-09 08:48:11.670  INFO [sipladservicediscovery,,,] 4433 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SIPLADSERVICEDISCOVERY with eureka with status UP
-2020-04-09 08:48:11.686  INFO [sipladservicediscovery,,,] 4433 --- [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
-2020-04-09 08:48:11.708  INFO [sipladservicediscovery,,,] 4433 --- [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
-2020-04-09 08:48:11.709  INFO [sipladservicediscovery,,,] 4433 --- [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
-2020-04-09 08:48:11.834  INFO [sipladservicediscovery,,,] 4433 --- [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
-2020-04-09 08:48:11.835  INFO [sipladservicediscovery,,,] 4433 --- [Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
-2020-04-09 08:48:11.835  INFO [sipladservicediscovery,,,] 4433 --- [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
-2020-04-09 08:48:11.835  INFO [sipladservicediscovery,,,] 4433 --- [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
-2020-04-09 08:48:11.836  INFO [sipladservicediscovery,,,] 4433 --- [Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
-2020-04-09 08:48:11.863  INFO [sipladservicediscovery,,,] 4433 --- [Thread-11] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
-2020-04-09 08:48:11.965  INFO [sipladservicediscovery,,,] 4433 --- [main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
-2020-04-09 08:48:12.076  INFO [sipladservicediscovery,,,] 4433 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2020-04-09 08:48:12.077  INFO [sipladservicediscovery,,,] 4433 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2020-04-09 08:48:12.077  INFO [sipladservicediscovery,,,] 4433 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2020-04-09 08:48:12.077  INFO [sipladservicediscovery,,,] 4433 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2020-04-09 08:48:12.737  INFO [sipladservicediscovery,,,] 4433 --- [main] io.undertow                              : starting server: Undertow - 2.0.29.Final
-2020-04-09 08:48:12.750  INFO [sipladservicediscovery,,,] 4433 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
-2020-04-09 08:48:12.837  INFO [sipladservicediscovery,,,] 4433 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
-2020-04-09 08:48:13.014  INFO [sipladservicediscovery,,,] 4433 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8800 (http) with context path ''
-2020-04-09 08:48:13.015  INFO [sipladservicediscovery,,,] 4433 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8800
-2020-04-09 08:48:13.061  INFO [sipladservicediscovery,,,] 4433 --- [main] .d.s.s.SipladServiceDiscoveryApplication : Started SipladServiceDiscoveryApplication in 13.707 seconds (JVM running for 14.828)
-2020-04-09 08:48:58.186  INFO [sipladservicediscovery,,,] 4433 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-04-09 08:48:58.186  INFO [sipladservicediscovery,,,] 4433 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-04-09 08:48:58.215  INFO [sipladservicediscovery,,,] 4433 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 28 ms
-2020-04-09 08:48:59.756  WARN [sipladservicediscovery,,,] 4433 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@2f666ebb}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
-2020-04-09 08:48:59.761  WARN [sipladservicediscovery,,,] 4433 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@2f666ebb}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 3 spans due to ResourceAccessException(I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused))
+2020-04-16 15:39:17.055  INFO [sipladservicediscovery,,,] 10928 --- [main] .d.s.s.SipladServiceDiscoveryApplication : The following profiles are active: default
+2020-04-16 15:39:17.668  WARN [sipladservicediscovery,,,] 10928 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-04-16 15:39:17.851  INFO [sipladservicediscovery,,,] 10928 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e0a071e2-5d87-3c8c-a01e-d5896ae202b9
+2020-04-16 15:39:18.291  WARN [sipladservicediscovery,,,] 10928 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-04-16 15:39:18.312  INFO [sipladservicediscovery,,,] 10928 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-04-16 15:39:18.312  INFO [sipladservicediscovery,,,] 10928 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1239 ms
+2020-04-16 15:39:18.407  WARN [sipladservicediscovery,,,] 10928 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-16 15:39:18.407  INFO [sipladservicediscovery,,,] 10928 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-16 15:39:18.415  INFO [sipladservicediscovery,,,] 10928 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4397a639
+2020-04-16 15:39:19.968  INFO [sipladservicediscovery,,,] 10928 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-16 15:39:20.753  WARN [sipladservicediscovery,,,] 10928 --- [main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@7af0affa}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out}]
+2020-04-16 15:39:20.964  WARN [sipladservicediscovery,,,] 10928 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-04-16 15:39:20.964  INFO [sipladservicediscovery,,,] 10928 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-16 15:39:21.181  INFO [sipladservicediscovery,,,] 10928 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-16 15:39:22.766  INFO [sipladservicediscovery,,,] 10928 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-16 15:39:22.805  WARN [sipladservicediscovery,,,] 10928 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-04-16 15:39:23.132  INFO [sipladservicediscovery,,,] 10928 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-04-16 15:39:23.150  INFO [sipladservicediscovery,,,] 10928 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-04-16 15:39:23.151  INFO [sipladservicediscovery,,,] 10928 --- [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2020-04-16 15:39:23.155  INFO [sipladservicediscovery,,,] 10928 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1587062363154 with initial instances count: 0
+2020-04-16 15:39:23.193  INFO [sipladservicediscovery,,,] 10928 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2020-04-16 15:39:23.195  INFO [sipladservicediscovery,,,] 10928 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8800/eureka/]
+2020-04-16 15:39:23.446  INFO [sipladservicediscovery,,,] 10928 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-04-16 15:39:23.446  INFO [sipladservicediscovery,,,] 10928 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-04-16 15:39:23.446  INFO [sipladservicediscovery,,,] 10928 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-04-16 15:39:23.446  INFO [sipladservicediscovery,,,] 10928 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-04-16 15:39:23.580  INFO [sipladservicediscovery,,,] 10928 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8800/eureka/
+2020-04-16 15:39:23.587  INFO [sipladservicediscovery,,,] 10928 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2020-04-16 15:39:23.587  INFO [sipladservicediscovery,,,] 10928 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2020-04-16 15:39:23.669  INFO [sipladservicediscovery,,,] 10928 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-16 15:39:23.747  INFO [sipladservicediscovery,,,] 10928 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SIPLADSERVICEDISCOVERY with eureka with status UP
+2020-04-16 15:39:23.749  INFO [sipladservicediscovery,,,] 10928 --- [Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2020-04-16 15:39:23.749  INFO [sipladservicediscovery,,,] 10928 --- [Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2020-04-16 15:39:23.750  INFO [sipladservicediscovery,,,] 10928 --- [Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2020-04-16 15:39:23.761  INFO [sipladservicediscovery,,,] 10928 --- [Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2020-04-16 15:39:23.761  INFO [sipladservicediscovery,,,] 10928 --- [Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2020-04-16 15:39:23.762  INFO [sipladservicediscovery,,,] 10928 --- [Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2020-04-16 15:39:23.762  INFO [sipladservicediscovery,,,] 10928 --- [Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2020-04-16 15:39:23.762  INFO [sipladservicediscovery,,,] 10928 --- [Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2020-04-16 15:39:23.770  INFO [sipladservicediscovery,,,] 10928 --- [Thread-12] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2020-04-16 15:39:23.796  INFO [sipladservicediscovery,,,] 10928 --- [main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-04-16 15:39:23.824  INFO [sipladservicediscovery,,,] 10928 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-04-16 15:39:23.824  INFO [sipladservicediscovery,,,] 10928 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-04-16 15:39:23.825  INFO [sipladservicediscovery,,,] 10928 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-04-16 15:39:23.825  INFO [sipladservicediscovery,,,] 10928 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-04-16 15:39:24.041  INFO [sipladservicediscovery,,,] 10928 --- [main] io.undertow                              : starting server: Undertow - 2.0.30.Final
+2020-04-16 15:39:24.046  INFO [sipladservicediscovery,,,] 10928 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2020-04-16 15:39:24.055  INFO [sipladservicediscovery,,,] 10928 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2020-04-16 15:39:24.127  INFO [sipladservicediscovery,,,] 10928 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 8800 (http) with context path ''
+2020-04-16 15:39:24.127  INFO [sipladservicediscovery,,,] 10928 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8800
+2020-04-16 15:39:25.277  INFO [sipladservicediscovery,,,] 10928 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-04-16 15:39:25.278  INFO [sipladservicediscovery,,,] 10928 --- [main] .d.s.s.SipladServiceDiscoveryApplication : Started SipladServiceDiscoveryApplication in 11.122 seconds (JVM running for 11.814)
+2020-04-16 15:40:23.763  INFO [sipladservicediscovery,,,] 10928 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-16 15:41:05.052  INFO [sipladservicediscovery,,,] 10928 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-16 15:41:05.052  INFO [sipladservicediscovery,,,] 10928 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-16 15:41:05.064  INFO [sipladservicediscovery,,,] 10928 --- [XNIO-1 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-04-16 15:41:05.846  WARN [sipladservicediscovery,,,] 10928 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@7af0affa}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2020-04-16 15:41:05.849  WARN [sipladservicediscovery,,,] 10928 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@7af0affa}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 3 spans due to ResourceAccessException(I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out)
 
-org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748) ~[spring-web-5.2.4.RELEASE.jar!/:5.2.4.RELEASE]
-	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar!/:2.2.2.RELEASE]
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:641) ~[spring-web-5.2.4.RELEASE.jar!/:5.2.4.RELEASE]
-	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar!/:2.2.2.RELEASE]
-	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:142) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar!/:2.2.2.RELEASE]
-	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:132) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar!/:2.2.2.RELEASE]
-	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.19.3.jar!/:na]
-	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:284) ~[zipkin-reporter-2.12.1.jar!/:na]
-	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:358) [zipkin-reporter-2.12.1.jar!/:na]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_242]
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_242]
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_242]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_242]
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_242]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_242]
-	at java.net.Socket.connect(Socket.java:607) ~[na:1.8.0_242]
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[na:1.8.0_242]
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_242]
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_242]
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_242]
-	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_242]
-	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_242]
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1226) ~[na:1.8.0_242]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162) ~[na:1.8.0_242]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056) ~[na:1.8.0_242]
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990) ~[na:1.8.0_242]
-	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.4.RELEASE.jar!/:5.2.4.RELEASE]
-	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.4.RELEASE.jar!/:5.2.4.RELEASE]
-	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.4.RELEASE.jar!/:5.2.4.RELEASE]
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:739) ~[spring-web-5.2.4.RELEASE.jar!/:5.2.4.RELEASE]
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://192.168.126.5:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:641) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:142) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:132) ~[spring-cloud-sleuth-zipkin-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.19.3.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:284) ~[zipkin-reporter-2.12.1.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:358) [zipkin-reporter-2.12.1.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_221]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_221]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_221]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_221]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_221]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_221]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1226) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056) ~[na:1.8.0_221]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990) ~[na:1.8.0_221]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:739) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
 	... 9 common frames omitted
 
-2020-04-09 08:49:11.850  INFO [sipladservicediscovery,,,] 4433 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2020-04-09 08:50:11.850  INFO [sipladservicediscovery,,,] 4433 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2020-04-09 08:50:54.081  INFO [sipladservicediscovery,5e85e8af434cd958,5e85e8af434cd958,true] 4433 --- [XNIO-1 task-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAPOIO/10.0.2.15:sipladserviceapoio:9300 with status UP (replication=false)
-2020-04-09 08:50:54.722  INFO [sipladservicediscovery,8d270cb782879099,8d270cb782879099,true] 4433 --- [XNIO-1 task-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAPOIO/10.0.2.15:sipladserviceapoio:9300 with status UP (replication=true)
-2020-04-09 08:51:11.850  INFO [sipladservicediscovery,,,] 4433 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2020-04-09 08:52:11.852  INFO [sipladservicediscovery,,,] 4433 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2020-04-09 08:52:44.852  INFO [sipladservicediscovery,3050cf825045637d,3050cf825045637d,true] 4433 --- [XNIO-1 task-12] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAUTENTICACAO/10.0.2.15:sipladserviceautenticacao:9100 with status UP (replication=false)
-2020-04-09 08:52:45.367  INFO [sipladservicediscovery,318168ff1e2d08d2,318168ff1e2d08d2,true] 4433 --- [XNIO-1 task-14] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAUTENTICACAO/10.0.2.15:sipladserviceautenticacao:9100 with status UP (replication=true)
-2020-04-09 08:53:11.854  INFO [sipladservicediscovery,,,] 4433 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2020-04-09 08:54:01.885  WARN [sipladservicediscovery,2a43bcc9eb694e1a,2a43bcc9eb694e1a,true] 4433 --- [XNIO-1 task-15] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: SIPLADSERVICEGATEWAY - 10.0.2.15:sipladservicegateway:8900
-2020-04-09 08:54:01.885  WARN [sipladservicediscovery,2a43bcc9eb694e1a,2a43bcc9eb694e1a,true] 4433 --- [XNIO-1 task-15] c.n.eureka.resources.InstanceResource    : Not Found (Renew): SIPLADSERVICEGATEWAY - 10.0.2.15:sipladservicegateway:8900
-2020-04-09 08:54:02.520  INFO [sipladservicediscovery,2fb0607496171cd8,2fb0607496171cd8,true] 4433 --- [XNIO-1 task-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/10.0.2.15:sipladservicegateway:8900 with status STARTING (replication=false)
-2020-04-09 08:54:03.091  INFO [sipladservicediscovery,a7250ad76e9b1bf4,a7250ad76e9b1bf4,true] 4433 --- [XNIO-1 task-16] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/10.0.2.15:sipladservicegateway:8900 with status STARTING (replication=true)
-2020-04-09 08:54:07.468  INFO [sipladservicediscovery,eaef60c381330767,eaef60c381330767,true] 4433 --- [XNIO-1 task-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/10.0.2.15:sipladservicegateway:8900 with status UP (replication=false)
-2020-04-09 08:54:08.000  INFO [sipladservicediscovery,b1572ce3beccc424,b1572ce3beccc424,true] 4433 --- [XNIO-1 task-11] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/10.0.2.15:sipladservicegateway:8900 with status UP (replication=true)
-2020-04-09 08:54:11.858  INFO [sipladservicediscovery,,,] 4433 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2020-04-09 08:55:11.859  INFO [sipladservicediscovery,,,] 4433 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2020-04-09 08:55:49.338  INFO [sipladservicediscovery,57ca7b36baa35c95,57ca7b36baa35c95,true] 4433 --- [XNIO-1 task-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICETESTE/10.0.2.15:sipladserviceteste:9600 with status UP (replication=false)
-2020-04-09 08:55:49.828  INFO [sipladservicediscovery,cbb1770459be4ad1,cbb1770459be4ad1,true] 4433 --- [XNIO-1 task-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICETESTE/10.0.2.15:sipladserviceteste:9600 with status UP (replication=true)
-2020-04-09 08:56:11.864  INFO [sipladservicediscovery,,,] 4433 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2020-04-09 08:57:11.866  INFO [sipladservicediscovery,,,] 4433 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2020-04-09 08:58:11.870  INFO [sipladservicediscovery,,,] 4433 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
-2020-04-09 08:59:11.870  INFO [sipladservicediscovery,,,] 4433 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2020-04-09 09:00:11.870  INFO [sipladservicediscovery,,,] 4433 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2020-04-09 09:01:11.873  INFO [sipladservicediscovery,,,] 4433 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
-2020-04-09 09:01:50.816  INFO [sipladservicediscovery,36e049d0663953ff,36e049d0663953ff,true] 4433 --- [XNIO-1 task-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICETESTE/10.0.2.15:sipladserviceteste:9600 with status DOWN (replication=false)
-2020-04-09 09:01:51.132  INFO [sipladservicediscovery,48d64cf334d299d6,48d64cf334d299d6,true] 4433 --- [XNIO-1 task-13] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICETESTE/10.0.2.15:sipladserviceteste:9600 with status DOWN (replication=true)
-2020-04-09 09:01:51.138  WARN [sipladservicediscovery,,,] 4433 --- [TaskBatchingWorker-target_localhost-3] c.n.eureka.cluster.ReplicationTask       : The replication of task SIPLADSERVICETESTE/10.0.2.15:sipladserviceteste:9600:Heartbeat@localhost failed with response code 409
-2020-04-09 09:01:51.138  WARN [sipladservicediscovery,,,] 4433 --- [TaskBatchingWorker-target_localhost-3] c.netflix.eureka.cluster.PeerEurekaNode  : Peer wants us to take the instance information from it, since the timestamp differs,Id : 10.0.2.15:sipladserviceteste:9600 My Timestamp : 1586433349172, Peer's timestamp: 1586433710810
-2020-04-09 09:01:51.138  INFO [sipladservicediscovery,,,] 4433 --- [TaskBatchingWorker-target_localhost-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICETESTE/10.0.2.15:sipladserviceteste:9600 with status DOWN (replication=true)
-2020-04-09 09:01:54.015  INFO [sipladservicediscovery,07abe5d86eb4d0a6,07abe5d86eb4d0a6,true] 4433 --- [XNIO-1 task-6] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SIPLADSERVICETESTE/10.0.2.15:sipladserviceteste:9600 (replication=false)
-2020-04-09 09:01:54.133  WARN [sipladservicediscovery,254e9e46700e4329,254e9e46700e4329,true] 4433 --- [XNIO-1 task-5] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: SIPLADSERVICETESTE - 10.0.2.15:sipladserviceteste:9600
-2020-04-09 09:01:54.133  WARN [sipladservicediscovery,254e9e46700e4329,254e9e46700e4329,true] 4433 --- [XNIO-1 task-5] c.n.eureka.resources.InstanceResource    : Not Found (Renew): SIPLADSERVICETESTE - 10.0.2.15:sipladserviceteste:9600
-2020-04-09 09:01:54.133  WARN [sipladservicediscovery,254e9e46700e4329,254e9e46700e4329,true] 4433 --- [XNIO-1 task-5] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: SIPLADSERVICETESTE/10.0.2.15:sipladserviceteste:9600
-2020-04-09 09:01:54.133  INFO [sipladservicediscovery,254e9e46700e4329,254e9e46700e4329,true] 4433 --- [XNIO-1 task-5] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): SIPLADSERVICETESTE - 10.0.2.15:sipladserviceteste:9600
-2020-04-09 09:01:54.134  WARN [sipladservicediscovery,,,] 4433 --- [TaskBatchingWorker-target_localhost-3] c.n.eureka.cluster.ReplicationTask       : The replication of task SIPLADSERVICETESTE/10.0.2.15:sipladserviceteste:9600:Heartbeat@localhost failed with response code 404
-2020-04-09 09:01:54.135  WARN [sipladservicediscovery,,,] 4433 --- [TaskBatchingWorker-target_localhost-3] c.netflix.eureka.cluster.PeerEurekaNode  : SIPLADSERVICETESTE/10.0.2.15:sipladserviceteste:9600:Heartbeat@localhost: missing entry.
-2020-04-09 09:01:54.136  WARN [sipladservicediscovery,,,] 4433 --- [TaskBatchingWorker-target_localhost-3] c.netflix.eureka.cluster.PeerEurekaNode  : SIPLADSERVICETESTE/10.0.2.15:sipladserviceteste:9600:Heartbeat@localhost: cannot find instance id 10.0.2.15:sipladserviceteste:9600 and hence replicating the instance with status DOWN
-2020-04-09 09:01:54.137  WARN [sipladservicediscovery,,,] 4433 --- [TaskBatchingWorker-target_localhost-3] c.n.eureka.cluster.ReplicationTask       : The replication of task SIPLADSERVICETESTE/10.0.2.15:sipladserviceteste:9600:Cancel@localhost failed with response code 404
-2020-04-09 09:01:54.137  WARN [sipladservicediscovery,,,] 4433 --- [TaskBatchingWorker-target_localhost-3] c.netflix.eureka.cluster.PeerEurekaNode  : SIPLADSERVICETESTE/10.0.2.15:sipladserviceteste:9600:Cancel@localhost: missing entry.
-2020-04-09 09:01:54.643  INFO [sipladservicediscovery,5809ec0f46dced9a,5809ec0f46dced9a,true] 4433 --- [XNIO-1 task-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICETESTE/10.0.2.15:sipladserviceteste:9600 with status DOWN (replication=true)
-2020-04-09 09:01:57.942  INFO [sipladservicediscovery,66caeb86a8ea7d7f,66caeb86a8ea7d7f,true] 4433 --- [XNIO-1 task-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAPOIO/10.0.2.15:sipladserviceapoio:9300 with status DOWN (replication=false)
-2020-04-09 09:01:58.462  INFO [sipladservicediscovery,83d83da770640cc8,83d83da770640cc8,true] 4433 --- [XNIO-1 task-13] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAPOIO/10.0.2.15:sipladserviceapoio:9300 with status DOWN (replication=true)
-2020-04-09 09:02:01.843  INFO [sipladservicediscovery,3000ac60e1195025,3000ac60e1195025,false] 4433 --- [XNIO-1 task-5] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SIPLADSERVICEAPOIO/10.0.2.15:sipladserviceapoio:9300 (replication=false)
-2020-04-09 09:02:02.295  WARN [sipladservicediscovery,498b27158056344d,498b27158056344d,true] 4433 --- [XNIO-1 task-4] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: SIPLADSERVICEAPOIO/10.0.2.15:sipladserviceapoio:9300
-2020-04-09 09:02:02.295  INFO [sipladservicediscovery,498b27158056344d,498b27158056344d,true] 4433 --- [XNIO-1 task-4] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): SIPLADSERVICEAPOIO - 10.0.2.15:sipladserviceapoio:9300
-2020-04-09 09:02:02.296  WARN [sipladservicediscovery,,,] 4433 --- [TaskBatchingWorker-target_localhost-11] c.n.eureka.cluster.ReplicationTask       : The replication of task SIPLADSERVICEAPOIO/10.0.2.15:sipladserviceapoio:9300:Cancel@localhost failed with response code 404
-2020-04-09 09:02:02.296  WARN [sipladservicediscovery,,,] 4433 --- [TaskBatchingWorker-target_localhost-11] c.netflix.eureka.cluster.PeerEurekaNode  : SIPLADSERVICEAPOIO/10.0.2.15:sipladserviceapoio:9300:Cancel@localhost: missing entry.
-2020-04-09 09:02:03.112  INFO [sipladservicediscovery,c2d6c60560b465e6,c2d6c60560b465e6,true] 4433 --- [XNIO-1 task-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAUTENTICACAO/10.0.2.15:sipladserviceautenticacao:9100 with status DOWN (replication=false)
-2020-04-09 09:02:03.152  INFO [sipladservicediscovery,59762636d3691109,59762636d3691109,false] 4433 --- [XNIO-1 task-11] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAUTENTICACAO/10.0.2.15:sipladserviceautenticacao:9100 with status DOWN (replication=true)
-2020-04-09 09:02:03.156  WARN [sipladservicediscovery,,,] 4433 --- [TaskBatchingWorker-target_localhost-9] c.n.eureka.cluster.ReplicationTask       : The replication of task SIPLADSERVICEAUTENTICACAO/10.0.2.15:sipladserviceautenticacao:9100:Heartbeat@localhost failed with response code 409
-2020-04-09 09:02:03.156  WARN [sipladservicediscovery,,,] 4433 --- [TaskBatchingWorker-target_localhost-9] c.netflix.eureka.cluster.PeerEurekaNode  : Peer wants us to take the instance information from it, since the timestamp differs,Id : 10.0.2.15:sipladserviceautenticacao:9100 My Timestamp : 1586433164734, Peer's timestamp: 1586433723108
-2020-04-09 09:02:03.157  INFO [sipladservicediscovery,,,] 4433 --- [TaskBatchingWorker-target_localhost-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEAUTENTICACAO/10.0.2.15:sipladserviceautenticacao:9100 with status DOWN (replication=true)
-2020-04-09 09:02:06.728  INFO [sipladservicediscovery,5a933bba4bd4e14c,5a933bba4bd4e14c,true] 4433 --- [XNIO-1 task-12] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SIPLADSERVICEAUTENTICACAO/10.0.2.15:sipladserviceautenticacao:9100 (replication=false)
-2020-04-09 09:02:07.169  INFO [sipladservicediscovery,,,] 4433 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SIPLADSERVICEDISCOVERY with eureka with status DOWN
-2020-04-09 09:02:07.172  INFO [sipladservicediscovery,,,] 4433 --- [SpringContextShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
-2020-04-09 09:02:07.213  INFO [sipladservicediscovery,,,] 4433 --- [SpringContextShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
-2020-04-09 09:02:07.217  INFO [sipladservicediscovery,,,] 4433 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-04-09 09:02:07.662  INFO [sipladservicediscovery,,,] 4433 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2020-04-09 09:02:07.663  INFO [sipladservicediscovery,,,] 4433 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
-2020-04-09 09:02:07.667  INFO [sipladservicediscovery,,,] 4433 --- [SpringContextShutdownHook] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2020-04-09 09:02:07.669  INFO [sipladservicediscovery,,,] 4433 --- [SpringContextShutdownHook] io.undertow                              : stopping server: Undertow - 2.0.29.Final
+2020-04-16 15:41:23.764  INFO [sipladservicediscovery,,,] 10928 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-16 15:41:49.849  INFO [sipladservicediscovery,995f728e81aae0f3,995f728e81aae0f3,true] 10928 --- [XNIO-1 task-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 with status UP (replication=false)
+2020-04-16 15:41:50.427  INFO [sipladservicediscovery,8d9766f09efde92a,8d9766f09efde92a,true] 10928 --- [XNIO-1 task-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 with status UP (replication=true)
+2020-04-16 15:42:23.764  INFO [sipladservicediscovery,,,] 10928 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-16 15:43:23.765  INFO [sipladservicediscovery,,,] 10928 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-16 15:44:07.479  INFO [sipladservicediscovery,2b670a7fa5a44085,2b670a7fa5a44085,true] 10928 --- [XNIO-1 task-111] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 with status DOWN (replication=false)
+2020-04-16 15:44:07.987  INFO [sipladservicediscovery,271d7062615095f3,271d7062615095f3,true] 10928 --- [XNIO-1 task-112] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 with status DOWN (replication=true)
+2020-04-16 15:44:11.452  INFO [sipladservicediscovery,7504dcaa5329051e,7504dcaa5329051e,true] 10928 --- [XNIO-1 task-115] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 (replication=false)
+2020-04-16 15:44:11.957  WARN [sipladservicediscovery,551abea1682ed0db,551abea1682ed0db,true] 10928 --- [XNIO-1 task-116] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900
+2020-04-16 15:44:11.957  INFO [sipladservicediscovery,551abea1682ed0db,551abea1682ed0db,true] 10928 --- [XNIO-1 task-116] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): SIPLADSERVICEGATEWAY - localhost:sipladservicegateway:8900
+2020-04-16 15:44:11.958  WARN [sipladservicediscovery,,,] 10928 --- [TaskBatchingWorker-target_localhost-16] c.n.eureka.cluster.ReplicationTask       : The replication of task SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900:Cancel@localhost failed with response code 404
+2020-04-16 15:44:11.958  WARN [sipladservicediscovery,,,] 10928 --- [TaskBatchingWorker-target_localhost-16] c.netflix.eureka.cluster.PeerEurekaNode  : SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900:Cancel@localhost: missing entry.
+2020-04-16 15:44:23.766  INFO [sipladservicediscovery,,,] 10928 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-16 15:44:29.897  INFO [sipladservicediscovery,4d6fea90e6240145,4d6fea90e6240145,true] 10928 --- [XNIO-1 task-118] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 with status UP (replication=false)
+2020-04-16 15:44:30.412  INFO [sipladservicediscovery,c25bb457e7648a22,c25bb457e7648a22,true] 10928 --- [XNIO-1 task-119] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 with status UP (replication=true)
+2020-04-16 15:45:23.767  INFO [sipladservicediscovery,,,] 10928 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-16 15:46:23.767  INFO [sipladservicediscovery,,,] 10928 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-16 15:47:23.768  INFO [sipladservicediscovery,,,] 10928 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-16 15:47:39.864  INFO [sipladservicediscovery,7536443f392f595b,7536443f392f595b,true] 10928 --- [XNIO-1 task-16] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 with status DOWN (replication=false)
+2020-04-16 15:47:40.372  INFO [sipladservicediscovery,ff9eeff3116fe2f3,ff9eeff3116fe2f3,true] 10928 --- [XNIO-1 task-17] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 with status DOWN (replication=true)
+2020-04-16 15:47:43.138  INFO [sipladservicediscovery,65d571dae13015d1,65d571dae13015d1,true] 10928 --- [XNIO-1 task-20] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900 (replication=false)
+2020-04-16 15:47:43.646  WARN [sipladservicediscovery,3c5d1e6eb214a7de,3c5d1e6eb214a7de,true] 10928 --- [XNIO-1 task-21] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900
+2020-04-16 15:47:43.647  INFO [sipladservicediscovery,3c5d1e6eb214a7de,3c5d1e6eb214a7de,true] 10928 --- [XNIO-1 task-21] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): SIPLADSERVICEGATEWAY - localhost:sipladservicegateway:8900
+2020-04-16 15:47:43.647  WARN [sipladservicediscovery,,,] 10928 --- [TaskBatchingWorker-target_localhost-9] c.n.eureka.cluster.ReplicationTask       : The replication of task SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900:Cancel@localhost failed with response code 404
+2020-04-16 15:47:43.647  WARN [sipladservicediscovery,,,] 10928 --- [TaskBatchingWorker-target_localhost-9] c.netflix.eureka.cluster.PeerEurekaNode  : SIPLADSERVICEGATEWAY/localhost:sipladservicegateway:8900:Cancel@localhost: missing entry.
+2020-04-16 15:48:23.768  INFO [sipladservicediscovery,,,] 10928 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-16 15:49:23.769  INFO [sipladservicediscovery,,,] 10928 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-16 15:50:23.769  INFO [sipladservicediscovery,,,] 10928 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-16 15:51:23.769  INFO [sipladservicediscovery,,,] 10928 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-16 15:52:23.770  INFO [sipladservicediscovery,,,] 10928 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-16 15:53:23.771  INFO [sipladservicediscovery,,,] 10928 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-16 15:54:23.588  INFO [sipladservicediscovery,,,] 10928 --- [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 1
+2020-04-16 15:54:23.772  INFO [sipladservicediscovery,,,] 10928 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-16 15:55:23.772  INFO [sipladservicediscovery,,,] 10928 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-16 15:56:23.773  INFO [sipladservicediscovery,,,] 10928 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-16 15:57:23.774  INFO [sipladservicediscovery,,,] 10928 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-16 15:58:23.774  INFO [sipladservicediscovery,,,] 10928 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-16 15:59:23.775  INFO [sipladservicediscovery,,,] 10928 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-16 16:00:23.775  INFO [sipladservicediscovery,,,] 10928 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-16 16:01:23.776  INFO [sipladservicediscovery,,,] 10928 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-16 16:02:23.777  INFO [sipladservicediscovery,,,] 10928 --- [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2020-04-16 16:03:22.133  INFO [sipladservicediscovery,,,] 10928 --- [RMI TCP Connection(33)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-04-16 16:03:22.133  INFO [sipladservicediscovery,,,] 10928 --- [RMI TCP Connection(33)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SIPLADSERVICEDISCOVERY with eureka with status DOWN
+2020-04-16 16:03:22.134  INFO [sipladservicediscovery,,,] 10928 --- [RMI TCP Connection(33)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2020-04-16 16:03:22.135  INFO [sipladservicediscovery,,,] 10928 --- [RMI TCP Connection(33)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+2020-04-16 16:03:22.138  INFO [sipladservicediscovery,,,] 10928 --- [RMI TCP Connection(33)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+2020-04-16 16:03:22.139  INFO [sipladservicediscovery,,,] 10928 --- [RMI TCP Connection(33)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.executionTime.Will start computing stats again.
+2020-04-16 16:03:22.139  INFO [sipladservicediscovery,,,] 10928 --- [RMI TCP Connection(33)-127.0.0.1] com.netflix.servo.monitor.StatsMonitor   : Attempting to get the value for an expired monitor: eurekaServer.replication.batchSize.Will start computing stats again.
+2020-04-16 16:03:22.148  INFO [sipladservicediscovery,,,] 10928 --- [RMI TCP Connection(33)-127.0.0.1] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2020-04-16 16:03:22.152  INFO [sipladservicediscovery,,,] 10928 --- [RMI TCP Connection(33)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-16 16:03:22.655  INFO [sipladservicediscovery,,,] 10928 --- [RMI TCP Connection(33)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-04-16 16:03:22.656  INFO [sipladservicediscovery,,,] 10928 --- [RMI TCP Connection(33)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-04-16 16:03:22.658  INFO [sipladservicediscovery,,,] 10928 --- [RMI TCP Connection(33)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-04-16 16:03:22.659  INFO [sipladservicediscovery,,,] 10928 --- [RMI TCP Connection(33)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.0.30.Final

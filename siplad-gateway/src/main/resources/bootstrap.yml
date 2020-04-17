@@ -1,3 +1,6 @@
 spring:
   application:
     name: sipladservicegateway
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
