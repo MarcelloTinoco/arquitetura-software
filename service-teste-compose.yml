@@ -1,16 +1,19 @@
 version: '3.2'
 
 services:
-
-  servicediscovery:
-    image: siplad/service-discovery:1.0
+  
+  servicesipladteste:
+    image: siplad/service-teste:1.0
     networks:
       - sipladnetwork-overlay
     environment:
+    - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://servicediscovery:8800/eureka/
     - SPRING_ZIPKIN_BASE-URL=http://zipkin:9411
+    - SPRING_CLOUD_LOADBALANCER_RIBBON_ENABLED=false
     ports:
-       - "8800:8800"
-
+    - "9600:9600"
+  
+          
 networks:
   sipladnetwork-overlay:
     external:
