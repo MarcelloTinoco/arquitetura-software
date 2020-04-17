@@ -1,7 +1,5 @@
-version: '3'
-volumes:
-  grafana-storage:
-  prometheus:
+version: '3.2'
+
 services:
 
   zipkin:

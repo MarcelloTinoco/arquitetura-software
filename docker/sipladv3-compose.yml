@@ -1,0 +1,58 @@
+version: '2.1'
+services:
+
+  servicediscovery:
+    image: siplad/service-discovery:1.0
+    environment:
+    - SPRING_ZIPKIN_BASE-URL=http://zipkin:9411
+    ports:
+       - "8800:8800"
+    networks:
+      siplad_backend:
+        aliases:
+          - "servicediscovery"
+		  
+  servicegateway:
+    image: siplad/service-gateway:1.0
+    environment:
+    - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://servicediscovery:8800/eureka/
+    - SPRING_ZIPKIN_BASE-URL=http://zipkin:9411
+    ports:
+    - "8900:8900"	
+    networks:
+      - siplad_backend
+	  
+    
+  serviceapoio:
+    image: siplad/service-apoio:1.0
+    environment:
+    - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://servicediscovery:8800/eureka/
+    - SPRING_ZIPKIN_BASE-URL=http://zipkin:9411
+    ports:
+    - "9300:9300"
+    networks:
+      - siplad_backend
+	  
+  serviceautenticacao:
+    image: siplad/service-autenticacao:1.0
+    environment:
+    - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://servicediscovery:8800/eureka/
+    - SPRING_ZIPKIN_BASE-URL=http://zipkin:9411
+    ports:
+    - "9100:9100"
+	networks:
+      - siplad_backend
+      
+  servicesipladteste:
+    image: siplad/service-teste:1.0
+    environment:
+    - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://servicediscovery:8800/eureka/
+    - SPRING_ZIPKIN_BASE-URL=http://zipkin:9411
+    ports:
+    - "9600:9600"
+	networks:
+      - siplad_backend
+      
+networks:
+  siplad_backend:
+    driver: bridge

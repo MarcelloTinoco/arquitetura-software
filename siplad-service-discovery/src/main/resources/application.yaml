@@ -19,7 +19,8 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-
+  server:
+    waitTimeInMsWhenSyncEmpty: 5
       
 # Configuracao do arquivo de log  - Sera utilizado quando utilizar o docker. Sera mapeado o volume do conteiner para o host para acessar os logs da aplicacao
 logging:

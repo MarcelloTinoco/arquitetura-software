@@ -1,0 +1,15 @@
+version: '2.1'
+
+services:
+
+  zipkin:
+    image: openzipkin/zipkin
+    networks:
+      - siplad_backend
+    ports:
+      - 9411:9411
+
+networks:
+  siplad_backend:
+    driver: bridge
+
